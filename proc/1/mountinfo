@@ -1,0 +1,25 @@
+1 1 0:1 / / ro shared:1 - rootfs rootfs ro,seclabel
+12 1 0:12 / /dev rw,nosuid,relatime shared:2 - tmpfs tmpfs rw,seclabel,size=1425056k,nr_inodes=356264,mode=755
+13 12 0:9 / /dev/pts rw,relatime shared:3 - devpts devpts rw,seclabel,mode=600
+14 1 0:3 / /proc rw,relatime shared:6 - proc proc rw,gid=3009,hidepid=2
+15 1 0:13 / /sys rw,relatime shared:7 - sysfs sysfs rw,seclabel
+16 15 0:11 / /sys/fs/selinux rw,relatime shared:8 - selinuxfs selinuxfs rw
+17 1 0:14 / /acct rw,relatime shared:11 - cgroup none rw,cpuacct
+18 15 0:5 / /sys/kernel/debug rw,relatime shared:9 - debugfs debugfs rw,seclabel
+19 1 0:15 / /mnt rw,relatime shared:12 - tmpfs tmpfs rw,seclabel,size=1425056k,nr_inodes=356264,mode=755,gid=1000
+20 1 0:10 / /config rw,relatime shared:13 - configfs none rw
+21 12 0:16 / /dev/cpuctl rw,relatime shared:4 - cgroup none rw,cpu
+22 12 0:17 / /dev/cpuset rw,relatime shared:5 - cgroup none rw,cpuset,noprefix,release_agent=/sbin/cpuset_release_agent
+23 15 0:18 / /sys/fs/pstore rw,relatime shared:10 - pstore pstore rw,seclabel
+24 1 253:0 / /system ro,relatime shared:14 - ext4 /dev/block/dm-0 ro,seclabel,inode_readahead_blks=8
+25 1 253:1 / /vendor ro,relatime shared:15 - ext4 /dev/block/dm-1 ro,seclabel,inode_readahead_blks=8
+27 1 259:6 / /cache rw,nosuid,nodev,noatime shared:17 - ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache rw,seclabel,noauto_da_alloc,errors=panic,data=ordered
+28 1 259:0 / /persist rw,nosuid,nodev,noatime shared:18 - ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/persist rw,seclabel,nodelalloc,errors=panic,data=ordered
+29 1 179:1 / /firmware ro,relatime shared:19 - vfat /dev/block/platform/soc.0/f9824900.sdhci/by-name/modem ro,context=u:object_r:firmware_file:s0,uid=1000,gid=1000,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro
+30 1 0:15 /runtime/default /storage rw,relatime master:12 - tmpfs tmpfs rw,seclabel,size=1425056k,nr_inodes=356264,mode=755,gid=1000
+31 12 0:20 / /dev/usb-ffs/adb rw,noatime shared:20 - functionfs adb rw
+26 1 253:2 / /data rw,nosuid,nodev,noatime shared:16 - ext4 /dev/block/dm-2 rw,seclabel,noauto_da_alloc,errors=panic,data=ordered,inode_readahead_blks=8
+138 19 0:19 / /mnt/runtime/default/emulated rw,nosuid,nodev,noexec,noatime shared:21 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid
+147 30 0:19 / /storage/emulated rw,nosuid,nodev,noexec,noatime shared:22 master:21 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid
+148 19 0:19 / /mnt/runtime/read/emulated rw,nosuid,nodev,noexec,noatime shared:21 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=23,derive_gid
+154 19 0:19 / /mnt/runtime/write/emulated rw,nosuid,nodev,noexec,noatime shared:21 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid

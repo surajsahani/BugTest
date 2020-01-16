@@ -1,0 +1,843 @@
+[    0.002039] __bionic_open_tzdata: couldn't find any tzdata when looking for GMT!
+[    0.002152] Starting recovery (pid 334) on Mon Sep 28 16:49:40 1970
+[    0.002164] recovery filesystem table
+[    0.002173] =========================
+[    0.002182]   0 /system ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/system 0
+[    0.002191]   1 /vendor ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor 0
+[    0.002200]   2 /data ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata 0
+[    0.002209]   3 /cache ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache 0
+[    0.002218]   4 /persist ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/persist 0
+[    0.002227]   5 /firmware vfat /dev/block/platform/soc.0/f9824900.sdhci/by-name/modem 0
+[    0.002237]   6 /boot emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/boot 0
+[    0.002245]   7 /recovery emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/recovery 0
+[    0.002472]   8 /misc emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/misc 0
+[    0.002483]   9 /modem emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/modem 0
+[    0.002492]   10 /sbl1 emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/sbl1 0
+[    0.002501]   11 /pmic emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/pmic 0
+[    0.002509]   12 /hyp emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/hyp 0
+[    0.002518]   13 /tz emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/tz 0
+[    0.002527]   14 /rpm emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/rpm 0
+[    0.002536]   15 /sdi emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/sdi 0
+[    0.002545]   16 /aboot emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/aboot 0
+[    0.002553]   17 /persistent emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/frp 0
+[    0.002562]   18 /keymaster emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/keymaster 0
+[    0.002572]   19 /cmnlib emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/cmnlib 0
+[    0.002580]   20 auto auto /devices/*/xhci-hcd.0.auto/usb* 0
+[    0.002589]   21 none swap /dev/block/zram0 0
+[    0.002598]   22 /tmp ramdisk ramdisk 0
+[    0.002606]
+[    0.003302] I:Boot command: boot-recovery
+[    0.003317] I:Got arguments from boot message
+[    0.058036] locale is [en_US]
+[    0.058069] stage is []
+[    0.058079] reason is [(null)]
+[    0.068941] cannot find/open a drm device: No such file or directory
+[    0.069865] fb0 reports (possibly inaccurate):
+[    0.069897]   vi.bits_per_pixel = 32
+[    0.069907]   vi.red.offset   =   0   .length =   8
+[    0.069917]   vi.green.offset =   8   .length =   8
+[    0.069926]   vi.blue.offset  =  16   .length =   8
+[    0.099722] framebuffer: 0 (1440 x 2560)
+[    0.174025]           erasing_text: en_US (178 x 76 @ 2310)
+[    0.190883]        no_command_text: en_US (330 x 76 @ 2310)
+[    0.204487]             error_text: en_US (127 x 76 @ 2310)
+[    2.864635]        installing_text: en_US (602 x 76 @ 2310)
+[    2.897781] Command: "recovery" "--update_package=@/cache/recovery/block.map" "--locale=en_US"
+[    2.897991]
+[    2.898269] ro.dalvik.vm.native.bridge=0
+[    2.898339] dalvik.vm.isa.arm.variant=cortex-a53.a57
+[    2.898404] dalvik.vm.isa.arm.features=default
+[    2.898469] dalvik.vm.isa.arm64.variant=cortex-a53
+[    2.898533] dalvik.vm.isa.arm64.features=default
+[    2.898597] dalvik.vm.usejit=true
+[    2.898661] dalvik.vm.heapsize=512m
+[    2.898727] dalvik.vm.dex2oat-Xms=64m
+[    2.898792] dalvik.vm.dex2oat-Xmx=512m
+[    2.898856] dalvik.vm.heapmaxfree=8m
+[    2.898919] dalvik.vm.heapminfree=512k
+[    2.898983] dalvik.vm.heapstartsize=8m
+[    2.899047] dalvik.vm.appimageformat=lz4
+[    2.899111] dalvik.vm.usejitprofiles=true
+[    2.899175] dalvik.vm.dex2oat-threads=4
+[    2.899239] dalvik.vm.heapgrowthlimit=192m
+[    2.899303] dalvik.vm.stack-trace-file=/data/anr/traces.txt
+[    2.899366] dalvik.vm.image-dex2oat-Xms=64m
+[    2.899431] dalvik.vm.image-dex2oat-Xmx=64m
+[    2.899495] dalvik.vm.boot-dex2oat-threads=4
+[    2.899558] dalvik.vm.heaptargetutilization=0.75
+[    2.899622] dalvik.vm.image-dex2oat-threads=4
+[    2.899773] ro.config.ringtone=Titania.ogg
+[    2.899840] ro.config.alarm_alert=Oxygen.ogg
+[    2.899905] ro.config.notification_sound=Tethys.ogg
+[    2.900102] ro.build.fingerprint=google/angler/angler:7.1.2/N2G48C/4104010:user/release-keys
+[    2.900239] af.fast_track_multiplier=1
+[    2.900307] pm.dexopt.boot=verify-profile
+[    2.900371] pm.dexopt.ab-ota=speed-profile
+[    2.900436] pm.dexopt.install=interpret-only
+[    2.900501] pm.dexopt.core-app=speed
+[    2.900566] pm.dexopt.bg-dexopt=speed-profile
+[    2.900629] pm.dexopt.first-boot=interpret-only
+[    2.900692] pm.dexopt.shared-apk=speed
+[    2.900756] pm.dexopt.nsys-library=speed
+[    2.900819] pm.dexopt.forced-dexopt=speed
+[    2.900884] ro.qc.sdk.audio.fluencetype=fluence
+[    2.900947] ro.sf.lcd_density=560
+[    2.901011] ro.adb.secure=1
+[    2.901079] ro.com.google.clientidbase=android-google
+[    2.901143] ro.com.android.dataroaming=false
+[    2.901244] ro.com.android.wifi-watchlist=GoogleGuest
+[    2.901313] ro.com.android.prov_mobiledata=false
+[    2.901377] ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/frp
+[    2.901442] ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+[    2.901507] ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+[    2.901572] ro.boot.mode=normal
+[    2.901640] ro.boot.flash.locked=1
+[    2.901703] ro.boot.radio=angler-03.81
+[    2.901767] ro.boot.console=ttyHSL0
+[    2.901830] ro.boot.baseband=msm
+[    2.901892] ro.boot.hardware=angler
+[    2.901957] ro.boot.hardware.ddr=3072MB,HYNIX,LPDDR4
+[    2.902020] ro.boot.hardware.sku=H1511
+[    2.902083] ro.boot.hardware.emmc=32GB,Samsung
+[    2.902148] ro.boot.hardware.revision=ANGLER-VN2
+[    2.902211] ro.boot.serialno=84B5T15A09001501
+[    2.902274] ro.boot.wifi_cal=
+[    2.902338] ro.boot.btmacaddr=AC:CF:85:12:50:CC
+[    2.902400] ro.boot.bootdevice=f9824900.sdhci
+[    2.902464] ro.boot.bootloader=angler-03.68
+[    2.902527] ro.boot.bootreason=recovery
+[    2.902590] ro.boot.veritymode=enforcing
+[    2.902653] ro.boot.wifimacaddr=AC:CF:85:12:46:40
+[    2.902716] ro.boot.secure_hardware=1
+[    2.902778] ro.boot.authorized_kernel=true
+[    2.902841] ro.boot.verifiedbootstate=green
+[    2.902906] ro.hwui.path_cache_size=32
+[    2.902970] ro.hwui.layer_cache_size=48
+[    2.903034] ro.hwui.texture_cache_size=72
+[    2.903097] ro.hwui.gradient_cache_size=1
+[    2.903160] ro.hwui.r_buffer_cache_size=8
+[    2.903223] ro.hwui.drop_shadow_cache_size=6
+[    2.903287] ro.hwui.text_large_cache_width=2048
+[    2.903352] ro.hwui.text_small_cache_width=1024
+[    2.903415] ro.hwui.text_large_cache_height=1024
+[    2.903478] ro.hwui.text_small_cache_height=1024
+[    2.903541] ro.hwui.texture_cache_flushrate=0.4
+[    2.903605] ro.wifi.channels=
+[    2.903669] ro.allow.mock.location=0
+[    2.903733] ro.audio.monitorRotation=true
+[    2.903797] ro.audio.flinger_standbytime_ms=300
+[    2.903860] ro.board.platform=msm8994
+[    2.903923] ro.build.id=N2G48C
+[    2.903987] ro.build.date=Thu Jun 15 19:35:37 UTC 2017
+[    2.904050] ro.build.date.utc=1497555337
+[    2.904114] ro.build.host=vpec13.mtv.corp.google.com
+[    2.904178] ro.build.tags=release-keys
+[    2.904241] ro.build.type=user
+[    2.904304] ro.build.user=android-build
+[    2.904368] ro.build.expect.baseband=angler-03.81
+[    2.904432] ro.build.expect.bootloader=angler-03.68
+[    2.904494] ro.build.flavor=angler-user
+[    2.904587] ro.build.display.id=N2G48C
+[    2.904654] ro.build.product=angler
+[    2.904719] ro.build.version.sdk=25
+[    2.904783] ro.build.version.base_os=
+[    2.904846] ro.build.version.release=7.1.2
+[    2.904910] ro.build.version.codename=REL
+[    2.904973] ro.build.version.incremental=4104010
+[    2.905036] ro.build.version.preview_sdk=0
+[    2.905099] ro.build.version.all_codenames=REL
+[    2.905162] ro.build.version.security_patch=2017-08-05
+[    2.905225] ro.build.description=angler-user 7.1.2 N2G48C 4104010 release-keys
+[    2.905289] ro.build.characteristics=nosdcard
+[    2.905353] ro.error.receiver.system.apps=com.google.android.gms
+[    2.905428] ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+[    2.905492] ro.secure=1
+[    2.905556] ro.vendor.extension_library=libqti-perfd-client.so
+[    2.905619] ro.zygote=zygote64_32
+[    2.905682] ro.carrier=unknown
+[    2.905747] ro.product.cpu.abi=arm64-v8a
+[    2.905810] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    2.905873] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    2.905936] ro.product.cpu.abilist64=arm64-v8a
+[    2.906000] ro.product.name=angler
+[    2.906063] ro.product.board=angler
+[    2.906126] ro.product.brand=google
+[    2.906190] ro.product.model=Nexus 6P
+[    2.906253] ro.product.device=angler
+[    2.906317] ro.product.locale=en-US
+[    2.906381] ro.product.manufacturer=Huawei
+[    2.906444] ro.product.first_api_level=23
+[    2.906507] ro.baseband=msm
+[    2.906570] ro.bootmode=normal
+[    2.906634] ro.facelock.det_timeout=2500
+[    2.906697] ro.facelock.rec_timeout=3500
+[    2.906760] ro.facelock.est_max_time=600
+[    2.906823] ro.facelock.black_timeout=700
+[    2.906886] ro.hardware=angler
+[    2.906949] ro.opengles.version=196610
+[    2.907012] ro.revision=0
+[    2.907074] ro.serialno=84B5T15A09001501
+[    2.907138] ro.bootimage.build.date=Thu Jun 15 19:35:37 UTC 2017
+[    2.907201] ro.bootimage.build.date.utc=1497555337
+[    2.907265] ro.bootimage.build.fingerprint=google/angler/angler:7.1.2/N2G48C/4104010:user/release-keys
+[    2.907328] ro.telephony.call_ring.multiple=0
+[    2.907391] ro.telephony.default_network=10
+[    2.907453] ro.telephony.default_cdma_sub=0
+[    2.907516] ro.bootloader=angler-03.68
+[    2.907580] ro.debuggable=0
+[    2.907643] ro.min_freq_0=384000
+[    2.907706] ro.retaildemo.video_path=/data/preloads/demo/retail_demo.mp4
+[    2.907769] ro.recovery_id=0x44126717ea5f72c8e516560e928a68381ee02a88000000000000000000000000
+[    2.907834] ro.setupwizard.enterprise_mode=1
+[    2.907991] ro.setupwizard.rotation_locked=true
+[    2.908058] ro.oem_unlock_supported=1
+[    2.908122] drm.service.enabled=true
+[    2.908185] init.svc.healthd=running
+[    2.908248] init.svc.ueventd=running
+[    2.908311] init.svc.recovery=running
+[    2.908374] rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+[    2.908437] vidc.enc.dcvs.extra-buff-count=2
+[    2.908499] vidc.debug.perf.mode=2
+[    2.908562] media.aac_51_output_enabled=true
+[    2.908625] persist.hwc.mdpcomp.enable=true
+[    2.908688] persist.data.mode=concurrent
+[    2.908751] persist.data.iwlan.enable=true
+[    2.908814] persist.camera.eis.enable=1
+[    2.908877] persist.camera.is_type=4
+[    2.908940] keyguard.no_require_sim=true
+[    2.909003] audio_hal.period_size=192
+[    2.909066] telephony.lteOnCdmaDevice=1
+[    2.909506] persist.audio.fluence.speaker=true
+[    2.909574] persist.audio.fluence.voicecall=true
+[    2.909639] persist.audio.fluence.voicecomm=true
+[    2.909703] persist.audio.product.identify=angler
+[    2.909825] security.perf_harden=1
+[    2.910171] debug.atrace.tags.enableflags=0
+[    2.910553] net.bt.name=Android
+[    2.910620] net.change=net.bt.name
+[    2.910686] persist.sys.ssr.restart_level=ALL_ENABLE
+[    2.910750] persist.sys.usb.config=none
+[    2.910814] persist.sys.dalvik.vm.lib.2=libart.so
+[    2.910946] persist.radio.custom_ecc=1
+[    2.911012] persist.radio.data_con_rprt=true
+[    2.911076] persist.radio.data_no_toggle=1
+[    2.911139] persist.radio.mode_pref_nv10=1
+[    2.911335] persist.radio.snapshot_timer=2
+[    2.911355] persist.radio.redir_party_num=0
+[    2.911365] persist.radio.always_send_plmn=true
+[    2.911375] persist.radio.apm_sim_not_pwdn=1
+[    2.911383] persist.radio.snapshot_enabled=1
+[    2.911472]
+[    2.911549] Supported API: 3
+[    2.916139] charge_status 3, charged 0, status 0, capacity 88
+[    3.004413] Finding update package...
+[    3.062779] I:Update location: @/cache/recovery/block.map
+[    3.062906] Opening update package...
+[    3.102915] sysutil: mmapped 526 ranges
+[    3.103316] I:read key e=65537 hash=20
+[    3.103399] I:1 key(s) loaded from /res/keys
+[    3.103472] Verifying update package...
+[    3.131357] I:comment is 1468 bytes; signature 1450 bytes from end
+[   20.410860] I:signature (offset: 0x3df5b87a, length: 1444): 308205a006092a864886f70d010702a08205913082058d020101310b300906052b0e03021a0500300b06092a864886f70d010701a08203bf308203bb308202a3a003020102020900b32c3a602af07792300d06092a864886f70d01010505003074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f6964301e170d3135303630383138323430365a170d3432313032343138323430365a3074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f696430820122300d06092a864886f70d01010105000382010f003082010a0282010100e0fd2f6ffe49673f7d09820759e3bb72fe944ade56a1914d715030039db6927967891dd4cdea697cedd44bfd16a78e74c4fe3b5ff6c78e9d1632b9851ee8c35358464ebed540ca215bd38384a41af3eef96c0b1908488b301198496fc150bf70a82ffb811ad2638d85a9bec100223a5ad4e29082cef47d679abf20a682cf523ae005b9f3f7b7d49d8ce130ef21b47454235fc0f32de9d56697d8cac575f87d3e9b35bbf85f657ee7caeeb5c7efc7d094f53481ef4887360b8d0bae1449c26b861647c845e9e80b3cf894e8135de513b6ad3a2a34435744990c77ef049eb28e800772dbec0c559fb811cc92658705010e6e6df729d59dcd91c29f96ef863953a30203010001a350304e301d0603551d0e04160414ef85e62126da695a9549501bbda2e8c91a0ce75d301f0603551d23041830168014ef85e62126da695a9549501bbda2e8c91a0ce75d300c0603551d13040530030101ff300d06092a864886f70d0101050500038201010064a5b15fd73170d3412d4d54d28155d98677ef32930792d0925d807bf02f5345ca24b47250001e95baeca6d5f015273fd0708ae3864411a81bee353eb58c20dd53fe6bc0f0fd21acb0ee70dc4b09d7e6d4001b4ef09988cb5016b52ba3f5c8f012a1081f4a05943cae5b4cb125d0c13cbbf95cb0f68f95ffd57fb12157a24c7841f47bde16d3c752a6110bee9cadd8b708c9a1f2031cba27ddab3c2352bd9ada434f2a8b6157c7c01adc786d65ff2b5aa8d62f2227a317245aea5388ec3282f8916adba657096a2a237c520dd46ef78192ec564f6b0394dd9339c3b57c68cdf0701854c4f9604d4a1d8589505bfb2f388f3825dcae2dcfe18b71dee7839c99bd318201a9308201a50201013081813074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f6964020900b32c3a602af07792300906052b0e03021a0500300d06092a864886f70d010101050004820100ab2d9e121b7746dd983348f822853a83a8b72211cb80dcae3b042bb70741cad8895ca1d45cdfa74c026000be1ce778e154c2c81ac58e007ac0d0b48f5f93e6bd8ec5bbf58f66cb18bd10b29a466fc41bfadc0a266880514d50bfaddee4bf4161c5374e14ff4607ec4b8771494dc86ef29729603bee4f68da0d3075769b6ed69390cadda7d7cdb17eaab04d9ca7dc83248c364ad4e11d118da8ecf7b927f36508fc8ee7d7cbabe40cc123570cab1619e8e353a0ff9f5a26cda2f8ebb134bf5028e71b38912d4672e96b7eef245a0d67039926a06f51a57d855f7b066a8ae4f0ac39d552687da86cd355b8d541b6c1829e6fef096e928f5a37182f364c73eb08b2
+[   20.411519] I:whole-file signature verified against RSA key 0
+[   20.411616] Update package verification took 17.3 s (result 0).
+[   20.419441] Installing update...
+[   20.509968] mmapped 526 ranges
+[   20.511627] selinux_android_file_context: Error getting file context handle (No such file or directory)
+[   20.511995] Target: google/angler/angler:8.0.0/OPR6.170623.019/4299446:user/release-keys
+[   20.514669]
+[   20.514838] Patching system image unconditionally...
+[   20.514906]
+[   20.514994] performing update
+[   20.515924] blockimg version is 4
+[   20.516018] maximum stash entries 0
+[   20.516209] creating stash /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/
+[   20.517550] 92340224 bytes free on /cache (0 needed)
+[   20.517741]  erasing 287558 blocks
+[   20.720477]  writing 1024 blocks of new data
+[   21.283005]  writing 1024 blocks of new data
+[   21.614922]  writing 1024 blocks of new data
+[   21.725075]  writing 1024 blocks of new data
+[   21.833549]  writing 1024 blocks of new data
+[   21.942570]  writing 1024 blocks of new data
+[   22.079014]  writing 1024 blocks of new data
+[   22.220617]  writing 1024 blocks of new data
+[   22.365103]  writing 1024 blocks of new data
+[   22.495598]  writing 1024 blocks of new data
+[   22.627349]  writing 1024 blocks of new data
+[   22.760068]  writing 1024 blocks of new data
+[   22.886702]  writing 1024 blocks of new data
+[   23.028426]  writing 1024 blocks of new data
+[   23.163583]  writing 1024 blocks of new data
+[   23.298335]  writing 1024 blocks of new data
+[   23.445096]  writing 1024 blocks of new data
+[   23.559559]  writing 1024 blocks of new data
+[   23.659511]  writing 1024 blocks of new data
+[   23.795395]  writing 1024 blocks of new data
+[   23.945134]  writing 1024 blocks of new data
+[   24.090917]  writing 1024 blocks of new data
+[   24.238603]  writing 1024 blocks of new data
+[   24.378821]  writing 1024 blocks of new data
+[   24.531698]  writing 1024 blocks of new data
+[   24.679312]  writing 1024 blocks of new data
+[   24.826259]  writing 1024 blocks of new data
+[   24.976697]  writing 1024 blocks of new data
+[   25.089905]  writing 1024 blocks of new data
+[   25.205169]  writing 1024 blocks of new data
+[   25.327022]  writing 1024 blocks of new data
+[   25.418856]  writing 1024 blocks of new data
+[   25.521148]  writing 1024 blocks of new data
+[   25.660506]  writing 1024 blocks of new data
+[   25.783786]  writing 1024 blocks of new data
+[   25.912714]  writing 1024 blocks of new data
+[   26.046577]  writing 1024 blocks of new data
+[   26.164065]  writing 1024 blocks of new data
+[   26.291082]  writing 1024 blocks of new data
+[   26.423697]  writing 1024 blocks of new data
+[   26.551723]  writing 1024 blocks of new data
+[   26.659370]  writing 1024 blocks of new data
+[   26.775011]  writing 1024 blocks of new data
+[   26.882780]  writing 1024 blocks of new data
+[   27.008361]  writing 1024 blocks of new data
+[   27.128590]  writing 1024 blocks of new data
+[   27.261158]  writing 1024 blocks of new data
+[   27.388423]  writing 1024 blocks of new data
+[   27.521606]  writing 1024 blocks of new data
+[   27.641594]  writing 1024 blocks of new data
+[   27.761719]  writing 1024 blocks of new data
+[   27.891866]  writing 1024 blocks of new data
+[   28.004930]  writing 1024 blocks of new data
+[   28.134420]  writing 1024 blocks of new data
+[   28.253473]  writing 1024 blocks of new data
+[   28.376105]  writing 1024 blocks of new data
+[   28.504347]  writing 1024 blocks of new data
+[   28.631375]  writing 1024 blocks of new data
+[   28.738509]  writing 1024 blocks of new data
+[   28.839023]  writing 1024 blocks of new data
+[   28.964915]  writing 1024 blocks of new data
+[   29.085744]  writing 1024 blocks of new data
+[   29.218565]  writing 1024 blocks of new data
+[   29.344281]  writing 1024 blocks of new data
+[   29.474471]  writing 1024 blocks of new data
+[   29.611871]  writing 1024 blocks of new data
+[   29.737366]  writing 1024 blocks of new data
+[   29.864499]  writing 1024 blocks of new data
+[   29.994911]  writing 1024 blocks of new data
+[   30.100788]  writing 1024 blocks of new data
+[   30.212034]  writing 1024 blocks of new data
+[   30.333481]  writing 1024 blocks of new data
+[   30.464265]  writing 1024 blocks of new data
+[   30.598345]  writing 1024 blocks of new data
+[   30.733909]  writing 1024 blocks of new data
+[   30.870713]  writing 1024 blocks of new data
+[   31.000816]  writing 1024 blocks of new data
+[   31.125639]  writing 1024 blocks of new data
+[   31.255356]  writing 1024 blocks of new data
+[   31.404621]  writing 1024 blocks of new data
+[   31.533702]  writing 1024 blocks of new data
+[   31.639879]  writing 1024 blocks of new data
+[   31.758688]  writing 1024 blocks of new data
+[   31.884729]  writing 1024 blocks of new data
+[   32.007042]  writing 1024 blocks of new data
+[   32.109699]  writing 1024 blocks of new data
+[   32.235658]  writing 1024 blocks of new data
+[   32.369910]  writing 1024 blocks of new data
+[   32.515150]  writing 1024 blocks of new data
+[   32.656672]  writing 1024 blocks of new data
+[   32.803755]  writing 1024 blocks of new data
+[   32.951840]  writing 1024 blocks of new data
+[   33.101600]  writing 1024 blocks of new data
+[   33.238166]  writing 1024 blocks of new data
+[   33.360293]  writing 1024 blocks of new data
+[   33.486521]  writing 1024 blocks of new data
+[   33.638254]  writing 1024 blocks of new data
+[   33.767315]  writing 1024 blocks of new data
+[   33.888114]  writing 1024 blocks of new data
+[   34.026725]  writing 1024 blocks of new data
+[   34.156633]  writing 1024 blocks of new data
+[   34.265656]  writing 1024 blocks of new data
+[   34.405345]  writing 1024 blocks of new data
+[   34.540603]  writing 1024 blocks of new data
+[   34.666831]  writing 1024 blocks of new data
+[   34.782102]  writing 1024 blocks of new data
+[   34.899107]  writing 1024 blocks of new data
+[   35.019421]  writing 1024 blocks of new data
+[   35.140435]  writing 1024 blocks of new data
+[   35.264856]  writing 1024 blocks of new data
+[   35.360660]  writing 1024 blocks of new data
+[   35.488735]  writing 1024 blocks of new data
+[   35.623044]  writing 1024 blocks of new data
+[   35.763006]  writing 1024 blocks of new data
+[   35.869446]  writing 1024 blocks of new data
+[   35.984892]  writing 1024 blocks of new data
+[   36.052071]  writing 1024 blocks of new data
+[   36.119654]  writing 1024 blocks of new data
+[   36.236929]  writing 1024 blocks of new data
+[   36.299898]  writing 1024 blocks of new data
+[   36.447073]  writing 1024 blocks of new data
+[   36.704654]  writing 1024 blocks of new data
+[   36.944646]  writing 1024 blocks of new data
+[   37.168242]  writing 1024 blocks of new data
+[   37.293345]  writing 1024 blocks of new data
+[   37.404148]  writing 1024 blocks of new data
+[   37.533893]  writing 1024 blocks of new data
+[   37.664893]  writing 1024 blocks of new data
+[   37.872926]  writing 1024 blocks of new data
+[   38.058454]  writing 1024 blocks of new data
+[   38.159736]  writing 1024 blocks of new data
+[   38.265039]  writing 1024 blocks of new data
+[   38.361981]  writing 1024 blocks of new data
+[   38.469451]  writing 1024 blocks of new data
+[   38.569971]  writing 1024 blocks of new data
+[   38.710023]  writing 1024 blocks of new data
+[   38.910048]  writing 1024 blocks of new data
+[   39.092553]  writing 1024 blocks of new data
+[   39.162709]  writing 1024 blocks of new data
+[   39.238443]  writing 1024 blocks of new data
+[   39.368266]  writing 1024 blocks of new data
+[   39.465875]  writing 1024 blocks of new data
+[   39.591063]  writing 1024 blocks of new data
+[   39.718260]  writing 1024 blocks of new data
+[   39.918268]  writing 1024 blocks of new data
+[   40.090437]  writing 1024 blocks of new data
+[   40.222220]  writing 1024 blocks of new data
+[   40.344936]  writing 1024 blocks of new data
+[   40.468932]  writing 1024 blocks of new data
+[   40.594032]  writing 1024 blocks of new data
+[   40.709600]  writing 1024 blocks of new data
+[   40.831932]  writing 1024 blocks of new data
+[   41.014375]  writing 1024 blocks of new data
+[   41.169561]  writing 1024 blocks of new data
+[   41.276594]  writing 1024 blocks of new data
+[   41.350403]  writing 1024 blocks of new data
+[   41.405814]  writing 1024 blocks of new data
+[   41.462679]  writing 1024 blocks of new data
+[   41.567051]  writing 1024 blocks of new data
+[   41.685269]  writing 1024 blocks of new data
+[   41.816209]  writing 1024 blocks of new data
+[   41.963937]  writing 1024 blocks of new data
+[   42.081489]  writing 1024 blocks of new data
+[   42.203194]  writing 1024 blocks of new data
+[   42.332249]  writing 1024 blocks of new data
+[   42.442811]  writing 1024 blocks of new data
+[   42.548999]  writing 1024 blocks of new data
+[   42.646406]  writing 1024 blocks of new data
+[   42.779013]  writing 1024 blocks of new data
+[   42.905558]  writing 1024 blocks of new data
+[   43.029807]  writing 1024 blocks of new data
+[   43.151183]  writing 1024 blocks of new data
+[   43.271654]  writing 1024 blocks of new data
+[   43.397693]  writing 1024 blocks of new data
+[   43.526025]  writing 1024 blocks of new data
+[   43.668509]  writing 1024 blocks of new data
+[   43.819884]  writing 1024 blocks of new data
+[   43.935427]  writing 1024 blocks of new data
+[   44.052416]  writing 1024 blocks of new data
+[   44.176715]  writing 1024 blocks of new data
+[   44.302324]  writing 1024 blocks of new data
+[   44.431765]  writing 1024 blocks of new data
+[   44.569847]  writing 1024 blocks of new data
+[   44.698238]  writing 1024 blocks of new data
+[   44.842177]  writing 1024 blocks of new data
+[   44.962089]  writing 1024 blocks of new data
+[   45.090955]  writing 1024 blocks of new data
+[   45.210219]  writing 1024 blocks of new data
+[   45.334071]  writing 1024 blocks of new data
+[   45.452416]  writing 1024 blocks of new data
+[   45.553336]  writing 1024 blocks of new data
+[   45.664137]  writing 1024 blocks of new data
+[   45.794138]  writing 1024 blocks of new data
+[   45.901531]  writing 1024 blocks of new data
+[   46.036438]  writing 1024 blocks of new data
+[   46.168244]  writing 1024 blocks of new data
+[   46.299685]  writing 1024 blocks of new data
+[   46.414424]  writing 1024 blocks of new data
+[   46.527370]  writing 1024 blocks of new data
+[   46.640700]  writing 1024 blocks of new data
+[   46.768270]  writing 1024 blocks of new data
+[   46.888068]  writing 1024 blocks of new data
+[   46.990058]  writing 1024 blocks of new data
+[   47.118098]  writing 1024 blocks of new data
+[   47.242648]  writing 1024 blocks of new data
+[   47.303325]  writing 1024 blocks of new data
+[   47.429313]  writing 1024 blocks of new data
+[   47.547825]  writing 1024 blocks of new data
+[   47.663562]  writing 1024 blocks of new data
+[   47.732682]  writing 1024 blocks of new data
+[   47.797081]  writing 1024 blocks of new data
+[   47.897441]  writing 1024 blocks of new data
+[   48.013511]  writing 1024 blocks of new data
+[   48.160375]  writing 1024 blocks of new data
+[   48.283118]  writing 1024 blocks of new data
+[   48.396727]  writing 1024 blocks of new data
+[   48.518923]  writing 1024 blocks of new data
+[   48.626383]  writing 1024 blocks of new data
+[   48.761759]  writing 1024 blocks of new data
+[   48.891593]  writing 1024 blocks of new data
+[   49.001522]  writing 1024 blocks of new data
+[   49.118600]  writing 1024 blocks of new data
+[   49.231935]  writing 1024 blocks of new data
+[   49.351149]  writing 1024 blocks of new data
+[   49.495154]  writing 1024 blocks of new data
+[   49.607849]  writing 1024 blocks of new data
+[   49.741987]  writing 1024 blocks of new data
+[   49.861532]  writing 1024 blocks of new data
+[   49.986939]  writing 1024 blocks of new data
+[   50.102415]  writing 1024 blocks of new data
+[   50.231698]  writing 1024 blocks of new data
+[   50.358270]  writing 1024 blocks of new data
+[   50.473822]  writing 1024 blocks of new data
+[   50.589844]  writing 1024 blocks of new data
+[   50.721570]  writing 1024 blocks of new data
+[   50.843356]  writing 1024 blocks of new data
+[   50.947033]  writing 1024 blocks of new data
+[   51.078355]  writing 1024 blocks of new data
+[   51.204087]  writing 1024 blocks of new data
+[   51.326982]  writing 1024 blocks of new data
+[   51.469275]  writing 1024 blocks of new data
+[   51.725978]  writing 1024 blocks of new data
+[   51.974450]  writing 1024 blocks of new data
+[   52.102221]  writing 1024 blocks of new data
+[   52.231932]  writing 1024 blocks of new data
+[   52.359759]  writing 1024 blocks of new data
+[   52.488183]  writing 1024 blocks of new data
+[   52.596278]  writing 1024 blocks of new data
+[   52.716451]  writing 1024 blocks of new data
+[   52.840761]  writing 1024 blocks of new data
+[   52.964871]  writing 1024 blocks of new data
+[   53.065673]  writing 1024 blocks of new data
+[   53.177274]  writing 1024 blocks of new data
+[   53.302933]  writing 1024 blocks of new data
+[   53.426877]  writing 1024 blocks of new data
+[   53.547032]  writing 1024 blocks of new data
+[   53.661124]  writing 1024 blocks of new data
+[   53.787651]  writing 1024 blocks of new data
+[   53.913757]  writing 1024 blocks of new data
+[   54.026465]  writing 1024 blocks of new data
+[   54.122369]  writing 1024 blocks of new data
+[   54.245793]  writing 1024 blocks of new data
+[   54.375181]  writing 1024 blocks of new data
+[   54.499461]  writing 1024 blocks of new data
+[   54.638963]  writing 1024 blocks of new data
+[   54.758303]  writing 1024 blocks of new data
+[   54.901009]  writing 1024 blocks of new data
+[   55.016934]  writing 1024 blocks of new data
+[   55.148815]  writing 1024 blocks of new data
+[   55.265587]  writing 1024 blocks of new data
+[   55.398142]  writing 1024 blocks of new data
+[   55.528563]  writing 1024 blocks of new data
+[   55.676196]  writing 1024 blocks of new data
+[   55.793009]  writing 1024 blocks of new data
+[   55.916768]  writing 1024 blocks of new data
+[   56.020529]  writing 1024 blocks of new data
+[   56.126866]  writing 1024 blocks of new data
+[   56.230209]  writing 1024 blocks of new data
+[   56.340673]  writing 1024 blocks of new data
+[   56.459568]  writing 1024 blocks of new data
+[   56.593428]  writing 1024 blocks of new data
+[   56.726802]  writing 1024 blocks of new data
+[   56.861599]  writing 1024 blocks of new data
+[   56.975713]  writing 1024 blocks of new data
+[   57.079454]  writing 1024 blocks of new data
+[   57.193860]  writing 1024 blocks of new data
+[   57.314922]  writing 1024 blocks of new data
+[   57.429691]  writing 1024 blocks of new data
+[   57.538943]  writing 1024 blocks of new data
+[   57.658108]  writing 1024 blocks of new data
+[   57.773404]  writing 1024 blocks of new data
+[   57.887027]  writing 1024 blocks of new data
+[   58.003436]  writing 1024 blocks of new data
+[   58.124724]  writing 1024 blocks of new data
+[   58.241982]  writing 1024 blocks of new data
+[   58.368239]  writing 1024 blocks of new data
+[   58.483825]  writing 1024 blocks of new data
+[   58.610939]  writing 1024 blocks of new data
+[   58.738257]  writing 1024 blocks of new data
+[   58.848297]  writing 1024 blocks of new data
+[   58.973125]  writing 1024 blocks of new data
+[   59.085463]  writing 1024 blocks of new data
+[   59.201582]  writing 1024 blocks of new data
+[   59.324807]  writing 1024 blocks of new data
+[   59.445934]  writing 1024 blocks of new data
+[   59.579649]  writing 1024 blocks of new data
+[   59.709658]  writing 1024 blocks of new data
+[   59.821072]  writing 1024 blocks of new data
+[   59.951001]  writing 1024 blocks of new data
+[   60.089457]  writing 1024 blocks of new data
+[   60.226868]  writing 1024 blocks of new data
+[   60.358670]  writing 1024 blocks of new data
+[   60.468719]  writing 1024 blocks of new data
+[   60.674014]  writing 1024 blocks of new data
+[   60.781496]  writing 1024 blocks of new data
+[   60.912775]  writing 1024 blocks of new data
+[   61.047391]  writing 1024 blocks of new data
+[   61.153816]  writing 1024 blocks of new data
+[   61.291838]  writing 1024 blocks of new data
+[   61.411130]  writing 1024 blocks of new data
+[   61.532193]  writing 1024 blocks of new data
+[   61.769493]  writing 1024 blocks of new data
+[   61.895035]  writing 1024 blocks of new data
+[   62.012910]  writing 1024 blocks of new data
+[   62.131865]  writing 1024 blocks of new data
+[   62.255674]  writing 1024 blocks of new data
+[   62.381013]  writing 1024 blocks of new data
+[   62.503183]  writing 1024 blocks of new data
+[   62.626591]  writing 1024 blocks of new data
+[   62.865536]  writing 1024 blocks of new data
+[   63.020625]  writing 1024 blocks of new data
+[   63.158193]  writing 1024 blocks of new data
+[   63.270398]  writing 1024 blocks of new data
+[   63.376257]  writing 1024 blocks of new data
+[   63.508094]  writing 1024 blocks of new data
+[   63.620352]  writing 1024 blocks of new data
+[   63.738614]  writing 1024 blocks of new data
+[   63.965476]  writing 1024 blocks of new data
+[   64.083451]  writing 1024 blocks of new data
+[   64.213857]  writing 1024 blocks of new data
+[   64.333042]  writing 1024 blocks of new data
+[   64.447182]  writing 1024 blocks of new data
+[   64.563360]  writing 1024 blocks of new data
+[   64.669854]  writing 1024 blocks of new data
+[   64.769028]  writing 1024 blocks of new data
+[   64.990729]  writing 1024 blocks of new data
+[   65.124206]  writing 1024 blocks of new data
+[   65.244590]  writing 1024 blocks of new data
+[   65.370017]  writing 1024 blocks of new data
+[   65.457515]  writing 1024 blocks of new data
+[   65.543662]  writing 1024 blocks of new data
+[   65.653419]  writing 1024 blocks of new data
+[   65.775863]  writing 1024 blocks of new data
+[   65.924897]  writing 1024 blocks of new data
+[   66.009997]  writing 1024 blocks of new data
+[   66.097055]  writing 1024 blocks of new data
+[   66.213467]  writing 1024 blocks of new data
+[   66.338243]  writing 1024 blocks of new data
+[   66.468471]  writing 1024 blocks of new data
+[   66.606194]  writing 1024 blocks of new data
+[   66.738873]  writing 1024 blocks of new data
+[   66.876927]  writing 1024 blocks of new data
+[   67.008539]  writing 1024 blocks of new data
+[   67.137155]  writing 1024 blocks of new data
+[   67.237334]  writing 1024 blocks of new data
+[   67.374255]  writing 1024 blocks of new data
+[   67.506285]  writing 1024 blocks of new data
+[   67.617172]  writing 1024 blocks of new data
+[   67.742737]  writing 1024 blocks of new data
+[   67.890208]  writing 1024 blocks of new data
+[   68.018194]  writing 1024 blocks of new data
+[   68.151115]  writing 1024 blocks of new data
+[   68.288606]  writing 1024 blocks of new data
+[   68.438861]  writing 1024 blocks of new data
+[   68.540506]  writing 1024 blocks of new data
+[   68.652861]  writing 1024 blocks of new data
+[   68.784982]  writing 1024 blocks of new data
+[   68.927079]  writing 1024 blocks of new data
+[   69.045827]  writing 1024 blocks of new data
+[   69.177852]  writing 1024 blocks of new data
+[   69.310181]  writing 1024 blocks of new data
+[   69.441419]  writing 1024 blocks of new data
+[   69.570546]  writing 1024 blocks of new data
+[   69.710600]  writing 1024 blocks of new data
+[   69.846537]  writing 1024 blocks of new data
+[   69.983660]  writing 1024 blocks of new data
+[   70.116330]  writing 1024 blocks of new data
+[   70.216646]  writing 1024 blocks of new data
+[   70.338567]  writing 1024 blocks of new data
+[   70.454344]  writing 1024 blocks of new data
+[   70.568707]  writing 1024 blocks of new data
+[   70.701192]  writing 1024 blocks of new data
+[   70.830770]  writing 1024 blocks of new data
+[   70.948293]  writing 1024 blocks of new data
+[   71.041813]  writing 1024 blocks of new data
+[   71.147629]  writing 1024 blocks of new data
+[   71.260442]  writing 1024 blocks of new data
+[   71.374220]  writing 1024 blocks of new data
+[   71.502684]  writing 1024 blocks of new data
+[   71.601636]  writing 1024 blocks of new data
+[   71.708135]  writing 1024 blocks of new data
+[   71.848407]  writing 1024 blocks of new data
+[   71.971881]  writing 1024 blocks of new data
+[   72.079813]  writing 1024 blocks of new data
+[   72.195473]  writing 1024 blocks of new data
+[   72.306610]  writing 1024 blocks of new data
+[   72.427692]  writing 1024 blocks of new data
+[   72.550371]  writing 1024 blocks of new data
+[   72.667656]  writing 1024 blocks of new data
+[   72.790771]  writing 1024 blocks of new data
+[   72.893150]  writing 1024 blocks of new data
+[   72.994755]  writing 1024 blocks of new data
+[   73.111506]  writing 1024 blocks of new data
+[   73.200310]  writing 1024 blocks of new data
+[   73.309986]  writing 1024 blocks of new data
+[   73.441478]  writing 1024 blocks of new data
+[   73.557490]  writing 1024 blocks of new data
+[   73.690479]  writing 1024 blocks of new data
+[   73.804124]  writing 1024 blocks of new data
+[   73.925270]  writing 1024 blocks of new data
+[   74.033639]  writing 1024 blocks of new data
+[   74.130556]  writing 1024 blocks of new data
+[   74.263995]  writing 1024 blocks of new data
+[   74.392613]  writing 1024 blocks of new data
+[   74.519673]  writing 1024 blocks of new data
+[   74.660953]  writing 1024 blocks of new data
+[   74.775061]  writing 1024 blocks of new data
+[   74.899748]  writing 1024 blocks of new data
+[   75.010035]  writing 1024 blocks of new data
+[   75.164892]  writing 1024 blocks of new data
+[   75.305143]  writing 1024 blocks of new data
+[   75.410887]  writing 1024 blocks of new data
+[   75.526289]  writing 1024 blocks of new data
+[   75.648499]  writing 1024 blocks of new data
+[   75.761184]  writing 1024 blocks of new data
+[   75.875893]  writing 1024 blocks of new data
+[   75.992377]  writing 1024 blocks of new data
+[   76.129714]  writing 1024 blocks of new data
+[   76.278692]  writing 1024 blocks of new data
+[   76.416120]  writing 1024 blocks of new data
+[   76.553656]  writing 1024 blocks of new data
+[   76.741603]  writing 1024 blocks of new data
+[   76.927212]  writing 1024 blocks of new data
+[   77.055940]  writing 1024 blocks of new data
+[   77.193664]  writing 1024 blocks of new data
+[   77.317837]  writing 1024 blocks of new data
+[   77.442003]  writing 1024 blocks of new data
+[   77.566677]  writing 1024 blocks of new data
+[   77.686797]  writing 1024 blocks of new data
+[   77.861150]  writing 1024 blocks of new data
+[   78.027838]  writing 1024 blocks of new data
+[   78.161870]  writing 1024 blocks of new data
+[   78.287823]  writing 1024 blocks of new data
+[   78.421580]  writing 1024 blocks of new data
+[   78.550578]  writing 1024 blocks of new data
+[   78.683777]  writing 1024 blocks of new data
+[   78.812462]  writing 1024 blocks of new data
+[   78.933614]  writing 1024 blocks of new data
+[   79.060649]  writing 1024 blocks of new data
+[   79.184496]  writing 1024 blocks of new data
+[   79.322370]  writing 1024 blocks of new data
+[   79.448225]  writing 1024 blocks of new data
+[   79.559797]  writing 1024 blocks of new data
+[   79.662172]  writing 1024 blocks of new data
+[   79.773557]  writing 1024 blocks of new data
+[   79.855800]  writing 1024 blocks of new data
+[   79.918683]  writing 1024 blocks of new data
+[   79.984173]  writing 1024 blocks of new data
+[   80.044883]  writing 1024 blocks of new data
+[   80.106671]  writing 1024 blocks of new data
+[   80.166551]  writing 1024 blocks of new data
+[   80.222361]  writing 1024 blocks of new data
+[   80.278259]  writing 1024 blocks of new data
+[   80.341873]  writing 1024 blocks of new data
+[   80.395939]  writing 1024 blocks of new data
+[   80.451521]  writing 1024 blocks of new data
+[   80.508255]  writing 223 blocks of new data
+[   80.527251]   zeroing 1024 blocks
+[   80.576931]   zeroing 1024 blocks
+[   80.628787]   zeroing 1024 blocks
+[   80.679498]   zeroing 1024 blocks
+[   80.731604]   zeroing 1024 blocks
+[   80.783739]   zeroing 1024 blocks
+[   80.857322]   zeroing 1024 blocks
+[   80.907085]   zeroing 1024 blocks
+[   80.959929]   zeroing 1024 blocks
+[   81.011598]   zeroing 1024 blocks
+[   81.063776]   zeroing 987 blocks
+[   81.113855] wrote 498874 blocks; expected 498874
+[   81.113982] stashed 0 blocks
+[   81.114057] max alloc needed was 4096
+[   81.114276] deleting stash de2e7fb5670ac23a725c1327e0e96dd9f24d2281
+[   81.974355] Patching vendor image unconditionally...
+[   81.974476]
+[   81.974756] performing update
+[   81.975361] blockimg version is 4
+[   81.975493] maximum stash entries 0
+[   81.975666] creating stash /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/
+[   81.976162] 92340224 bytes free on /cache (0 needed)
+[   81.976351]  erasing 3397 blocks
+[   81.993417]  writing 1024 blocks of new data
+[   82.142929]  writing 1024 blocks of new data
+[   82.297782]  writing 1024 blocks of new data
+[   82.403922]  writing 1024 blocks of new data
+[   82.508674]  writing 1024 blocks of new data
+[   82.631566]  writing 1024 blocks of new data
+[   82.754619]  writing 1024 blocks of new data
+[   82.859775]  writing 1024 blocks of new data
+[   82.985183]  writing 1024 blocks of new data
+[   83.095291]  writing 1024 blocks of new data
+[   83.216862]  writing 1024 blocks of new data
+[   83.333692]  writing 1024 blocks of new data
+[   83.478170]  writing 1024 blocks of new data
+[   83.630647]  writing 1024 blocks of new data
+[   83.765982]  writing 1024 blocks of new data
+[   83.901600]  writing 1024 blocks of new data
+[   84.055068]  writing 1024 blocks of new data
+[   84.205059]  writing 1024 blocks of new data
+[   84.368248]  writing 1024 blocks of new data
+[   84.500630]  writing 1024 blocks of new data
+[   84.607764]  writing 1024 blocks of new data
+[   84.712466]  writing 1024 blocks of new data
+[   84.839688]  writing 1024 blocks of new data
+[   84.973674]  writing 1024 blocks of new data
+[   85.086087]  writing 1024 blocks of new data
+[   85.198342]  writing 1024 blocks of new data
+[   85.313690]  writing 1024 blocks of new data
+[   85.422232]  writing 1024 blocks of new data
+[   85.551842]  writing 1024 blocks of new data
+[   85.671561]  writing 1024 blocks of new data
+[   85.750423]  writing 1024 blocks of new data
+[   85.878045]  writing 1024 blocks of new data
+[   86.025971]  writing 1024 blocks of new data
+[   86.143972]  writing 1024 blocks of new data
+[   86.280534]  writing 1024 blocks of new data
+[   86.418278]  writing 1024 blocks of new data
+[   86.543100]  writing 1024 blocks of new data
+[   86.663311]  writing 1024 blocks of new data
+[   86.758249]  writing 1024 blocks of new data
+[   86.868460]  writing 1024 blocks of new data
+[   87.013347]  writing 1024 blocks of new data
+[   87.161541]  writing 1024 blocks of new data
+[   87.288327]  writing 1024 blocks of new data
+[   87.448666]  writing 1024 blocks of new data
+[   87.569902]  writing 1024 blocks of new data
+[   87.691601]  writing 683 blocks of new data
+[   87.735772]   zeroing 1024 blocks
+[   87.786361]   zeroing 16 blocks
+[   87.788158] wrote 47803 blocks; expected 47803
+[   87.788257] stashed 0 blocks
+[   87.788331] max alloc needed was 4096
+[   87.788545] deleting stash e0341fb49ef2c8bdfa78ba20752cf45f042352e9
+[   88.264810] Writing bootloader...
+[   88.264938]
+[   88.266625] writing partition image sbl1
+[   88.266740]
+[   88.293956] writing partition image aboot
+[   88.294078]
+[   88.368027] writing partition image cmnlib
+[   88.368138]
+[   88.377367] writing partition image pmic
+[   88.377533]
+[   88.380015] writing partition image rpm
+[   88.380135]
+[   88.389805] writing partition image keymaster
+[   88.389916]
+[   88.397775] writing partition image tz
+[   88.397975]
+[   88.420777] writing partition image sdi
+[   88.420909]
+[   88.425242] writing partition image hyp
+[   88.425344]
+[   88.429721] Writing radio...
+[   88.429823]
+[   88.429917] writing partition image modem
+[   88.429982]
+[   90.225997]
+[   92.799562] I:@/cache/recovery/block.map
+[   92.799601] 1
+[   92.799611] time_total: 89
+[   92.799620] retry: 0
+[   92.799629] bytes_written_system: 2043387904
+[   92.799637] bytes_stashed_system: 0
+[   92.799647] bytes_written_vendor: 195801088
+[   92.799655] bytes_stashed_vendor: 0
+[   92.799664] uncrypt_time: 29
+[   92.799877] I:Saving locale "en_US"

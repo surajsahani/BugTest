@@ -1,0 +1,14 @@
+@/cache/recovery/block.map
+1
+time_total: 163
+retry: 0
+target_build: 4903069
+source_build: 4805388
+bytes_written_system: 673894400
+bytes_stashed_system: 567959552
+bytes_written_vendor: 8261632
+bytes_stashed_vendor: 3796992
+uncrypt_time: 2
+temperature_start: 23385
+temperature_end: 24315
+temperature_max: 24315

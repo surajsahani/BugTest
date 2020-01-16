@@ -1,0 +1,2246 @@
+[    0.002046] __bionic_open_tzdata: couldn't find any tzdata when looking for GMT!
+[    0.002158] Starting recovery (pid 333) on Mon Aug 31 15:27:33 1970
+[    0.002169] recovery filesystem table
+[    0.002179] =========================
+[    0.002188]   0 /system ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/system 0
+[    0.002197]   1 /vendor ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor 0
+[    0.002206]   2 /data ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/userdata 0
+[    0.002214]   3 /cache ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/cache 0
+[    0.002223]   4 /persist ext4 /dev/block/platform/soc.0/f9824900.sdhci/by-name/persist 0
+[    0.002231]   5 /firmware vfat /dev/block/platform/soc.0/f9824900.sdhci/by-name/modem 0
+[    0.002240]   6 /boot emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/boot 0
+[    0.002250]   7 /recovery emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/recovery 0
+[    0.002258]   8 /misc emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/misc 0
+[    0.002486]   9 /modem emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/modem 0
+[    0.002498]   10 /sbl1 emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/sbl1 0
+[    0.002508]   11 /pmic emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/pmic 0
+[    0.002518]   12 /hyp emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/hyp 0
+[    0.002527]   13 /tz emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/tz 0
+[    0.002535]   14 /rpm emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/rpm 0
+[    0.002544]   15 /sdi emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/sdi 0
+[    0.002552]   16 /aboot emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/aboot 0
+[    0.002560]   17 /persistent emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/frp 0
+[    0.002570]   18 /keymaster emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/keymaster 0
+[    0.002579]   19 /cmnlib emmc /dev/block/platform/soc.0/f9824900.sdhci/by-name/cmnlib 0
+[    0.002587]   20 auto auto /devices/*/xhci-hcd.0.auto/usb* 0
+[    0.002595]   21 none swap /dev/block/zram0 0
+[    0.002604]   22 /tmp ramdisk ramdisk 0
+[    0.002612]
+[    0.003300] I:Boot command: boot-recovery
+[    0.003317] I:Got arguments from boot message
+[    0.059291] locale is [en_US]
+[    0.059329] stage is []
+[    0.059339] reason is [(null)]
+[    0.063594] cannot find/open a drm device: No such file or directory
+[    0.064148] fb0 reports (possibly inaccurate):
+[    0.064174]   vi.bits_per_pixel = 32
+[    0.064185]   vi.red.offset   =   0   .length =   8
+[    0.064194]   vi.green.offset =   8   .length =   8
+[    0.064202]   vi.blue.offset  =  16   .length =   8
+[    0.092346] framebuffer: 0 (1440 x 2560)
+[    0.168626]           erasing_text: en_US (178 x 76 @ 2310)
+[    0.185566]        no_command_text: en_US (330 x 76 @ 2310)
+[    0.199247]             error_text: en_US (127 x 76 @ 2310)
+[    2.850323]        installing_text: en_US (602 x 76 @ 2310)
+[    2.875680] Command: "recovery" "--update_package=@/cache/recovery/block.map" "--locale=en_US"
+[    2.875777]
+[    2.876048] ro.dalvik.vm.native.bridge=0
+[    2.876119] dalvik.vm.isa.arm.variant=cortex-a53.a57
+[    2.876184] dalvik.vm.isa.arm.features=default
+[    2.876249] dalvik.vm.isa.arm64.variant=cortex-a53
+[    2.876312] dalvik.vm.isa.arm64.features=default
+[    2.876377] dalvik.vm.usejit=true
+[    2.876442] dalvik.vm.heapsize=512m
+[    2.876507] dalvik.vm.dex2oat-Xms=64m
+[    2.876571] dalvik.vm.dex2oat-Xmx=512m
+[    2.876635] dalvik.vm.heapmaxfree=8m
+[    2.876697] dalvik.vm.heapminfree=512k
+[    2.876761] dalvik.vm.heapstartsize=8m
+[    2.876825] dalvik.vm.appimageformat=lz4
+[    2.877056] dalvik.vm.usejitprofiles=true
+[    2.877125] dalvik.vm.dex2oat-threads=4
+[    2.877192] dalvik.vm.heapgrowthlimit=192m
+[    2.877256] dalvik.vm.stack-trace-file=/data/anr/traces.txt
+[    2.877320] dalvik.vm.image-dex2oat-Xms=64m
+[    2.877384] dalvik.vm.image-dex2oat-Xmx=64m
+[    2.877448] dalvik.vm.boot-dex2oat-threads=4
+[    2.877511] dalvik.vm.heaptargetutilization=0.75
+[    2.877576] dalvik.vm.image-dex2oat-threads=4
+[    2.877750] ro.config.ringtone=Titania.ogg
+[    2.877817] ro.config.alarm_alert=Oxygen.ogg
+[    2.877881] ro.config.notification_sound=Tethys.ogg
+[    2.878067] ro.build.fingerprint=google/angler/angler:7.1.2/N2G48B/4073501:user/release-keys
+[    2.878203] af.fast_track_multiplier=1
+[    2.878271] pm.dexopt.boot=verify-profile
+[    2.878335] pm.dexopt.ab-ota=speed-profile
+[    2.878400] pm.dexopt.install=interpret-only
+[    2.878464] pm.dexopt.core-app=speed
+[    2.878527] pm.dexopt.bg-dexopt=speed-profile
+[    2.878591] pm.dexopt.first-boot=interpret-only
+[    2.878655] pm.dexopt.shared-apk=speed
+[    2.878718] pm.dexopt.nsys-library=speed
+[    2.878781] pm.dexopt.forced-dexopt=speed
+[    2.878845] ro.qc.sdk.audio.fluencetype=fluence
+[    2.878908] ro.sf.lcd_density=560
+[    2.878972] ro.adb.secure=1
+[    2.879040] ro.com.google.clientidbase=android-google
+[    2.879104] ro.com.android.dataroaming=false
+[    2.879166] ro.com.android.wifi-watchlist=GoogleGuest
+[    2.879231] ro.com.android.prov_mobiledata=false
+[    2.879296] ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/frp
+[    2.879359] ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+[    2.879423] ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+[    2.879487] ro.boot.mode=normal
+[    2.879554] ro.boot.flash.locked=1
+[    2.879618] ro.boot.radio=angler-03.81
+[    2.879681] ro.boot.console=ttyHSL0
+[    2.879744] ro.boot.baseband=msm
+[    2.879807] ro.boot.hardware=angler
+[    2.879869] ro.boot.hardware.ddr=3072MB,HYNIX,LPDDR4
+[    2.879933] ro.boot.hardware.sku=H1511
+[    2.879996] ro.boot.hardware.emmc=32GB,Samsung
+[    2.880059] ro.boot.hardware.revision=ANGLER-VN2
+[    2.880122] ro.boot.serialno=84B5T15A09001501
+[    2.880231] ro.boot.wifi_cal=
+[    2.880319] ro.boot.btmacaddr=AC:CF:85:12:50:CC
+[    2.880390] ro.boot.bootdevice=f9824900.sdhci
+[    2.880456] ro.boot.bootloader=angler-03.68
+[    2.880521] ro.boot.bootreason=recovery
+[    2.880586] ro.boot.veritymode=enforcing
+[    2.880650] ro.boot.wifimacaddr=AC:CF:85:12:46:40
+[    2.880714] ro.boot.secure_hardware=1
+[    2.880778] ro.boot.authorized_kernel=true
+[    2.880841] ro.boot.verifiedbootstate=green
+[    2.880906] ro.hwui.path_cache_size=32
+[    2.880970] ro.hwui.layer_cache_size=48
+[    2.881034] ro.hwui.texture_cache_size=72
+[    2.881098] ro.hwui.gradient_cache_size=1
+[    2.881161] ro.hwui.r_buffer_cache_size=8
+[    2.881224] ro.hwui.drop_shadow_cache_size=6
+[    2.881288] ro.hwui.text_large_cache_width=2048
+[    2.881352] ro.hwui.text_small_cache_width=1024
+[    2.881415] ro.hwui.text_large_cache_height=1024
+[    2.881478] ro.hwui.text_small_cache_height=1024
+[    2.881541] ro.hwui.texture_cache_flushrate=0.4
+[    2.881605] ro.wifi.channels=
+[    2.881668] ro.allow.mock.location=0
+[    2.881732] ro.audio.monitorRotation=true
+[    2.881796] ro.audio.flinger_standbytime_ms=300
+[    2.881859] ro.board.platform=msm8994
+[    2.881922] ro.build.id=N2G48B
+[    2.881986] ro.build.date=Tue Jun  6 22:17:23 UTC 2017
+[    2.882049] ro.build.date.utc=1496787443
+[    2.882113] ro.build.host=wpix5.hot.corp.google.com
+[    2.882175] ro.build.tags=release-keys
+[    2.882238] ro.build.type=user
+[    2.882301] ro.build.user=android-build
+[    2.882364] ro.build.expect.baseband=angler-03.81
+[    2.882428] ro.build.expect.bootloader=angler-03.68
+[    2.882491] ro.build.flavor=angler-user
+[    2.882554] ro.build.display.id=N2G48B
+[    2.882617] ro.build.product=angler
+[    2.882681] ro.build.version.sdk=25
+[    2.882745] ro.build.version.base_os=
+[    2.882809] ro.build.version.release=7.1.2
+[    2.882871] ro.build.version.codename=REL
+[    2.882934] ro.build.version.incremental=4073501
+[    2.882997] ro.build.version.preview_sdk=0
+[    2.883060] ro.build.version.all_codenames=REL
+[    2.883123] ro.build.version.security_patch=2017-07-05
+[    2.883186] ro.build.description=angler-user 7.1.2 N2G48B 4073501 release-keys
+[    2.883249] ro.build.characteristics=nosdcard
+[    2.883313] ro.error.receiver.system.apps=com.google.android.gms
+[    2.883418] ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+[    2.883483] ro.secure=1
+[    2.883675] ro.vendor.extension_library=libqti-perfd-client.so
+[    2.883742] ro.zygote=zygote64_32
+[    2.883805] ro.carrier=unknown
+[    2.883869] ro.product.cpu.abi=arm64-v8a
+[    2.883933] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    2.883996] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    2.884059] ro.product.cpu.abilist64=arm64-v8a
+[    2.884123] ro.product.name=angler
+[    2.884186] ro.product.board=angler
+[    2.884249] ro.product.brand=google
+[    2.884312] ro.product.model=Nexus 6P
+[    2.884374] ro.product.device=angler
+[    2.884438] ro.product.locale=en-US
+[    2.884501] ro.product.manufacturer=Huawei
+[    2.884564] ro.product.first_api_level=23
+[    2.884628] ro.baseband=msm
+[    2.884691] ro.bootmode=normal
+[    2.884756] ro.facelock.det_timeout=2500
+[    2.884819] ro.facelock.rec_timeout=3500
+[    2.884882] ro.facelock.est_max_time=600
+[    2.884945] ro.facelock.black_timeout=700
+[    2.885009] ro.hardware=angler
+[    2.885072] ro.opengles.version=196610
+[    2.885135] ro.revision=0
+[    2.885198] ro.serialno=84B5T15A09001501
+[    2.885261] ro.bootimage.build.date=Tue Jun 6 22:17:23 UTC 2017
+[    2.885325] ro.bootimage.build.date.utc=1496787443
+[    2.885388] ro.bootimage.build.fingerprint=google/angler/angler:7.1.2/N2G48B/4073501:user/release-keys
+[    2.885452] ro.telephony.call_ring.multiple=0
+[    2.885515] ro.telephony.default_network=10
+[    2.885578] ro.telephony.default_cdma_sub=0
+[    2.885641] ro.bootloader=angler-03.68
+[    2.885705] ro.debuggable=0
+[    2.885768] ro.min_freq_0=384000
+[    2.885831] ro.retaildemo.video_path=/data/preloads/demo/retail_demo.mp4
+[    2.885895] ro.recovery_id=0xf4992b4cd8825fec4eea0bd1091d00ac804aab86000000000000000000000000
+[    2.885958] ro.setupwizard.enterprise_mode=1
+[    2.886022] ro.setupwizard.rotation_locked=true
+[    2.886085] ro.oem_unlock_supported=1
+[    2.886148] drm.service.enabled=true
+[    2.886210] init.svc.healthd=running
+[    2.886273] init.svc.ueventd=running
+[    2.886336] init.svc.recovery=running
+[    2.886400] rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+[    2.886463] vidc.enc.dcvs.extra-buff-count=2
+[    2.886527] vidc.debug.perf.mode=2
+[    2.886589] media.aac_51_output_enabled=true
+[    2.886653] persist.hwc.mdpcomp.enable=true
+[    2.886716] persist.data.mode=concurrent
+[    2.886780] persist.data.iwlan.enable=true
+[    2.886882] persist.camera.eis.enable=1
+[    2.886950] persist.camera.is_type=4
+[    2.887015] keyguard.no_require_sim=true
+[    2.887078] audio_hal.period_size=192
+[    2.887141] telephony.lteOnCdmaDevice=1
+[    2.887606] persist.audio.fluence.speaker=true
+[    2.887675] persist.audio.fluence.voicecall=true
+[    2.887739] persist.audio.fluence.voicecomm=true
+[    2.887802] persist.audio.product.identify=angler
+[    2.887925] security.perf_harden=1
+[    2.888256] debug.atrace.tags.enableflags=0
+[    2.888640] net.bt.name=Android
+[    2.888707] net.change=net.bt.name
+[    2.888773] persist.sys.ssr.restart_level=ALL_ENABLE
+[    2.888838] persist.sys.usb.config=none
+[    2.888904] persist.sys.dalvik.vm.lib.2=libart.so
+[    2.889030] persist.radio.custom_ecc=1
+[    2.889095] persist.radio.data_con_rprt=true
+[    2.889160] persist.radio.data_no_toggle=1
+[    2.889225] persist.radio.mode_pref_nv10=1
+[    2.889289] persist.radio.snapshot_timer=2
+[    2.889353] persist.radio.redir_party_num=0
+[    2.889415] persist.radio.always_send_plmn=true
+[    2.889479] persist.radio.apm_sim_not_pwdn=1
+[    2.889542] persist.radio.snapshot_enabled=1
+[    2.889714]
+[    2.889787] Supported API: 3
+[    2.894349] charge_status 3, charged 0, status 0, capacity 98
+[    2.980068] Finding update package...
+[    3.040689] I:Update location: @/cache/recovery/block.map
+[    3.040817] Opening update package...
+[    3.076170] sysutil: mmapped 12 ranges
+[    3.076554] I:read key e=65537 hash=20
+[    3.076639] I:1 key(s) loaded from /res/keys
+[    3.076712] Verifying update package...
+[    3.093007] I:comment is 1468 bytes; signature 1450 bytes from end
+[    3.722710] I:signature (offset: 0x235f112, length: 1444): 308205a006092a864886f70d010702a08205913082058d020101310b300906052b0e03021a0500300b06092a864886f70d010701a08203bf308203bb308202a3a003020102020900b32c3a602af07792300d06092a864886f70d01010505003074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f6964301e170d3135303630383138323430365a170d3432313032343138323430365a3074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f696430820122300d06092a864886f70d01010105000382010f003082010a0282010100e0fd2f6ffe49673f7d09820759e3bb72fe944ade56a1914d715030039db6927967891dd4cdea697cedd44bfd16a78e74c4fe3b5ff6c78e9d1632b9851ee8c35358464ebed540ca215bd38384a41af3eef96c0b1908488b301198496fc150bf70a82ffb811ad2638d85a9bec100223a5ad4e29082cef47d679abf20a682cf523ae005b9f3f7b7d49d8ce130ef21b47454235fc0f32de9d56697d8cac575f87d3e9b35bbf85f657ee7caeeb5c7efc7d094f53481ef4887360b8d0bae1449c26b861647c845e9e80b3cf894e8135de513b6ad3a2a34435744990c77ef049eb28e800772dbec0c559fb811cc92658705010e6e6df729d59dcd91c29f96ef863953a30203010001a350304e301d0603551d0e04160414ef85e62126da695a9549501bbda2e8c91a0ce75d301f0603551d23041830168014ef85e62126da695a9549501bbda2e8c91a0ce75d300c0603551d13040530030101ff300d06092a864886f70d0101050500038201010064a5b15fd73170d3412d4d54d28155d98677ef32930792d0925d807bf02f5345ca24b47250001e95baeca6d5f015273fd0708ae3864411a81bee353eb58c20dd53fe6bc0f0fd21acb0ee70dc4b09d7e6d4001b4ef09988cb5016b52ba3f5c8f012a1081f4a05943cae5b4cb125d0c13cbbf95cb0f68f95ffd57fb12157a24c7841f47bde16d3c752a6110bee9cadd8b708c9a1f2031cba27ddab3c2352bd9ada434f2a8b6157c7c01adc786d65ff2b5aa8d62f2227a317245aea5388ec3282f8916adba657096a2a237c520dd46ef78192ec564f6b0394dd9339c3b57c68cdf0701854c4f9604d4a1d8589505bfb2f388f3825dcae2dcfe18b71dee7839c99bd318201a9308201a50201013081813074310b30090603550406130255533113301106035504080c0a43616c69666f726e69613116301406035504070c0d4d6f756e7461696e205669657731143012060355040a0c0b476f6f676c6520496e632e3110300e060355040b0c07416e64726f69643110300e06035504030c07416e64726f6964020900b32c3a602af07792300906052b0e03021a0500300d06092a864886f70d010101050004820100195b9ed4c8968ac42bde9ca48486d9363113e60d9bc68944668c8bdfe324cd00c8d85c57f0ce7fabbd061b98cec497e5ddc0725e37dbb00cc9f715906b548ae62975636e9fd22556fe0493289421ee3e8921adf77bd68f35168e0d55c7f3f7cb3e9f956f7e51bc1947e69a4f1c6e61b9e50b18bafb4c6875d7e88666d52e03b7e45352469162f87bd7a4cd5462b3c4114d9864fa9b81741466987fabc099d1651e32857d38bbefd5b2e6d4cc670ff9d75d41b96fa86254b177c17322c5e4bacefaad36fc694c72fff58cf8a23aa5601ba67f775de965100ba5aa55bc9a05e90ba4c794f6a74c6bb222881c1e3e18dfef0ca2d4032f4b62554fe9582ced8f867f
+[    3.723333] I:whole-file signature verified against RSA key 0
+[    3.723431] Update package verification took 0.6 s (result 0).
+[    3.739017] Installing update...
+[    3.828880] sysutil: mmapped 12 ranges
+[    3.835144] Source: google/angler/angler:7.1.2/N2G48B/4073501:user/release-keys
+[    3.837055] Target: google/angler/angler:7.1.2/N2G48C/4104010:user/release-keys
+[    3.837157] Verifying current system...
+[    4.050909] partition read matched size 12682470 sha aafe155025440d48856dcd6dedd5fa86c578c8c8
+[    4.061399] 92532736 bytes free on /cache (13189120 needed)
+[    8.180326] Verified system image...
+[    8.251459] Verified vendor image...
+[    8.253810] Patching system image after verification.
+[    8.253987] performing update
+[    8.259200] blockimg version is 4
+[    8.259341] maximum stash entries 37
+[    8.259518] creating stash /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/
+[    8.260851] 92528640 bytes free on /cache (13189120 needed)
+[    8.261009]  erasing 69974 blocks
+[    8.450288]   moving 1 blocks
+[    8.505385] warning: commands executed out of order [move]
+[    8.505507] skipping 1 already moved blocks
+[    8.506253] stashing 1 overlapping blocks to 034ea4a45016ca04c85e25112ef5922b2b575d86
+[    8.506369] 92528640 bytes free on /cache (4096 needed)
+[    8.506516]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/034ea4a45016ca04c85e25112ef5922b2b575d86
+[    8.778806] patching 1 blocks to 1
+[    8.782755] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/034ea4a45016ca04c85e25112ef5922b2b575d86
+[    8.840421] stashing 1 overlapping blocks to 2b0fde69f0a0fd72449b331fac4fa326c15a3203
+[    8.840583] 92528640 bytes free on /cache (4096 needed)
+[    8.840724]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2b0fde69f0a0fd72449b331fac4fa326c15a3203
+[    9.100817] patching 1 blocks to 1
+[    9.101390] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2b0fde69f0a0fd72449b331fac4fa326c15a3203
+[    9.104425] stashing 1 overlapping blocks to 9cb1e63f01d6c1ac218efa32592a1800cf6f20e0
+[    9.104553] 92528640 bytes free on /cache (4096 needed)
+[    9.104680]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9cb1e63f01d6c1ac218efa32592a1800cf6f20e0
+[    9.109433] patching 1 blocks to 1
+[    9.109926] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9cb1e63f01d6c1ac218efa32592a1800cf6f20e0
+[    9.112148] stashing 1 overlapping blocks to c29f367ba7cded5a9b18a6421cf6ae779659a3dd
+[    9.112277] 92528640 bytes free on /cache (4096 needed)
+[    9.112400]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c29f367ba7cded5a9b18a6421cf6ae779659a3dd
+[    9.115898] patching 1 blocks to 1
+[    9.116402] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c29f367ba7cded5a9b18a6421cf6ae779659a3dd
+[    9.118536] stashing 1 overlapping blocks to 6c9655aa5fb8c3697a1e7d489da9e351bfb3d385
+[    9.118701] 92528640 bytes free on /cache (4096 needed)
+[    9.118847]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6c9655aa5fb8c3697a1e7d489da9e351bfb3d385
+[    9.122466] patching 1 blocks to 1
+[    9.122955] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6c9655aa5fb8c3697a1e7d489da9e351bfb3d385
+[    9.124703] stashing 1 overlapping blocks to 7b2da88b2df0a56d449984668c3d2903eb70b906
+[    9.124832] 92528640 bytes free on /cache (4096 needed)
+[    9.124954]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7b2da88b2df0a56d449984668c3d2903eb70b906
+[    9.128202] patching 1 blocks to 1
+[    9.128670] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7b2da88b2df0a56d449984668c3d2903eb70b906
+[    9.386244] stashing 1994 overlapping blocks to 0b42cc726fe99fa04a5b5c36261acd6d1390bcbf
+[    9.386428] 92528640 bytes free on /cache (8167424 needed)
+[    9.386575]  writing 1994 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0b42cc726fe99fa04a5b5c36261acd6d1390bcbf
+[    9.492180] patching 1994 blocks to 1994
+[    9.692349] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0b42cc726fe99fa04a5b5c36261acd6d1390bcbf
+[    9.771149] stashing 1 overlapping blocks to 2dd2e454690e4a356a1e02f649a759178fa7431b
+[    9.771317] 92528640 bytes free on /cache (4096 needed)
+[    9.771460]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2dd2e454690e4a356a1e02f649a759178fa7431b
+[    9.777249] patching 1 blocks to 1
+[    9.777676] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2dd2e454690e4a356a1e02f649a759178fa7431b
+[    9.779331] stashing 1 overlapping blocks to 79c69294e6e1ef157b69cb348771784e1144750e
+[    9.779446] 92528640 bytes free on /cache (4096 needed)
+[    9.779564]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/79c69294e6e1ef157b69cb348771784e1144750e
+[    9.783953] patching 1 blocks to 1
+[    9.784346] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/79c69294e6e1ef157b69cb348771784e1144750e
+[    9.786128] stashing 1 overlapping blocks to d128f6a184ed36eb9f21d93e2b0d31bac2d4bf0e
+[    9.786303] 92528640 bytes free on /cache (4096 needed)
+[    9.786450]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d128f6a184ed36eb9f21d93e2b0d31bac2d4bf0e
+[    9.791316] patching 1 blocks to 1
+[    9.791735] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d128f6a184ed36eb9f21d93e2b0d31bac2d4bf0e
+[    9.793412] stashing 1 overlapping blocks to 2f3278b5e84a5276bf13d0980553f3b6e38d41dc
+[    9.793588] 92528640 bytes free on /cache (4096 needed)
+[    9.793724]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2f3278b5e84a5276bf13d0980553f3b6e38d41dc
+[    9.797855] patching 1 blocks to 1
+[    9.798250] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2f3278b5e84a5276bf13d0980553f3b6e38d41dc
+[    9.799928] stashing 1 overlapping blocks to f7085daae388a07ce93f2976f643ae7fb6c8c359
+[    9.800045] 92528640 bytes free on /cache (4096 needed)
+[    9.800160]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f7085daae388a07ce93f2976f643ae7fb6c8c359
+[    9.803741] patching 1 blocks to 1
+[    9.804125] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f7085daae388a07ce93f2976f643ae7fb6c8c359
+[    9.805766] stashing 1 overlapping blocks to 9a92dd7c64c5b248502c8dd50c02195d16409809
+[    9.805879] 92528640 bytes free on /cache (4096 needed)
+[    9.805997]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9a92dd7c64c5b248502c8dd50c02195d16409809
+[    9.809488] patching 1 blocks to 1
+[    9.809901] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9a92dd7c64c5b248502c8dd50c02195d16409809
+[    9.811700] stashing 1 overlapping blocks to 4e12efceab4016340f7e0091dcf04ed7cfd653e0
+[    9.811825] 92528640 bytes free on /cache (4096 needed)
+[    9.811948]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4e12efceab4016340f7e0091dcf04ed7cfd653e0
+[    9.815344] patching 1 blocks to 1
+[    9.815737] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4e12efceab4016340f7e0091dcf04ed7cfd653e0
+[    9.817439] stashing 1 overlapping blocks to 624badf458bdc7c2ef95fd3005d9563224406da5
+[    9.817565] 92528640 bytes free on /cache (4096 needed)
+[    9.817685]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/624badf458bdc7c2ef95fd3005d9563224406da5
+[    9.821541] patching 1 blocks to 1
+[    9.821973] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/624badf458bdc7c2ef95fd3005d9563224406da5
+[    9.823741] stashing 1 overlapping blocks to 3a76c3207c9d647d47f66742b91715b990ecf2c8
+[    9.823871] 92528640 bytes free on /cache (4096 needed)
+[    9.823997]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3a76c3207c9d647d47f66742b91715b990ecf2c8
+[    9.829680] patching 1 blocks to 1
+[    9.830077] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3a76c3207c9d647d47f66742b91715b990ecf2c8
+[    9.831886] stashing 1 overlapping blocks to a4dae8d77a7328b5f6caff8d3a6051b228da38cf
+[    9.832009] 92528640 bytes free on /cache (4096 needed)
+[    9.832126]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a4dae8d77a7328b5f6caff8d3a6051b228da38cf
+[    9.836376] patching 1 blocks to 1
+[    9.836762] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a4dae8d77a7328b5f6caff8d3a6051b228da38cf
+[    9.838473] stashing 1 overlapping blocks to 1783037bc692542d25bb9a2bfeb486a4fa5ba1d2
+[    9.838596] 92528640 bytes free on /cache (4096 needed)
+[    9.838716]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1783037bc692542d25bb9a2bfeb486a4fa5ba1d2
+[    9.842916] patching 1 blocks to 1
+[    9.843308] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1783037bc692542d25bb9a2bfeb486a4fa5ba1d2
+[    9.845145] stashing 1 overlapping blocks to f078192597a2d1ac609bc15c87031c22bb5285e9
+[    9.845269] 92528640 bytes free on /cache (4096 needed)
+[    9.845407]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f078192597a2d1ac609bc15c87031c22bb5285e9
+[    9.849603] patching 1 blocks to 1
+[    9.849996] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f078192597a2d1ac609bc15c87031c22bb5285e9
+[    9.851769] stashing 1 overlapping blocks to dd7875ad9875f557b1429d31e686a8fc022f4ed4
+[    9.851894] 92528640 bytes free on /cache (4096 needed)
+[    9.852015]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dd7875ad9875f557b1429d31e686a8fc022f4ed4
+[    9.856128] patching 1 blocks to 1
+[    9.856556] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dd7875ad9875f557b1429d31e686a8fc022f4ed4
+[    9.858362] stashing 1 overlapping blocks to 328f4d7834bafdd2d09f3f01553cb7ea11de28aa
+[    9.858490] 92528640 bytes free on /cache (4096 needed)
+[    9.858610]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/328f4d7834bafdd2d09f3f01553cb7ea11de28aa
+[    9.862133] patching 1 blocks to 1
+[    9.862532] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/328f4d7834bafdd2d09f3f01553cb7ea11de28aa
+[    9.864314] stashing 1 overlapping blocks to 80fd120e37a8707d95c3dfd8b7f93ead2870ca2b
+[    9.864436] 92528640 bytes free on /cache (4096 needed)
+[    9.864554]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/80fd120e37a8707d95c3dfd8b7f93ead2870ca2b
+[    9.868066] patching 1 blocks to 1
+[    9.868456] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/80fd120e37a8707d95c3dfd8b7f93ead2870ca2b
+[    9.968719] stashing 944 overlapping blocks to f8e91eafc3bd932e987e9eb412cf5732f21d9a27
+[    9.968904] 92528640 bytes free on /cache (3866624 needed)
+[    9.969049]  writing 944 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f8e91eafc3bd932e987e9eb412cf5732f21d9a27
+[   10.021755] patching 944 blocks to 944
+[   10.254355] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f8e91eafc3bd932e987e9eb412cf5732f21d9a27
+[   10.297889] stashing 1 overlapping blocks to 7c6162a13a65929a4a992f86c6932dbb83f407b3
+[   10.298056] 92528640 bytes free on /cache (4096 needed)
+[   10.298194]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c6162a13a65929a4a992f86c6932dbb83f407b3
+[   10.303400] patching 1 blocks to 1
+[   10.303880] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c6162a13a65929a4a992f86c6932dbb83f407b3
+[   10.305579] stashing 1 overlapping blocks to b5eb99db456db307df688d47d0849dc15c710685
+[   10.305710] 92528640 bytes free on /cache (4096 needed)
+[   10.305836]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b5eb99db456db307df688d47d0849dc15c710685
+[   10.310362] patching 1 blocks to 1
+[   10.310764] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b5eb99db456db307df688d47d0849dc15c710685
+[   10.312386] stashing 1 overlapping blocks to aa8bb492ca69df2cdaa3e9ef033728aff62456f8
+[   10.312504] 92528640 bytes free on /cache (4096 needed)
+[   10.312626]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa8bb492ca69df2cdaa3e9ef033728aff62456f8
+[   10.315931] patching 1 blocks to 1
+[   10.316342] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa8bb492ca69df2cdaa3e9ef033728aff62456f8
+[   10.318101] stashing 1 overlapping blocks to ec6acd9f0f5b266ef9a9f3f0f9e89b7a310bfcbb
+[   10.318225] 92528640 bytes free on /cache (4096 needed)
+[   10.318344]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ec6acd9f0f5b266ef9a9f3f0f9e89b7a310bfcbb
+[   10.322066] patching 1 blocks to 1
+[   10.322534] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ec6acd9f0f5b266ef9a9f3f0f9e89b7a310bfcbb
+[   10.324681] stashing 1 overlapping blocks to 9107d1635c136515a06fb2a188357b4d54e18214
+[   10.324828] 92528640 bytes free on /cache (4096 needed)
+[   10.324958]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9107d1635c136515a06fb2a188357b4d54e18214
+[   10.328424] patching 1 blocks to 1
+[   10.328822] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9107d1635c136515a06fb2a188357b4d54e18214
+[   10.330505] stashing 1 overlapping blocks to be888a39c12c41716a01d7619a80ba29c00705e2
+[   10.330627] 92528640 bytes free on /cache (4096 needed)
+[   10.330746]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be888a39c12c41716a01d7619a80ba29c00705e2
+[   10.334212] patching 1 blocks to 1
+[   10.334604] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be888a39c12c41716a01d7619a80ba29c00705e2
+[   10.336229] stashing 1 overlapping blocks to cf605ce80011efa8ef5aee8347d3cf0de684fc4b
+[   10.336348] 92528640 bytes free on /cache (4096 needed)
+[   10.336467]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cf605ce80011efa8ef5aee8347d3cf0de684fc4b
+[   10.342093] patching 1 blocks to 1
+[   10.342499] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cf605ce80011efa8ef5aee8347d3cf0de684fc4b
+[   10.344250] stashing 1 overlapping blocks to 47b0c3cb5be338aaf8a3c0dacc7bb8acc5c84be5
+[   10.344377] 92528640 bytes free on /cache (4096 needed)
+[   10.344498]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/47b0c3cb5be338aaf8a3c0dacc7bb8acc5c84be5
+[   10.348803] patching 1 blocks to 1
+[   10.349199] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/47b0c3cb5be338aaf8a3c0dacc7bb8acc5c84be5
+[   10.614165] stashing 2393 overlapping blocks to 671968233a5e560dfe91a39b20d4b1d7301528ad
+[   10.614347] 92528640 bytes free on /cache (9801728 needed)
+[   10.614495]  writing 2393 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/671968233a5e560dfe91a39b20d4b1d7301528ad
+[   10.735782] patching 2393 blocks to 2393
+[   11.581492] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/671968233a5e560dfe91a39b20d4b1d7301528ad
+[   12.050381] stashing 3200 overlapping blocks to c222152b95e68e6a899a919405b501124322b81e
+[   12.050563] 92528640 bytes free on /cache (13107200 needed)
+[   12.050712]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c222152b95e68e6a899a919405b501124322b81e
+[   12.216453] patching 3200 blocks to 3200
+[   12.594442] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c222152b95e68e6a899a919405b501124322b81e
+[   13.292509] stashing 3200 overlapping blocks to 700a7b9ff98d173bf1c565f122e78c0e53da4379
+[   13.292689] 92528640 bytes free on /cache (13107200 needed)
+[   13.292834]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/700a7b9ff98d173bf1c565f122e78c0e53da4379
+[   14.046487] patching 3200 blocks to 3200
+[   14.548020] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/700a7b9ff98d173bf1c565f122e78c0e53da4379
+[   15.127599] stashing 1 overlapping blocks to 9060ddb58df3a11f65e9044b24e89287df7becea
+[   15.127771] 92528640 bytes free on /cache (4096 needed)
+[   15.127914]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9060ddb58df3a11f65e9044b24e89287df7becea
+[   15.229560] patching 1 blocks to 1
+[   15.232863] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9060ddb58df3a11f65e9044b24e89287df7becea
+[   15.238214] stashing 1 overlapping blocks to 4c75596b2afe57ceea8f4bad352dba72c8ce60c2
+[   15.238355] 92528640 bytes free on /cache (4096 needed)
+[   15.238488]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4c75596b2afe57ceea8f4bad352dba72c8ce60c2
+[   15.243180] patching 1 blocks to 1
+[   15.243681] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4c75596b2afe57ceea8f4bad352dba72c8ce60c2
+[   15.245338] stashing 1 overlapping blocks to 5828c3c58a63022c4bfd4b9898677d5b6927b463
+[   15.245461] 92528640 bytes free on /cache (4096 needed)
+[   15.245582]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5828c3c58a63022c4bfd4b9898677d5b6927b463
+[   15.249112] patching 1 blocks to 1
+[   15.249511] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5828c3c58a63022c4bfd4b9898677d5b6927b463
+[   15.251277] stashing 1 overlapping blocks to de25e66fd56a67341de5fb40fcb2c4414dd180ca
+[   15.251402] 92528640 bytes free on /cache (4096 needed)
+[   15.251522]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/de25e66fd56a67341de5fb40fcb2c4414dd180ca
+[   15.254989] patching 1 blocks to 1
+[   15.255381] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/de25e66fd56a67341de5fb40fcb2c4414dd180ca
+[   15.257268]   moving 1 blocks
+[   15.271293] stashing 107 overlapping blocks to bfec96b1b8d141c7845cb1cd64b3c6b0e4bdffc0
+[   15.271470] 92528640 bytes free on /cache (438272 needed)
+[   15.271615]  writing 107 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bfec96b1b8d141c7845cb1cd64b3c6b0e4bdffc0
+[   15.284326] patching 107 blocks to 107
+[   15.302180] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bfec96b1b8d141c7845cb1cd64b3c6b0e4bdffc0
+[   15.308249] stashing 1 overlapping blocks to d6ca94e1412bf8e0aa38d49ef1f4fe427e61404c
+[   15.308398] 92528640 bytes free on /cache (4096 needed)
+[   15.308528]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6ca94e1412bf8e0aa38d49ef1f4fe427e61404c
+[   15.315218] patching 1 blocks to 1
+[   15.315838] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6ca94e1412bf8e0aa38d49ef1f4fe427e61404c
+[   15.317606] stashing 1 overlapping blocks to 9ed6ae40a2c9ae8d1deb7b791d6dbc6a293d4b5e
+[   15.317729] 92528640 bytes free on /cache (4096 needed)
+[   15.317849]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9ed6ae40a2c9ae8d1deb7b791d6dbc6a293d4b5e
+[   15.321408] patching 1 blocks to 1
+[   15.321826] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9ed6ae40a2c9ae8d1deb7b791d6dbc6a293d4b5e
+[   15.323468] stashing 1 overlapping blocks to 435bcdd0cd652c5c30e6a5cacf3aa50e0ae52752
+[   15.323645] 92528640 bytes free on /cache (4096 needed)
+[   15.323769]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/435bcdd0cd652c5c30e6a5cacf3aa50e0ae52752
+[   15.327238] patching 1 blocks to 1
+[   15.327644] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/435bcdd0cd652c5c30e6a5cacf3aa50e0ae52752
+[   15.329303] stashing 1 overlapping blocks to be03bd5c800e5ec52efa4d97fe72d3f923b94bd1
+[   15.329420] 92528640 bytes free on /cache (4096 needed)
+[   15.329540]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be03bd5c800e5ec52efa4d97fe72d3f923b94bd1
+[   15.333711] patching 1 blocks to 1
+[   15.334147] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be03bd5c800e5ec52efa4d97fe72d3f923b94bd1
+[   15.335849] stashing 1 overlapping blocks to 94733bc8b8fcfe63e432731b2ac97cab619dba9a
+[   15.335969] 92528640 bytes free on /cache (4096 needed)
+[   15.336092]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/94733bc8b8fcfe63e432731b2ac97cab619dba9a
+[   15.339836] patching 1 blocks to 1
+[   15.340349] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/94733bc8b8fcfe63e432731b2ac97cab619dba9a
+[   15.342034] stashing 1 overlapping blocks to 8a8271b0d75d8d147a394d0dcc1f78c9a97b7f9d
+[   15.342158] 92528640 bytes free on /cache (4096 needed)
+[   15.342280]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a8271b0d75d8d147a394d0dcc1f78c9a97b7f9d
+[   15.345702] patching 1 blocks to 1
+[   15.346092] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a8271b0d75d8d147a394d0dcc1f78c9a97b7f9d
+[   15.347762] stashing 1 overlapping blocks to 071c57c4aae4500a995ff5838560387bd7d13b02
+[   15.347882] 92528640 bytes free on /cache (4096 needed)
+[   15.348001]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/071c57c4aae4500a995ff5838560387bd7d13b02
+[   15.351481] patching 1 blocks to 1
+[   15.351899] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/071c57c4aae4500a995ff5838560387bd7d13b02
+[   15.353616] stashing 1 overlapping blocks to 4d4571d7b0be841595b0b73a2da8ecb897686493
+[   15.353743] 92528640 bytes free on /cache (4096 needed)
+[   15.353863]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4d4571d7b0be841595b0b73a2da8ecb897686493
+[   15.357092] patching 1 blocks to 1
+[   15.357483] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4d4571d7b0be841595b0b73a2da8ecb897686493
+[   15.359115] stashing 1 overlapping blocks to 6ea64c2fd90c4600b1c84236f9c85d052d538830
+[   15.359229] 92528640 bytes free on /cache (4096 needed)
+[   15.359351]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6ea64c2fd90c4600b1c84236f9c85d052d538830
+[   15.362872] patching 1 blocks to 1
+[   15.363270] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6ea64c2fd90c4600b1c84236f9c85d052d538830
+[   15.365259] stashing 1 overlapping blocks to 77a8f296594e287ac59fa31e91d365ffdc2d72ef
+[   15.365428] 92528640 bytes free on /cache (4096 needed)
+[   15.365573]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/77a8f296594e287ac59fa31e91d365ffdc2d72ef
+[   15.369358] patching 1 blocks to 1
+[   15.369766] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/77a8f296594e287ac59fa31e91d365ffdc2d72ef
+[   15.371579] stashing 1 overlapping blocks to b290177b15bdce39363f7ad6bf17355182efdafe
+[   15.371705] 92528640 bytes free on /cache (4096 needed)
+[   15.371827]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b290177b15bdce39363f7ad6bf17355182efdafe
+[   15.375215] patching 1 blocks to 1
+[   15.375616] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b290177b15bdce39363f7ad6bf17355182efdafe
+[   15.377453] stashing 1 overlapping blocks to 0b73020492286c86018b1884c0b98f1a3e0eb596
+[   15.377579] 92528640 bytes free on /cache (4096 needed)
+[   15.377707]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0b73020492286c86018b1884c0b98f1a3e0eb596
+[   15.381050] patching 1 blocks to 1
+[   15.381449] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0b73020492286c86018b1884c0b98f1a3e0eb596
+[   15.383111] stashing 1 overlapping blocks to 4a7f305f237c5d92107b7b008a5588c150434dc8
+[   15.383229] 92528640 bytes free on /cache (4096 needed)
+[   15.383349]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4a7f305f237c5d92107b7b008a5588c150434dc8
+[   15.386821] patching 1 blocks to 1
+[   15.387355] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4a7f305f237c5d92107b7b008a5588c150434dc8
+[   15.389008] stashing 1 overlapping blocks to d83c6d04012f199107f76c1ef9d4cac4214b83bc
+[   15.389126] 92528640 bytes free on /cache (4096 needed)
+[   15.389246]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d83c6d04012f199107f76c1ef9d4cac4214b83bc
+[   15.392945] patching 1 blocks to 1
+[   15.393351] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d83c6d04012f199107f76c1ef9d4cac4214b83bc
+[   15.395078] stashing 1 overlapping blocks to 5bb434f30f5382e5ebdf2a9e25b5a7a6a4e1f56d
+[   15.395205] 92528640 bytes free on /cache (4096 needed)
+[   15.395324]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5bb434f30f5382e5ebdf2a9e25b5a7a6a4e1f56d
+[   15.398975] patching 1 blocks to 1
+[   15.399700] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5bb434f30f5382e5ebdf2a9e25b5a7a6a4e1f56d
+[   15.401569] stashing 1 overlapping blocks to f219bfce895366f4e96e8377de240652613687a1
+[   15.401704] 92528640 bytes free on /cache (4096 needed)
+[   15.401838]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f219bfce895366f4e96e8377de240652613687a1
+[   15.405195] patching 1 blocks to 1
+[   15.405595] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f219bfce895366f4e96e8377de240652613687a1
+[   15.461093] stashing 495 overlapping blocks to 8285f25d2ad53c08bbce85858f92c0d76a66805c
+[   15.461299] 92528640 bytes free on /cache (2027520 needed)
+[   15.461447]  writing 495 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8285f25d2ad53c08bbce85858f92c0d76a66805c
+[   15.489189] patching 495 blocks to 495
+[   15.566356] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8285f25d2ad53c08bbce85858f92c0d76a66805c
+[   15.591214] stashing 1 overlapping blocks to dfe84d7cd26962bf0329ddcfa73c2f13bd6dd0d8
+[   15.591391] 92528640 bytes free on /cache (4096 needed)
+[   15.591532]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dfe84d7cd26962bf0329ddcfa73c2f13bd6dd0d8
+[   15.596611] patching 1 blocks to 1
+[   15.597115] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dfe84d7cd26962bf0329ddcfa73c2f13bd6dd0d8
+[   15.609311] stashing 86 overlapping blocks to 3e6e65a30d8b0bf08b194b21f4a34393a1390938
+[   15.609488] 92528640 bytes free on /cache (352256 needed)
+[   15.609632]  writing 86 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3e6e65a30d8b0bf08b194b21f4a34393a1390938
+[   15.620399] patching 86 blocks to 86
+[   15.634182] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3e6e65a30d8b0bf08b194b21f4a34393a1390938
+[   15.641167] stashing 1 overlapping blocks to 734739083d74cfe8ceb896df4171a69bf9047a26
+[   15.641315] 92528640 bytes free on /cache (4096 needed)
+[   15.641449]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/734739083d74cfe8ceb896df4171a69bf9047a26
+[   15.645130] patching 1 blocks to 1
+[   15.645538] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/734739083d74cfe8ceb896df4171a69bf9047a26
+[   15.647221] stashing 1 overlapping blocks to ebc122202ad86961610a8ea0b291523db663f967
+[   15.647343] 92528640 bytes free on /cache (4096 needed)
+[   15.647463]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ebc122202ad86961610a8ea0b291523db663f967
+[   15.653110] patching 1 blocks to 1
+[   15.653594] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ebc122202ad86961610a8ea0b291523db663f967
+[   15.656441] stashing 1 overlapping blocks to 52d2a7b981da36983e0c655d922c69bf426025e8
+[   15.656569] 92528640 bytes free on /cache (4096 needed)
+[   15.656689]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/52d2a7b981da36983e0c655d922c69bf426025e8
+[   15.660987] patching 1 blocks to 1
+[   15.661389] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/52d2a7b981da36983e0c655d922c69bf426025e8
+[   15.663039] stashing 1 overlapping blocks to b49d1e66f0fece8d97bfb87a8948d707a21b24e4
+[   15.663160] 92528640 bytes free on /cache (4096 needed)
+[   15.663279]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b49d1e66f0fece8d97bfb87a8948d707a21b24e4
+[   15.668284] patching 1 blocks to 1
+[   15.668706] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b49d1e66f0fece8d97bfb87a8948d707a21b24e4
+[   15.670428] stashing 1 overlapping blocks to 5021582860fdefc162a7bba7773b8adb9ec4c327
+[   15.670557] 92528640 bytes free on /cache (4096 needed)
+[   15.670688]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5021582860fdefc162a7bba7773b8adb9ec4c327
+[   15.674880] patching 1 blocks to 1
+[   15.675284] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5021582860fdefc162a7bba7773b8adb9ec4c327
+[   15.676985] stashing 1 overlapping blocks to bc9fdf42c1916398cde7c7c67524bf04e661cf39
+[   15.677112] 92528640 bytes free on /cache (4096 needed)
+[   15.677242]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bc9fdf42c1916398cde7c7c67524bf04e661cf39
+[   15.680724] patching 1 blocks to 1
+[   15.681117] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bc9fdf42c1916398cde7c7c67524bf04e661cf39
+[   15.682788] stashing 1 overlapping blocks to e0389de18b1e3ccc5b5947b845ea7f5553a2a81a
+[   15.682902] 92528640 bytes free on /cache (4096 needed)
+[   15.683036]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e0389de18b1e3ccc5b5947b845ea7f5553a2a81a
+[   15.686514] patching 1 blocks to 1
+[   15.686989] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e0389de18b1e3ccc5b5947b845ea7f5553a2a81a
+[   15.688659] stashing 1 overlapping blocks to 5d8811442de68656001c2a713f34246753bd289b
+[   15.688780] 92528640 bytes free on /cache (4096 needed)
+[   15.688902]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5d8811442de68656001c2a713f34246753bd289b
+[   15.692295] patching 1 blocks to 1
+[   15.692695] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5d8811442de68656001c2a713f34246753bd289b
+[   15.699880] stashing 41 overlapping blocks to 34cdf481785cf1720535b921e39825670c288fbd
+[   15.700075] 92528640 bytes free on /cache (167936 needed)
+[   15.700298]  writing 41 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/34cdf481785cf1720535b921e39825670c288fbd
+[   15.707151] patching 41 blocks to 41
+[   15.712717] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/34cdf481785cf1720535b921e39825670c288fbd
+[   15.717973] stashing 1 overlapping blocks to 99834dc11c660e39d29599df420dd14362a0dc95
+[   15.718124] 92528640 bytes free on /cache (4096 needed)
+[   15.718254]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99834dc11c660e39d29599df420dd14362a0dc95
+[   15.722557] patching 1 blocks to 1
+[   15.722970] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99834dc11c660e39d29599df420dd14362a0dc95
+[   15.724692] stashing 1 overlapping blocks to f430b52b5eff9993e9df557b5c11eb90381df9cc
+[   15.724821] 92528640 bytes free on /cache (4096 needed)
+[   15.724943]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f430b52b5eff9993e9df557b5c11eb90381df9cc
+[   15.729280] patching 1 blocks to 1
+[   15.729677] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f430b52b5eff9993e9df557b5c11eb90381df9cc
+[   15.731418] stashing 1 overlapping blocks to 23bb16a82557d7ecea52bd8866030bd628673755
+[   15.731547] 92528640 bytes free on /cache (4096 needed)
+[   15.731671]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/23bb16a82557d7ecea52bd8866030bd628673755
+[   15.735550] patching 1 blocks to 1
+[   15.735979] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/23bb16a82557d7ecea52bd8866030bd628673755
+[   15.737687] stashing 1 overlapping blocks to 70f8aab2a8eff934cfe32c3fcd4b16297226c40c
+[   15.737817] 92528640 bytes free on /cache (4096 needed)
+[   15.737942]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70f8aab2a8eff934cfe32c3fcd4b16297226c40c
+[   15.741273] patching 1 blocks to 1
+[   15.741680] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70f8aab2a8eff934cfe32c3fcd4b16297226c40c
+[   15.743344] stashing 1 overlapping blocks to aa19f6d13109d9a62baa99f36ed00025fcc40756
+[   15.743464] 92528640 bytes free on /cache (4096 needed)
+[   15.743624]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa19f6d13109d9a62baa99f36ed00025fcc40756
+[   15.747083] patching 1 blocks to 1
+[   15.747477] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa19f6d13109d9a62baa99f36ed00025fcc40756
+[   15.749118] stashing 1 overlapping blocks to 83fd7f0acea65e362bc47301e8450e64803c6a00
+[   15.749237] 92528640 bytes free on /cache (4096 needed)
+[   15.749353]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/83fd7f0acea65e362bc47301e8450e64803c6a00
+[   15.752766] patching 1 blocks to 1
+[   15.753161] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/83fd7f0acea65e362bc47301e8450e64803c6a00
+[   15.754868] stashing 1 overlapping blocks to 2614b6dcbd14f6e097c01ae191ec9b93dfe74f32
+[   15.754992] 92528640 bytes free on /cache (4096 needed)
+[   15.755110]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2614b6dcbd14f6e097c01ae191ec9b93dfe74f32
+[   15.760743] patching 1 blocks to 1
+[   15.761147] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2614b6dcbd14f6e097c01ae191ec9b93dfe74f32
+[   15.762796] stashing 1 overlapping blocks to 556d109b5239d8dbe0d7bbbc2264db942f29c02c
+[   15.762919] 92528640 bytes free on /cache (4096 needed)
+[   15.763038]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/556d109b5239d8dbe0d7bbbc2264db942f29c02c
+[   15.767740] patching 1 blocks to 1
+[   15.768163] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/556d109b5239d8dbe0d7bbbc2264db942f29c02c
+[   15.769931] stashing 1 overlapping blocks to 674bfbf27a084338a899a7e478b51dfcc40fc2a7
+[   15.770053] 92528640 bytes free on /cache (4096 needed)
+[   15.770215]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/674bfbf27a084338a899a7e478b51dfcc40fc2a7
+[   15.774467] patching 1 blocks to 1
+[   15.774863] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/674bfbf27a084338a899a7e478b51dfcc40fc2a7
+[   15.776517] stashing 1 overlapping blocks to 9a0b535c22f1920ba109b5f3592acdefd6d52473
+[   15.776638] 92528640 bytes free on /cache (4096 needed)
+[   15.776757]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9a0b535c22f1920ba109b5f3592acdefd6d52473
+[   15.781038] patching 1 blocks to 1
+[   15.781437] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9a0b535c22f1920ba109b5f3592acdefd6d52473
+[   15.783092] stashing 1 overlapping blocks to f81e0c4d1207ecfa83ce1540f0e25556b3c2f48c
+[   15.783209] 92528640 bytes free on /cache (4096 needed)
+[   15.783325]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f81e0c4d1207ecfa83ce1540f0e25556b3c2f48c
+[   15.786786] patching 1 blocks to 1
+[   15.787264] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f81e0c4d1207ecfa83ce1540f0e25556b3c2f48c
+[   15.788910] stashing 1 overlapping blocks to c9873ad2a04bd2da1d67c8dac7f0bc1813117d89
+[   15.789028] 92528640 bytes free on /cache (4096 needed)
+[   15.789145]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9873ad2a04bd2da1d67c8dac7f0bc1813117d89
+[   15.792487] patching 1 blocks to 1
+[   15.792884] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9873ad2a04bd2da1d67c8dac7f0bc1813117d89
+[   15.794594] stashing 1 overlapping blocks to 57acc30e371682c7af425f98ef6cf5dd9cdbf99e
+[   15.794720] 92528640 bytes free on /cache (4096 needed)
+[   15.794842]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/57acc30e371682c7af425f98ef6cf5dd9cdbf99e
+[   15.798411] patching 1 blocks to 1
+[   15.798806] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/57acc30e371682c7af425f98ef6cf5dd9cdbf99e
+[   15.800921] stashing 1 overlapping blocks to 929844291beea01735ade3a8046da889cb407bed
+[   15.801112] 92528640 bytes free on /cache (4096 needed)
+[   15.801253]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/929844291beea01735ade3a8046da889cb407bed
+[   15.804942] patching 1 blocks to 1
+[   15.805341] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/929844291beea01735ade3a8046da889cb407bed
+[   15.807059] stashing 1 overlapping blocks to 4d046013191dd8686264b572bc923ca44628d346
+[   15.807187] 92528640 bytes free on /cache (4096 needed)
+[   15.807313]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4d046013191dd8686264b572bc923ca44628d346
+[   15.813309] patching 1 blocks to 1
+[   15.813782] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4d046013191dd8686264b572bc923ca44628d346
+[   15.815416] stashing 1 overlapping blocks to b057814e033766507250221bb22b258d17f83c94
+[   15.815538] 92528640 bytes free on /cache (4096 needed)
+[   15.815658]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b057814e033766507250221bb22b258d17f83c94
+[   15.819927] patching 1 blocks to 1
+[   15.820390] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b057814e033766507250221bb22b258d17f83c94
+[   15.822047] stashing 1 overlapping blocks to bbb75507c66d300ec0b78664652c2a18d1175c9c
+[   15.822170] 92528640 bytes free on /cache (4096 needed)
+[   15.822291]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bbb75507c66d300ec0b78664652c2a18d1175c9c
+[   15.826347] patching 1 blocks to 1
+[   15.826739] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bbb75507c66d300ec0b78664652c2a18d1175c9c
+[   15.886435] stashing 512 overlapping blocks to 93df71a94fc00c48ce35e0d227e2dacf0bb519bc
+[   15.886615] 92528640 bytes free on /cache (2097152 needed)
+[   15.886766]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/93df71a94fc00c48ce35e0d227e2dacf0bb519bc
+[   15.917634] patching 512 blocks to 512
+[   15.968160] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/93df71a94fc00c48ce35e0d227e2dacf0bb519bc
+[   16.052421] stashing 512 overlapping blocks to 520e54d1244acdf2c3d058edd95f9c669243cc57
+[   16.052597] 92528640 bytes free on /cache (2097152 needed)
+[   16.052740]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/520e54d1244acdf2c3d058edd95f9c669243cc57
+[   16.084025] patching 512 blocks to 512
+[   16.134712] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/520e54d1244acdf2c3d058edd95f9c669243cc57
+[   16.160121] stashing 1 overlapping blocks to af4b7d9ca059814f1a58d8af40ea6fb5fa9f2b38
+[   16.160358] 92528640 bytes free on /cache (4096 needed)
+[   16.160505]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/af4b7d9ca059814f1a58d8af40ea6fb5fa9f2b38
+[   16.165482] patching 1 blocks to 1
+[   16.165885] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/af4b7d9ca059814f1a58d8af40ea6fb5fa9f2b38
+[   16.167643] stashing 1 overlapping blocks to c3c1297fd5ec8d900db6d4b6b39fd16327991f29
+[   16.167818] 92528640 bytes free on /cache (4096 needed)
+[   16.167961]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c3c1297fd5ec8d900db6d4b6b39fd16327991f29
+[   16.171830] patching 1 blocks to 1
+[   16.172241] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c3c1297fd5ec8d900db6d4b6b39fd16327991f29
+[   16.173965] stashing 1 overlapping blocks to cff2fedb9fdbfbc5f95a99d6775ad1c31c055cdc
+[   16.174100] 92528640 bytes free on /cache (4096 needed)
+[   16.174232]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cff2fedb9fdbfbc5f95a99d6775ad1c31c055cdc
+[   16.177749] patching 1 blocks to 1
+[   16.178181] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cff2fedb9fdbfbc5f95a99d6775ad1c31c055cdc
+[   16.179814] stashing 1 overlapping blocks to 19e5d7ba630d1080588c7a9e7b7b6e80bb00109c
+[   16.179931] 92528640 bytes free on /cache (4096 needed)
+[   16.180051]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/19e5d7ba630d1080588c7a9e7b7b6e80bb00109c
+[   16.183294] patching 1 blocks to 1
+[   16.183768] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/19e5d7ba630d1080588c7a9e7b7b6e80bb00109c
+[   16.185408] stashing 1 overlapping blocks to 77b01f0094a8ece5ad58a81c83afd4ead211e965
+[   16.185528] 92528640 bytes free on /cache (4096 needed)
+[   16.185645]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/77b01f0094a8ece5ad58a81c83afd4ead211e965
+[   16.189092] patching 1 blocks to 1
+[   16.189484] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/77b01f0094a8ece5ad58a81c83afd4ead211e965
+[   16.243157] stashing 512 overlapping blocks to 7d87f3c7460f2e6cf9c565c4dcec53d9500742b1
+[   16.243340] 92528640 bytes free on /cache (2097152 needed)
+[   16.243486]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7d87f3c7460f2e6cf9c565c4dcec53d9500742b1
+[   16.275588] patching 512 blocks to 512
+[   16.327266] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7d87f3c7460f2e6cf9c565c4dcec53d9500742b1
+[   16.406971] stashing 512 overlapping blocks to c7138bc43fa4377c3c171ecb018078d4cc2719d4
+[   16.407174] 92528640 bytes free on /cache (2097152 needed)
+[   16.407318]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c7138bc43fa4377c3c171ecb018078d4cc2719d4
+[   16.439310] patching 512 blocks to 512
+[   17.044229] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c7138bc43fa4377c3c171ecb018078d4cc2719d4
+[   17.122358] stashing 512 overlapping blocks to dd8f40418530b57587265c68bb8868417cad47f6
+[   17.122539] 92528640 bytes free on /cache (2097152 needed)
+[   17.122689]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dd8f40418530b57587265c68bb8868417cad47f6
+[   17.156162] patching 512 blocks to 512
+[   17.229491] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dd8f40418530b57587265c68bb8868417cad47f6
+[   17.305163] stashing 512 overlapping blocks to 8a5280826b03a12135f1f5ee859aac6e8b50ce63
+[   17.305356] 92528640 bytes free on /cache (2097152 needed)
+[   17.305504]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a5280826b03a12135f1f5ee859aac6e8b50ce63
+[   17.337332] patching 512 blocks to 512
+[   17.390579] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a5280826b03a12135f1f5ee859aac6e8b50ce63
+[   17.466130] stashing 512 overlapping blocks to 403b3b16fff43d700b6a0180ecab2bbbe6dd03c4
+[   17.466316] 92528640 bytes free on /cache (2097152 needed)
+[   17.466461]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/403b3b16fff43d700b6a0180ecab2bbbe6dd03c4
+[   17.619086] patching 512 blocks to 512
+[   18.935201] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/403b3b16fff43d700b6a0180ecab2bbbe6dd03c4
+[   19.085152] stashing 512 overlapping blocks to 3b77ad4685c3949ec2b8364ae93f79b57945ceaf
+[   19.085332] 92528640 bytes free on /cache (2097152 needed)
+[   19.085479]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3b77ad4685c3949ec2b8364ae93f79b57945ceaf
+[   19.265240] patching 512 blocks to 512
+[   20.564827] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3b77ad4685c3949ec2b8364ae93f79b57945ceaf
+[   20.724843] stashing 512 overlapping blocks to 70e0b2360adb34a540f563dfc50ff7663613f21d
+[   20.725022] 92528640 bytes free on /cache (2097152 needed)
+[   20.725170]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70e0b2360adb34a540f563dfc50ff7663613f21d
+[   20.932738] patching 512 blocks to 512
+[   22.232699] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70e0b2360adb34a540f563dfc50ff7663613f21d
+[   22.390625] stashing 512 overlapping blocks to 984d3ef3661d02ba609352940b8577899866528c
+[   22.390818] 92528640 bytes free on /cache (2097152 needed)
+[   22.390973]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/984d3ef3661d02ba609352940b8577899866528c
+[   22.467123] patching 512 blocks to 512
+[   23.768270] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/984d3ef3661d02ba609352940b8577899866528c
+[   23.846514] stashing 512 overlapping blocks to 35a3f293073a8d83f7639abb21146acab0383c56
+[   23.846697] 92528640 bytes free on /cache (2097152 needed)
+[   23.846895]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/35a3f293073a8d83f7639abb21146acab0383c56
+[   23.878920] patching 512 blocks to 512
+[   25.188609] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/35a3f293073a8d83f7639abb21146acab0383c56
+[   25.217164] stashing 1 overlapping blocks to bee53b23bc325e2c46068c4a3f5478dcb91f0c93
+[   25.217331] 92528640 bytes free on /cache (4096 needed)
+[   25.217475]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bee53b23bc325e2c46068c4a3f5478dcb91f0c93
+[   25.220880] patching 1 blocks to 1
+[   25.221367] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bee53b23bc325e2c46068c4a3f5478dcb91f0c93
+[   25.223044] stashing 1 overlapping blocks to 3930bb5a007ff39415d3f3d3d528e1e52b3da5ba
+[   25.223182] 92528640 bytes free on /cache (4096 needed)
+[   25.223302]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3930bb5a007ff39415d3f3d3d528e1e52b3da5ba
+[   25.226921] patching 1 blocks to 1
+[   25.227419] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3930bb5a007ff39415d3f3d3d528e1e52b3da5ba
+[   25.239001] stashing 83 overlapping blocks to 4591e465fe2632a0557cebef21f4cb6a3fe95164
+[   25.239183] 92528640 bytes free on /cache (339968 needed)
+[   25.239327]  writing 83 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4591e465fe2632a0557cebef21f4cb6a3fe95164
+[   25.251097] patching 83 blocks to 83
+[   25.259792] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4591e465fe2632a0557cebef21f4cb6a3fe95164
+[   25.267719] stashing 1 overlapping blocks to 1223c571403d7b142ea47509f4b88547d0d17f6e
+[   25.267881] 92528640 bytes free on /cache (4096 needed)
+[   25.268023]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1223c571403d7b142ea47509f4b88547d0d17f6e
+[   25.272092] patching 1 blocks to 1
+[   25.272674] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1223c571403d7b142ea47509f4b88547d0d17f6e
+[   25.274399] stashing 1 overlapping blocks to de3c235ef7d069bb4896b917bc1b5cc3b43e749e
+[   25.274522] 92528640 bytes free on /cache (4096 needed)
+[   25.274643]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/de3c235ef7d069bb4896b917bc1b5cc3b43e749e
+[   25.278077] patching 1 blocks to 1
+[   25.278493] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/de3c235ef7d069bb4896b917bc1b5cc3b43e749e
+[   25.280117] stashing 1 overlapping blocks to dc0a7105eeec5bb6c914a035473a0f7ec2c5cc14
+[   25.280291] 92528640 bytes free on /cache (4096 needed)
+[   25.280414]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dc0a7105eeec5bb6c914a035473a0f7ec2c5cc14
+[   25.283827] patching 1 blocks to 1
+[   25.284231] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dc0a7105eeec5bb6c914a035473a0f7ec2c5cc14
+[   25.285883] stashing 1 overlapping blocks to 40a1ea75be67d2492085e1e09f7e9de51aca4121
+[   25.286009] 92528640 bytes free on /cache (4096 needed)
+[   25.286133]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/40a1ea75be67d2492085e1e09f7e9de51aca4121
+[   25.289458] patching 1 blocks to 1
+[   25.289858] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/40a1ea75be67d2492085e1e09f7e9de51aca4121
+[   25.345229] stashing 512 overlapping blocks to 75efc18fc9500ac6595f40e0cc600fcb7b233e2d
+[   25.345406] 92528640 bytes free on /cache (2097152 needed)
+[   25.345553]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/75efc18fc9500ac6595f40e0cc600fcb7b233e2d
+[   25.377436] patching 512 blocks to 512
+[   26.693802] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/75efc18fc9500ac6595f40e0cc600fcb7b233e2d
+[   26.721222] stashing 1 overlapping blocks to 73d6065167bdb31da8c7f6addf60b4f38f5b83d4
+[   26.721396] 92528640 bytes free on /cache (4096 needed)
+[   26.721542]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/73d6065167bdb31da8c7f6addf60b4f38f5b83d4
+[   26.725176] patching 1 blocks to 1
+[   26.725683] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/73d6065167bdb31da8c7f6addf60b4f38f5b83d4
+[   26.727341] stashing 1 overlapping blocks to 6dedd02e8c4abe1e20945c72a8b6d0b1fd585a60
+[   26.727466] 92528640 bytes free on /cache (4096 needed)
+[   26.727587]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6dedd02e8c4abe1e20945c72a8b6d0b1fd585a60
+[   26.733044] patching 1 blocks to 1
+[   26.733615] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6dedd02e8c4abe1e20945c72a8b6d0b1fd585a60
+[   26.735335] stashing 1 overlapping blocks to a7208029086abf005ac0ed9e9342251dd1d607dc
+[   26.735459] 92528640 bytes free on /cache (4096 needed)
+[   26.735594]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a7208029086abf005ac0ed9e9342251dd1d607dc
+[   26.740414] patching 1 blocks to 1
+[   26.740931] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a7208029086abf005ac0ed9e9342251dd1d607dc
+[   26.762089] stashing 20 overlapping blocks to 95d84320d348e5645913272dd97836ecd1021901
+[   26.762252] 92528640 bytes free on /cache (81920 needed)
+[   26.762393]  writing 20 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/95d84320d348e5645913272dd97836ecd1021901
+[   26.767640] patching 20 blocks to 20
+[   26.769942] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/95d84320d348e5645913272dd97836ecd1021901
+[   26.772906] stashing 1 overlapping blocks to 03672f303a3d6370c84e515073955fbdea9750ed
+[   26.773070] 92528640 bytes free on /cache (4096 needed)
+[   26.773217]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/03672f303a3d6370c84e515073955fbdea9750ed
+[   26.776679] patching 1 blocks to 1
+[   26.777261] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/03672f303a3d6370c84e515073955fbdea9750ed
+[   26.778964] stashing 1 overlapping blocks to a4c114678f3a65d305af316cc9aad9f8195fba32
+[   26.779088] 92528640 bytes free on /cache (4096 needed)
+[   26.779208]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a4c114678f3a65d305af316cc9aad9f8195fba32
+[   26.782809] patching 1 blocks to 1
+[   26.783221] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a4c114678f3a65d305af316cc9aad9f8195fba32
+[   26.785065] stashing 1 overlapping blocks to ae1ed93f19db28a068f3d92548394a7d740d2d2e
+[   26.785188] 92528640 bytes free on /cache (4096 needed)
+[   26.785310]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ae1ed93f19db28a068f3d92548394a7d740d2d2e
+[   26.790842] patching 1 blocks to 1
+[   26.791233] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ae1ed93f19db28a068f3d92548394a7d740d2d2e
+[   26.792891] stashing 1 overlapping blocks to 7ff95d2608422594dbff762b2e310306eaab6475
+[   26.793009] 92528640 bytes free on /cache (4096 needed)
+[   26.793125]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7ff95d2608422594dbff762b2e310306eaab6475
+[   26.797390] patching 1 blocks to 1
+[   26.797792] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7ff95d2608422594dbff762b2e310306eaab6475
+[   26.799438] stashing 1 overlapping blocks to bdae082bbe9849d04228a63f7f8732cd0049de4a
+[   26.799556] 92528640 bytes free on /cache (4096 needed)
+[   26.799679]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bdae082bbe9849d04228a63f7f8732cd0049de4a
+[   26.803728] patching 1 blocks to 1
+[   26.804118] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bdae082bbe9849d04228a63f7f8732cd0049de4a
+[   26.952065] stashing 1415 overlapping blocks to 7c8f45b9bfd027b126b7a847acfcaf321b3b2e1e
+[   26.952245] 92528640 bytes free on /cache (5795840 needed)
+[   26.952394]  writing 1415 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c8f45b9bfd027b126b7a847acfcaf321b3b2e1e
+[   27.026372] patching 1415 blocks to 1415
+[   27.299305] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c8f45b9bfd027b126b7a847acfcaf321b3b2e1e
+[   27.457507] stashing 46 overlapping blocks to 91ef01854d7058112ad3b5f371325a86bf16add4
+[   27.457682] 92528640 bytes free on /cache (188416 needed)
+[   27.457827]  writing 46 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/91ef01854d7058112ad3b5f371325a86bf16add4
+[   27.574159] patching 46 blocks to 46
+[   27.581153] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/91ef01854d7058112ad3b5f371325a86bf16add4
+[   27.605883] stashing 1 overlapping blocks to d3e73370802a26c2f2d09b91633e7ae439a98a97
+[   27.606034] 92528640 bytes free on /cache (4096 needed)
+[   27.606164]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d3e73370802a26c2f2d09b91633e7ae439a98a97
+[   27.723293] patching 1 blocks to 1
+[   27.723919] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d3e73370802a26c2f2d09b91633e7ae439a98a97
+[   27.747323] stashing 1 overlapping blocks to 71db7024d7c03106e0fc507e76c8e4cc998a6e39
+[   27.747483] 92528640 bytes free on /cache (4096 needed)
+[   27.747624]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/71db7024d7c03106e0fc507e76c8e4cc998a6e39
+[   27.879797] patching 1 blocks to 1
+[   27.880415] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/71db7024d7c03106e0fc507e76c8e4cc998a6e39
+[   27.905923] stashing 1 overlapping blocks to d3536af3e945e88e8a5624a580070d19ce4344c5
+[   27.906054] 92528640 bytes free on /cache (4096 needed)
+[   27.906180]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d3536af3e945e88e8a5624a580070d19ce4344c5
+[   28.049511] patching 1 blocks to 1
+[   28.049942] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d3536af3e945e88e8a5624a580070d19ce4344c5
+[   28.071908] stashing 1 overlapping blocks to 4aa6812e18f7ae2727d9379bbe34174ab53775f9
+[   28.072037] 92528640 bytes free on /cache (4096 needed)
+[   28.072166]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4aa6812e18f7ae2727d9379bbe34174ab53775f9
+[   28.075717] patching 1 blocks to 1
+[   28.076181] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4aa6812e18f7ae2727d9379bbe34174ab53775f9
+[   28.078216] stashing 1 overlapping blocks to a2cfa6505e004516e8ab5983d6c35c220765284c
+[   28.078374] 92528640 bytes free on /cache (4096 needed)
+[   28.078512]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a2cfa6505e004516e8ab5983d6c35c220765284c
+[   28.081975] patching 1 blocks to 1
+[   28.084836] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a2cfa6505e004516e8ab5983d6c35c220765284c
+[   28.127841] stashing 363 overlapping blocks to 7a92101f0231c8b572d7a7c6e3c88fc45829006b
+[   28.128021] 92528640 bytes free on /cache (1486848 needed)
+[   28.128172]  writing 363 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7a92101f0231c8b572d7a7c6e3c88fc45829006b
+[   28.152933] patching 363 blocks to 363
+[   28.191676] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7a92101f0231c8b572d7a7c6e3c88fc45829006b
+[   28.210386] stashing 1 overlapping blocks to 87d77f116417ad61a72ea24e471fe6ff50065cf7
+[   28.210560] 92528640 bytes free on /cache (4096 needed)
+[   28.210703]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/87d77f116417ad61a72ea24e471fe6ff50065cf7
+[   28.217106] patching 1 blocks to 1
+[   28.217529] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/87d77f116417ad61a72ea24e471fe6ff50065cf7
+[   28.224289] stashing 36 overlapping blocks to cda4183c6e066d67c05418c39e9d12e9e5d31c64
+[   28.224469] 92528640 bytes free on /cache (147456 needed)
+[   28.224610]  writing 36 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cda4183c6e066d67c05418c39e9d12e9e5d31c64
+[   28.230108] patching 36 blocks to 36
+[   28.236770] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cda4183c6e066d67c05418c39e9d12e9e5d31c64
+[   28.242394] stashing 1 overlapping blocks to c7230aec3a9eceb3654f90a66941bf2131504204
+[   28.242559] 92528640 bytes free on /cache (4096 needed)
+[   28.242706]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c7230aec3a9eceb3654f90a66941bf2131504204
+[   28.247490] patching 1 blocks to 1
+[   28.247903] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c7230aec3a9eceb3654f90a66941bf2131504204
+[   28.257899] stashing 76 overlapping blocks to c159b96f7b2839e0099f5fe21d235cb3a228a971
+[   28.258081] 92528640 bytes free on /cache (311296 needed)
+[   28.258224]  writing 76 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c159b96f7b2839e0099f5fe21d235cb3a228a971
+[   28.267915] patching 76 blocks to 76
+[   28.275494] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c159b96f7b2839e0099f5fe21d235cb3a228a971
+[   28.282738] stashing 1 overlapping blocks to 313ba9c0b15b6802b54a33031e09607d96f9b3ba
+[   28.282897] 92528640 bytes free on /cache (4096 needed)
+[   28.283037]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/313ba9c0b15b6802b54a33031e09607d96f9b3ba
+[   28.286576] patching 1 blocks to 1
+[   28.287039] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/313ba9c0b15b6802b54a33031e09607d96f9b3ba
+[   28.288725] stashing 1 overlapping blocks to ab855da1e7cabb979e48a08545c45550a0f44952
+[   28.288848] 92528640 bytes free on /cache (4096 needed)
+[   28.288966]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab855da1e7cabb979e48a08545c45550a0f44952
+[   28.292471] patching 1 blocks to 1
+[   28.292869] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab855da1e7cabb979e48a08545c45550a0f44952
+[   28.448484] stashing 1476 overlapping blocks to 99363d44ddf93009f0e2b221995899f21712414a
+[   28.448660] 92528640 bytes free on /cache (6045696 needed)
+[   28.448807]  writing 1476 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99363d44ddf93009f0e2b221995899f21712414a
+[   28.527503] patching 1476 blocks to 1476
+[   28.693018] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99363d44ddf93009f0e2b221995899f21712414a
+[   28.750539]  writing 1 blocks of new data
+[   28.752260] stashing 1 overlapping blocks to e2d711ecd19a417690c69bb4a157fdf9e56bdf0a
+[   28.752419] 92528640 bytes free on /cache (4096 needed)
+[   28.752560]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e2d711ecd19a417690c69bb4a157fdf9e56bdf0a
+[   28.756249] patching 1 blocks to 1
+[   28.756655] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e2d711ecd19a417690c69bb4a157fdf9e56bdf0a
+[   28.758328] stashing 1 overlapping blocks to 9b9816e884b09d452037da357baade74f478f7e2
+[   28.758457] 92528640 bytes free on /cache (4096 needed)
+[   28.758582]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9b9816e884b09d452037da357baade74f478f7e2
+[   28.762018] patching 1 blocks to 1
+[   28.762451] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9b9816e884b09d452037da357baade74f478f7e2
+[   28.764041] stashing 1 overlapping blocks to a2d0dc22e5a4f233a81c181ab2d317af3ce26400
+[   28.764164] 92528640 bytes free on /cache (4096 needed)
+[   28.764283]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a2d0dc22e5a4f233a81c181ab2d317af3ce26400
+[   28.767690] patching 1 blocks to 1
+[   28.768074] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a2d0dc22e5a4f233a81c181ab2d317af3ce26400
+[   28.769626] stashing 1 overlapping blocks to 1a50460f87b59918caa96ddf5728a7d5775b4edf
+[   28.769744] 92528640 bytes free on /cache (4096 needed)
+[   28.769859]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1a50460f87b59918caa96ddf5728a7d5775b4edf
+[   28.773147] patching 1 blocks to 1
+[   28.773625] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1a50460f87b59918caa96ddf5728a7d5775b4edf
+[   28.827412] stashing 512 overlapping blocks to ac488ddeb38a857bc3fd8d31a8bd43aeeb05d55e
+[   28.827596] 92528640 bytes free on /cache (2097152 needed)
+[   28.827747]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ac488ddeb38a857bc3fd8d31a8bd43aeeb05d55e
+[   28.859572] patching 512 blocks to 512
+[   28.941952] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ac488ddeb38a857bc3fd8d31a8bd43aeeb05d55e
+[   29.026484] stashing 512 overlapping blocks to bda09d782e82e2e2d0f571b81497b1fb7eabda0b
+[   29.026666] 92528640 bytes free on /cache (2097152 needed)
+[   29.026810]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bda09d782e82e2e2d0f571b81497b1fb7eabda0b
+[   29.058659] patching 512 blocks to 512
+[   29.406664] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bda09d782e82e2e2d0f571b81497b1fb7eabda0b
+[   29.490118] stashing 512 overlapping blocks to 7a514e680a7e567a2e2beb130f937a05f77c7534
+[   29.490370] 92528640 bytes free on /cache (2097152 needed)
+[   29.490518]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7a514e680a7e567a2e2beb130f937a05f77c7534
+[   29.522837] patching 512 blocks to 512
+[   29.574790] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7a514e680a7e567a2e2beb130f937a05f77c7534
+[   29.603302] stashing 35 overlapping blocks to fa6cc8567f45f7adeb3ece4f1337586921cde76f
+[   29.603486] 92528640 bytes free on /cache (143360 needed)
+[   29.603724]  writing 35 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fa6cc8567f45f7adeb3ece4f1337586921cde76f
+[   29.611357] patching 35 blocks to 35
+[   29.615162] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fa6cc8567f45f7adeb3ece4f1337586921cde76f
+[   29.670583] stashing 512 overlapping blocks to 00d42d571564c93ec18402fbf5633465492f5aac
+[   29.670766] 92528640 bytes free on /cache (2097152 needed)
+[   29.670914]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/00d42d571564c93ec18402fbf5633465492f5aac
+[   29.807375] patching 512 blocks to 512
+[   29.859595] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/00d42d571564c93ec18402fbf5633465492f5aac
+[   30.043465] stashing 512 overlapping blocks to 95f6d1ec9a7e8797f5993c58621b1e7273c01883
+[   30.043676] 92528640 bytes free on /cache (2097152 needed)
+[   30.043823]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/95f6d1ec9a7e8797f5993c58621b1e7273c01883
+[   30.143007] patching 512 blocks to 512
+[   30.349488] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/95f6d1ec9a7e8797f5993c58621b1e7273c01883
+[   30.378119] stashing 1 overlapping blocks to cca9ceae159ce2622ca11aacc22562a823ebd61d
+[   30.378285] 92528640 bytes free on /cache (4096 needed)
+[   30.378428]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cca9ceae159ce2622ca11aacc22562a823ebd61d
+[   30.381983] patching 1 blocks to 1
+[   30.382385] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cca9ceae159ce2622ca11aacc22562a823ebd61d
+[   30.384341] stashing 1 overlapping blocks to 580acf6a370d10de6aaa3a2eb253ab3c11b86d24
+[   30.384516] 92528640 bytes free on /cache (4096 needed)
+[   30.384659]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/580acf6a370d10de6aaa3a2eb253ab3c11b86d24
+[   30.388471] patching 1 blocks to 1
+[   30.388895] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/580acf6a370d10de6aaa3a2eb253ab3c11b86d24
+[   30.390509] stashing 1 overlapping blocks to 1471f2926b1645b51dab32a173f2e4c7236f6d9f
+[   30.390640] 92528640 bytes free on /cache (4096 needed)
+[   30.390762]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1471f2926b1645b51dab32a173f2e4c7236f6d9f
+[   30.396117] patching 1 blocks to 1
+[   30.396506] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1471f2926b1645b51dab32a173f2e4c7236f6d9f
+[   30.398151] stashing 1 overlapping blocks to ddb864ef4b6fe72e6ee9bbc5121b9fbc4fe890c2
+[   30.398274] 92528640 bytes free on /cache (4096 needed)
+[   30.398397]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ddb864ef4b6fe72e6ee9bbc5121b9fbc4fe890c2
+[   30.402588] patching 1 blocks to 1
+[   30.402970] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ddb864ef4b6fe72e6ee9bbc5121b9fbc4fe890c2
+[   30.404816] stashing 1 overlapping blocks to 32328d335c6723da5ba67dc9a354dccdfd850a5d
+[   30.404953] 92528640 bytes free on /cache (4096 needed)
+[   30.405083]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/32328d335c6723da5ba67dc9a354dccdfd850a5d
+[   30.409317] patching 1 blocks to 1
+[   30.409710] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/32328d335c6723da5ba67dc9a354dccdfd850a5d
+[   30.423305] stashing 99 overlapping blocks to 610a4b21ddeb900d0b7bfa53291aac518ad70900
+[   30.423554] 92528640 bytes free on /cache (405504 needed)
+[   30.423704]  writing 99 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/610a4b21ddeb900d0b7bfa53291aac518ad70900
+[   30.435368] patching 99 blocks to 99
+[   30.456113] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/610a4b21ddeb900d0b7bfa53291aac518ad70900
+[   30.465521] stashing 1 overlapping blocks to 5ceb348eaf53396fbf086da468e9f838ea81a18c
+[   30.465681] 92528640 bytes free on /cache (4096 needed)
+[   30.465820]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5ceb348eaf53396fbf086da468e9f838ea81a18c
+[   30.470152] patching 1 blocks to 1
+[   30.470638] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5ceb348eaf53396fbf086da468e9f838ea81a18c
+[   30.472314] stashing 1 overlapping blocks to ac3bbc5f18482547dbd23189326d8ce5df87bc78
+[   30.472433] 92528640 bytes free on /cache (4096 needed)
+[   30.472558]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ac3bbc5f18482547dbd23189326d8ce5df87bc78
+[   30.476180] patching 1 blocks to 1
+[   30.476580] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ac3bbc5f18482547dbd23189326d8ce5df87bc78
+[   30.478382] stashing 1 overlapping blocks to ab6d1f514b6363a91a34029b4dd9922b7b3e4780
+[   30.478505] 92528640 bytes free on /cache (4096 needed)
+[   30.478624]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab6d1f514b6363a91a34029b4dd9922b7b3e4780
+[   30.482119] patching 1 blocks to 1
+[   30.482515] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab6d1f514b6363a91a34029b4dd9922b7b3e4780
+[   30.484332] stashing 1 overlapping blocks to 5a2efdbbda2e84188db4c81336a762aef6c380b4
+[   30.484464] 92528640 bytes free on /cache (4096 needed)
+[   30.484589]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5a2efdbbda2e84188db4c81336a762aef6c380b4
+[   30.487847] patching 1 blocks to 1
+[   30.488248] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5a2efdbbda2e84188db4c81336a762aef6c380b4
+[   30.489867] stashing 1 overlapping blocks to c412b8c418dba105d3f7d1e4dc33fd9717e941d1
+[   30.489989] 92528640 bytes free on /cache (4096 needed)
+[   30.490113]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c412b8c418dba105d3f7d1e4dc33fd9717e941d1
+[   30.494127] patching 1 blocks to 1
+[   30.494547] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c412b8c418dba105d3f7d1e4dc33fd9717e941d1
+[   30.496239] stashing 1 overlapping blocks to cb9cf0278ecab325e9aebd6645b341b5e22c7063
+[   30.496362] 92528640 bytes free on /cache (4096 needed)
+[   30.496487]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cb9cf0278ecab325e9aebd6645b341b5e22c7063
+[   30.502116] patching 1 blocks to 1
+[   30.502513] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cb9cf0278ecab325e9aebd6645b341b5e22c7063
+[   30.504195] stashing 1 overlapping blocks to debd70868336ba17ce2d24b892adbcdc9169817c
+[   30.504316] 92528640 bytes free on /cache (4096 needed)
+[   30.504436]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/debd70868336ba17ce2d24b892adbcdc9169817c
+[   30.508618] patching 1 blocks to 1
+[   30.509009] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/debd70868336ba17ce2d24b892adbcdc9169817c
+[   30.510730] stashing 1 overlapping blocks to 2d8a2c928030d0ac70759a2d1c17ecd1ad713588
+[   30.510851] 92528640 bytes free on /cache (4096 needed)
+[   30.510973]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2d8a2c928030d0ac70759a2d1c17ecd1ad713588
+[   30.515063] patching 1 blocks to 1
+[   30.515449] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2d8a2c928030d0ac70759a2d1c17ecd1ad713588
+[   30.517242] stashing 1 overlapping blocks to 6e6c43cd3f1c4365213e219a17755ce27efebe50
+[   30.517368] 92528640 bytes free on /cache (4096 needed)
+[   30.517506]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6e6c43cd3f1c4365213e219a17755ce27efebe50
+[   30.521757] patching 1 blocks to 1
+[   30.522152] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6e6c43cd3f1c4365213e219a17755ce27efebe50
+[   30.537193] stashing 120 overlapping blocks to 857a952cda2b3d70fa1cc72ed4e5d9a24707066b
+[   30.537368] 92528640 bytes free on /cache (491520 needed)
+[   30.537524]  writing 120 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/857a952cda2b3d70fa1cc72ed4e5d9a24707066b
+[   30.548921] patching 120 blocks to 120
+[   30.566305] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/857a952cda2b3d70fa1cc72ed4e5d9a24707066b
+[   30.627629] stashing 512 overlapping blocks to 412867d2f5222d957bd2f6e2a1601eb6608d6e40
+[   30.627809] 92528640 bytes free on /cache (2097152 needed)
+[   30.627953]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/412867d2f5222d957bd2f6e2a1601eb6608d6e40
+[   30.659295] patching 512 blocks to 512
+[   31.980670] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/412867d2f5222d957bd2f6e2a1601eb6608d6e40
+[   32.061442] stashing 512 overlapping blocks to d86d8ada04e4c8cd5d2a02088166a0d62396fa32
+[   32.061627] 92528640 bytes free on /cache (2097152 needed)
+[   32.061779]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d86d8ada04e4c8cd5d2a02088166a0d62396fa32
+[   32.093798] patching 512 blocks to 512
+[   33.394988] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d86d8ada04e4c8cd5d2a02088166a0d62396fa32
+[   33.474743] stashing 512 overlapping blocks to 3236a9d8b4a33fbda61cc1cc511d6b181d8d7dfc
+[   33.474923] 92528640 bytes free on /cache (2097152 needed)
+[   33.475074]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3236a9d8b4a33fbda61cc1cc511d6b181d8d7dfc
+[   33.507909] patching 512 blocks to 512
+[   34.785881] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3236a9d8b4a33fbda61cc1cc511d6b181d8d7dfc
+[   34.847857] stashing 315 overlapping blocks to 9d0223d13c3baa5b0049375c9d20150f49792b9a
+[   34.848035] 92528640 bytes free on /cache (1290240 needed)
+[   34.848178]  writing 315 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9d0223d13c3baa5b0049375c9d20150f49792b9a
+[   34.870773] patching 315 blocks to 315
+[   35.675611] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9d0223d13c3baa5b0049375c9d20150f49792b9a
+[   35.746506] stashing 512 overlapping blocks to ca26e93114a2098e94186af0f86dc72c756d6d29
+[   35.746684] 92528640 bytes free on /cache (2097152 needed)
+[   35.746830]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ca26e93114a2098e94186af0f86dc72c756d6d29
+[   35.779635] patching 512 blocks to 512
+[   37.075672] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ca26e93114a2098e94186af0f86dc72c756d6d29
+[   37.104950] stashing 1 overlapping blocks to acb5fb55fff3ddd37d12a186ffcab277881bb372
+[   37.105117] 92528640 bytes free on /cache (4096 needed)
+[   37.105259]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/acb5fb55fff3ddd37d12a186ffcab277881bb372
+[   37.108713] patching 1 blocks to 1
+[   37.109143] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/acb5fb55fff3ddd37d12a186ffcab277881bb372
+[   37.113216] stashing 31 overlapping blocks to 42d8b143274e57f168cfd92bd3c8871be5e306bd
+[   37.113393] 92528640 bytes free on /cache (126976 needed)
+[   37.113605]  writing 31 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/42d8b143274e57f168cfd92bd3c8871be5e306bd
+[   37.120790] patching 31 blocks to 31
+[   37.124372] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/42d8b143274e57f168cfd92bd3c8871be5e306bd
+[   37.128364] stashing 1 overlapping blocks to c4334751c2a7a6fa8ec40bbdafa7a752332ce813
+[   37.128513] 92528640 bytes free on /cache (4096 needed)
+[   37.128642]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c4334751c2a7a6fa8ec40bbdafa7a752332ce813
+[   37.131997] patching 1 blocks to 1
+[   37.132395] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c4334751c2a7a6fa8ec40bbdafa7a752332ce813
+[   37.208309] stashing 653 overlapping blocks to 58ab4a35d1406389cd0fad3b18bb9efe0248ad8d
+[   37.208487] 92528640 bytes free on /cache (2674688 needed)
+[   37.208637]  writing 653 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/58ab4a35d1406389cd0fad3b18bb9efe0248ad8d
+[   37.247801] patching 653 blocks to 653
+[   37.550011] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/58ab4a35d1406389cd0fad3b18bb9efe0248ad8d
+[   37.913274] stashing 3200 overlapping blocks to fbf1a7b6ea03b18b2c8262b03313ca61a3d90a6b
+[   37.913460] 92528640 bytes free on /cache (13107200 needed)
+[   37.913653]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fbf1a7b6ea03b18b2c8262b03313ca61a3d90a6b
+[   38.092026] patching 3200 blocks to 3200
+[   38.506130] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fbf1a7b6ea03b18b2c8262b03313ca61a3d90a6b
+[   38.941049] stashing 3200 overlapping blocks to b1132db58c600f2d4b7c2e504f8575c4b914d109
+[   38.941225] 92528640 bytes free on /cache (13107200 needed)
+[   38.941374]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b1132db58c600f2d4b7c2e504f8575c4b914d109
+[   39.398055] patching 3200 blocks to 3200
+[   39.732988] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b1132db58c600f2d4b7c2e504f8575c4b914d109
+[   40.610917] stashing 3200 overlapping blocks to e8e234f537a5cc51785d443a7c6c159d0063e3f2
+[   40.611106] 92528640 bytes free on /cache (13107200 needed)
+[   40.611255]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e8e234f537a5cc51785d443a7c6c159d0063e3f2
+[   41.165982] patching 3200 blocks to 3200
+[   41.684414] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e8e234f537a5cc51785d443a7c6c159d0063e3f2
+[   42.173648] stashing 1 overlapping blocks to 3097a7df19e70f611dd226b00f4deb94662daac5
+[   42.173704] 92528640 bytes free on /cache (4096 needed)
+[   42.173715]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3097a7df19e70f611dd226b00f4deb94662daac5
+[   42.179050] patching 1 blocks to 1
+[   42.179477] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3097a7df19e70f611dd226b00f4deb94662daac5
+[   42.181131] stashing 1 overlapping blocks to 98219496c4c14ed7ffd5292da439b16dc00c4f30
+[   42.181260] 92528640 bytes free on /cache (4096 needed)
+[   42.181385]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/98219496c4c14ed7ffd5292da439b16dc00c4f30
+[   42.186182] patching 1 blocks to 1
+[   42.186600] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/98219496c4c14ed7ffd5292da439b16dc00c4f30
+[   42.188366] stashing 1 overlapping blocks to 9d2ee3d7267af79a1c14e32934a51785cd31ec67
+[   42.188495] 92528640 bytes free on /cache (4096 needed)
+[   42.188617]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9d2ee3d7267af79a1c14e32934a51785cd31ec67
+[   42.192931] patching 1 blocks to 1
+[   42.193339] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9d2ee3d7267af79a1c14e32934a51785cd31ec67
+[   42.195106] stashing 1 overlapping blocks to b8a32a31062c57b01631c9da6d86405264b36340
+[   42.195231] 92528640 bytes free on /cache (4096 needed)
+[   42.195354]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b8a32a31062c57b01631c9da6d86405264b36340
+[   42.198898] patching 1 blocks to 1
+[   42.199291] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b8a32a31062c57b01631c9da6d86405264b36340
+[   42.200991] stashing 1 overlapping blocks to 3642618dacc67682e89cda1333e1c9763c91b97d
+[   42.201117] 92528640 bytes free on /cache (4096 needed)
+[   42.201236]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3642618dacc67682e89cda1333e1c9763c91b97d
+[   42.204538] patching 1 blocks to 1
+[   42.204964] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3642618dacc67682e89cda1333e1c9763c91b97d
+[   42.206608] stashing 1 overlapping blocks to 469b0e7c270d9f50a443b30849f78b45137234e8
+[   42.206728] 92528640 bytes free on /cache (4096 needed)
+[   42.206919]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/469b0e7c270d9f50a443b30849f78b45137234e8
+[   42.210397] patching 1 blocks to 1
+[   42.210803] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/469b0e7c270d9f50a443b30849f78b45137234e8
+[   42.212423] stashing 1 overlapping blocks to 8a22270bc8e0f8a7d3d4b04e70a12479635f9f62
+[   42.212539] 92528640 bytes free on /cache (4096 needed)
+[   42.212656]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a22270bc8e0f8a7d3d4b04e70a12479635f9f62
+[   42.216080] patching 1 blocks to 1
+[   42.216536] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8a22270bc8e0f8a7d3d4b04e70a12479635f9f62
+[   42.218610] stashing 1 overlapping blocks to d74d8002eecc8e1093f7e9b648c8670a2a2234cc
+[   42.218771] 92528640 bytes free on /cache (4096 needed)
+[   42.218913]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d74d8002eecc8e1093f7e9b648c8670a2a2234cc
+[   42.224629] patching 1 blocks to 1
+[   42.225037] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d74d8002eecc8e1093f7e9b648c8670a2a2234cc
+[   42.230889] stashing 36 overlapping blocks to e7be1a3c4b4133a4abc1d0317dfa2a30af8e40d6
+[   42.231067] 92528640 bytes free on /cache (147456 needed)
+[   42.231209]  writing 36 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e7be1a3c4b4133a4abc1d0317dfa2a30af8e40d6
+[   42.237009] patching 36 blocks to 36
+[   42.243351] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e7be1a3c4b4133a4abc1d0317dfa2a30af8e40d6
+[   42.248768] stashing 1 overlapping blocks to 222ce08b4e9e343405b645abac16a6e7eb6f65e1
+[   42.248918] 92528640 bytes free on /cache (4096 needed)
+[   42.249078]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/222ce08b4e9e343405b645abac16a6e7eb6f65e1
+[   42.254071] patching 1 blocks to 1
+[   42.254500] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/222ce08b4e9e343405b645abac16a6e7eb6f65e1
+[   42.256195] stashing 1 overlapping blocks to 154fcf798c7226b60caa83be4394f3028bd2c2f6
+[   42.256313] 92528640 bytes free on /cache (4096 needed)
+[   42.256436]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/154fcf798c7226b60caa83be4394f3028bd2c2f6
+[   42.260745] patching 1 blocks to 1
+[   42.261152] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/154fcf798c7226b60caa83be4394f3028bd2c2f6
+[   42.262829] stashing 1 overlapping blocks to 144b7a9b35cbb347ee26c0a779f10005c2df39ed
+[   42.262946] 92528640 bytes free on /cache (4096 needed)
+[   42.263065]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/144b7a9b35cbb347ee26c0a779f10005c2df39ed
+[   42.267182] patching 1 blocks to 1
+[   42.267576] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/144b7a9b35cbb347ee26c0a779f10005c2df39ed
+[   42.269222] stashing 1 overlapping blocks to 53a3860b87d5df902f4d8b84e0339437bac877ea
+[   42.269338] 92528640 bytes free on /cache (4096 needed)
+[   42.269456]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/53a3860b87d5df902f4d8b84e0339437bac877ea
+[   42.272976] patching 1 blocks to 1
+[   42.273363] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/53a3860b87d5df902f4d8b84e0339437bac877ea
+[   42.275314] stashing 1 overlapping blocks to c3c6bfafbcb33258990558d73fb46538f6aeba0e
+[   42.275444] 92528640 bytes free on /cache (4096 needed)
+[   42.275570]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c3c6bfafbcb33258990558d73fb46538f6aeba0e
+[   42.279067] patching 1 blocks to 1
+[   42.279453] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c3c6bfafbcb33258990558d73fb46538f6aeba0e
+[   42.331868] stashing 512 overlapping blocks to 41e552ed514a496a2fd937959a07961dabdf6e19
+[   42.332052] 92528640 bytes free on /cache (2097152 needed)
+[   42.332202]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/41e552ed514a496a2fd937959a07961dabdf6e19
+[   42.364367] patching 512 blocks to 512
+[   42.415103] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/41e552ed514a496a2fd937959a07961dabdf6e19
+[   42.441335] stashing 1 overlapping blocks to 8b52c39125b9a6ce9508ad1885fc88303a298c38
+[   42.441500] 92528640 bytes free on /cache (4096 needed)
+[   42.441643]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8b52c39125b9a6ce9508ad1885fc88303a298c38
+[   42.445190] patching 1 blocks to 1
+[   42.445596] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8b52c39125b9a6ce9508ad1885fc88303a298c38
+[   42.447335] stashing 1 overlapping blocks to 4afbc734deb32ef7d55d6d743540e5b1e2b998af
+[   42.447461] 92528640 bytes free on /cache (4096 needed)
+[   42.447580]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4afbc734deb32ef7d55d6d743540e5b1e2b998af
+[   42.451114] patching 1 blocks to 1
+[   42.451563] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4afbc734deb32ef7d55d6d743540e5b1e2b998af
+[   42.453464] stashing 1 overlapping blocks to c8f3088da4d261293d293d774ba5b0ac583cccb5
+[   42.453678] 92528640 bytes free on /cache (4096 needed)
+[   42.453818]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c8f3088da4d261293d293d774ba5b0ac583cccb5
+[   42.459598] patching 1 blocks to 1
+[   42.460014] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c8f3088da4d261293d293d774ba5b0ac583cccb5
+[   42.461871] stashing 1 overlapping blocks to 251b465505a0e5c9e6d516922730b5b8186f6540
+[   42.462006] 92528640 bytes free on /cache (4096 needed)
+[   42.462126]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/251b465505a0e5c9e6d516922730b5b8186f6540
+[   42.466221] patching 1 blocks to 1
+[   42.466636] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/251b465505a0e5c9e6d516922730b5b8186f6540
+[   42.468392] stashing 1 overlapping blocks to dcf1b417d2a4d4c1cadc5f39a8b68dcc2d82abae
+[   42.468514] 92528640 bytes free on /cache (4096 needed)
+[   42.468634]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dcf1b417d2a4d4c1cadc5f39a8b68dcc2d82abae
+[   42.472900] patching 1 blocks to 1
+[   42.473487] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dcf1b417d2a4d4c1cadc5f39a8b68dcc2d82abae
+[   42.475270] stashing 1 overlapping blocks to b5882ba27dcfea7dcbe539d9d24974f4fb1b26f8
+[   42.475392] 92528640 bytes free on /cache (4096 needed)
+[   42.475512]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b5882ba27dcfea7dcbe539d9d24974f4fb1b26f8
+[   42.479734] patching 1 blocks to 1
+[   42.480131] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b5882ba27dcfea7dcbe539d9d24974f4fb1b26f8
+[   42.481863] stashing 1 overlapping blocks to 0d8989f971d3f3695bfa3a49ccdd2da2a608e107
+[   42.481984] 92528640 bytes free on /cache (4096 needed)
+[   42.482104]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d8989f971d3f3695bfa3a49ccdd2da2a608e107
+[   42.486380] patching 1 blocks to 1
+[   42.486811] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d8989f971d3f3695bfa3a49ccdd2da2a608e107
+[   42.488617] stashing 1 overlapping blocks to 94645022a952a102566408c95ea221c76a70a11e
+[   42.488750] 92528640 bytes free on /cache (4096 needed)
+[   42.488878]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/94645022a952a102566408c95ea221c76a70a11e
+[   42.492364] patching 1 blocks to 1
+[   42.492761] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/94645022a952a102566408c95ea221c76a70a11e
+[   42.494489] stashing 1 overlapping blocks to f1996224e56d8e65b4b6fc03081a1e0283bb2477
+[   42.494615] 92528640 bytes free on /cache (4096 needed)
+[   42.494734]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f1996224e56d8e65b4b6fc03081a1e0283bb2477
+[   42.498049] patching 1 blocks to 1
+[   42.498432] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f1996224e56d8e65b4b6fc03081a1e0283bb2477
+[   42.500079] stashing 1 overlapping blocks to 0cb826a425272166ed7e7ba2bb7c73c8e9fc90c0
+[   42.500293] 92528640 bytes free on /cache (4096 needed)
+[   42.500425]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0cb826a425272166ed7e7ba2bb7c73c8e9fc90c0
+[   42.503796] patching 1 blocks to 1
+[   42.504179] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0cb826a425272166ed7e7ba2bb7c73c8e9fc90c0
+[   42.505841] stashing 1 overlapping blocks to 1aa8752400a99de79a595f879066af1d9d7ab91e
+[   42.505961] 92528640 bytes free on /cache (4096 needed)
+[   42.506079]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1aa8752400a99de79a595f879066af1d9d7ab91e
+[   42.511674] patching 1 blocks to 1
+[   42.512074] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1aa8752400a99de79a595f879066af1d9d7ab91e
+[   42.513890] stashing 1 overlapping blocks to 0d47849c865e03e1492932c742c3236564797e35
+[   42.514016] 92528640 bytes free on /cache (4096 needed)
+[   42.514139]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d47849c865e03e1492932c742c3236564797e35
+[   42.518505] patching 1 blocks to 1
+[   42.519232] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d47849c865e03e1492932c742c3236564797e35
+[   42.521043] stashing 1 overlapping blocks to 0c819e17e3c6bbbc4261c77f1f9c8a80098d98df
+[   42.521173] 92528640 bytes free on /cache (4096 needed)
+[   42.521300]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0c819e17e3c6bbbc4261c77f1f9c8a80098d98df
+[   42.525295] patching 1 blocks to 1
+[   42.525695] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0c819e17e3c6bbbc4261c77f1f9c8a80098d98df
+[   42.527408] stashing 1 overlapping blocks to 893c940418547ea986c54678ff0e2a9d4707cd4f
+[   42.527533] 92528640 bytes free on /cache (4096 needed)
+[   42.527652]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/893c940418547ea986c54678ff0e2a9d4707cd4f
+[   42.531808] patching 1 blocks to 1
+[   42.532194] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/893c940418547ea986c54678ff0e2a9d4707cd4f
+[   42.533901] stashing 1 overlapping blocks to 742d50a64ac2adc0f98b33a56dc16a4f3c7543f8
+[   42.534023] 92528640 bytes free on /cache (4096 needed)
+[   42.534140]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/742d50a64ac2adc0f98b33a56dc16a4f3c7543f8
+[   42.549560] patching 1 blocks to 1
+[   42.549963] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/742d50a64ac2adc0f98b33a56dc16a4f3c7543f8
+[   42.552067] stashing 1 overlapping blocks to 49fe93b408476579402fe2be08404ca97285dcab
+[   42.552237] 92528640 bytes free on /cache (4096 needed)
+[   42.552380]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/49fe93b408476579402fe2be08404ca97285dcab
+[   42.556190] patching 1 blocks to 1
+[   42.556598] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/49fe93b408476579402fe2be08404ca97285dcab
+[   42.558381] stashing 1 overlapping blocks to 4a21423ca1ce2ad5ee91a0fc6c90690e3aa94491
+[   42.558509] 92528640 bytes free on /cache (4096 needed)
+[   42.558632]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4a21423ca1ce2ad5ee91a0fc6c90690e3aa94491
+[   42.562034] patching 1 blocks to 1
+[   42.562428] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4a21423ca1ce2ad5ee91a0fc6c90690e3aa94491
+[   42.580138] stashing 145 overlapping blocks to 3e473a67113fa78d32d566930fecbfc33ca74647
+[   42.580348] 92528640 bytes free on /cache (593920 needed)
+[   42.580519]  writing 145 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3e473a67113fa78d32d566930fecbfc33ca74647
+[   42.595725] patching 145 blocks to 145
+[   42.616145] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3e473a67113fa78d32d566930fecbfc33ca74647
+[   42.626370] stashing 1 overlapping blocks to 8f97ae2b975f7564ed7753f4de10e6a9b513d38b
+[   42.626531] 92528640 bytes free on /cache (4096 needed)
+[   42.626672]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8f97ae2b975f7564ed7753f4de10e6a9b513d38b
+[   42.630322] patching 1 blocks to 1
+[   42.630727] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8f97ae2b975f7564ed7753f4de10e6a9b513d38b
+[   42.632378] stashing 1 overlapping blocks to 11e7b2690a477a4c560300826078035aa141e5f1
+[   42.632498] 92528640 bytes free on /cache (4096 needed)
+[   42.632614]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/11e7b2690a477a4c560300826078035aa141e5f1
+[   42.636097] patching 1 blocks to 1
+[   42.636490] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/11e7b2690a477a4c560300826078035aa141e5f1
+[   42.645592] stashing 64 overlapping blocks to 07ee4ef16ef7f81bdf00ac8b0ac03438a2d5536f
+[   42.645772] 92528640 bytes free on /cache (262144 needed)
+[   42.645913]  writing 64 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/07ee4ef16ef7f81bdf00ac8b0ac03438a2d5536f
+[   42.655409] patching 64 blocks to 64
+[   42.668651] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/07ee4ef16ef7f81bdf00ac8b0ac03438a2d5536f
+[   42.680732] stashing 50 overlapping blocks to 7f3de2410afdc95bc8332ce5577834e7022d5082
+[   42.680918] 92528640 bytes free on /cache (204800 needed)
+[   42.681062]  writing 50 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f3de2410afdc95bc8332ce5577834e7022d5082
+[   42.689186] patching 50 blocks to 50
+[   42.700126] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f3de2410afdc95bc8332ce5577834e7022d5082
+[   42.706488] stashing 1 overlapping blocks to 13ae87dcca5dca66049e6458760e7e361ac588d6
+[   42.706640] 92528640 bytes free on /cache (4096 needed)
+[   42.706771]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/13ae87dcca5dca66049e6458760e7e361ac588d6
+[   42.711198] patching 1 blocks to 1
+[   42.711599] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/13ae87dcca5dca66049e6458760e7e361ac588d6
+[   42.715839] stashing 23 overlapping blocks to b397e57077364e8a8b1708478f12f18c7d3c73c5
+[   42.716004] 92528640 bytes free on /cache (94208 needed)
+[   42.716145]  writing 23 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b397e57077364e8a8b1708478f12f18c7d3c73c5
+[   42.721912] patching 23 blocks to 23
+[   42.724571] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b397e57077364e8a8b1708478f12f18c7d3c73c5
+[   42.727452] stashing 1 overlapping blocks to 6a04078b13b9fcdbfbf605c90ed724ce20bbd697
+[   42.727596] 92528640 bytes free on /cache (4096 needed)
+[   42.727725]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6a04078b13b9fcdbfbf605c90ed724ce20bbd697
+[   42.731305] patching 1 blocks to 1
+[   42.731699] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6a04078b13b9fcdbfbf605c90ed724ce20bbd697
+[   42.733328] stashing 1 overlapping blocks to a021233527b9406458e2d6927a26f23ff7ade1af
+[   42.733444] 92528640 bytes free on /cache (4096 needed)
+[   42.733624]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a021233527b9406458e2d6927a26f23ff7ade1af
+[   42.737177] patching 1 blocks to 1
+[   42.737574] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a021233527b9406458e2d6927a26f23ff7ade1af
+[   42.739246] stashing 1 overlapping blocks to 4353eebe886f65887af6c3a7582bcb9af989f3c7
+[   42.739370] 92528640 bytes free on /cache (4096 needed)
+[   42.739490]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4353eebe886f65887af6c3a7582bcb9af989f3c7
+[   42.745024] patching 1 blocks to 1
+[   42.745424] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4353eebe886f65887af6c3a7582bcb9af989f3c7
+[   42.747151] stashing 1 overlapping blocks to ad18f6bc5d6fd1bd31157502e0f66137e7ddf7b5
+[   42.747280] 92528640 bytes free on /cache (4096 needed)
+[   42.747402]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ad18f6bc5d6fd1bd31157502e0f66137e7ddf7b5
+[   42.751795] patching 1 blocks to 1
+[   42.752249] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ad18f6bc5d6fd1bd31157502e0f66137e7ddf7b5
+[   42.754416] stashing 1 overlapping blocks to 25d327a64eb94195b6d8ec1e26c5036cbcc7b0d4
+[   42.754576] 92528640 bytes free on /cache (4096 needed)
+[   42.754715]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/25d327a64eb94195b6d8ec1e26c5036cbcc7b0d4
+[   42.759454] patching 1 blocks to 1
+[   42.759858] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/25d327a64eb94195b6d8ec1e26c5036cbcc7b0d4
+[   42.762481] stashing 7 overlapping blocks to fdc59cbe97207166af378c9a66dbb667855a5e32
+[   42.762621] 92528640 bytes free on /cache (28672 needed)
+[   42.762751]  writing 7 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fdc59cbe97207166af378c9a66dbb667855a5e32
+[   42.767070] patching 7 blocks to 7
+[   42.768528] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fdc59cbe97207166af378c9a66dbb667855a5e32
+[   42.770757] stashing 1 overlapping blocks to 718b6ac20b380a1ee6726a2b117e576be2717173
+[   42.770889] 92528640 bytes free on /cache (4096 needed)
+[   42.771016]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/718b6ac20b380a1ee6726a2b117e576be2717173
+[   42.775330] patching 1 blocks to 1
+[   42.775735] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/718b6ac20b380a1ee6726a2b117e576be2717173
+[   42.777453] stashing 1 overlapping blocks to bb25a63c7616412f79128c707187165411275295
+[   42.777580] 92528640 bytes free on /cache (4096 needed)
+[   42.777701]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bb25a63c7616412f79128c707187165411275295
+[   42.781211] patching 1 blocks to 1
+[   42.781600] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bb25a63c7616412f79128c707187165411275295
+[   42.783240] stashing 1 overlapping blocks to 1d44eb5f103cd2ecacc5e79e1002d1dc4c1dfcd3
+[   42.783349] 92528640 bytes free on /cache (4096 needed)
+[   42.783465]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1d44eb5f103cd2ecacc5e79e1002d1dc4c1dfcd3
+[   42.787307] patching 1 blocks to 1
+[   42.787740] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1d44eb5f103cd2ecacc5e79e1002d1dc4c1dfcd3
+[   42.789504] stashing 1 overlapping blocks to dc51252978aaa3bf346b424871c23f386957a86b
+[   42.789625] 92528640 bytes free on /cache (4096 needed)
+[   42.789751]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dc51252978aaa3bf346b424871c23f386957a86b
+[   42.793283] patching 1 blocks to 1
+[   42.793762] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/dc51252978aaa3bf346b424871c23f386957a86b
+[   42.795403] stashing 1 overlapping blocks to 7f3a0081ff6b49c6e1df19168c6a454fbea242c4
+[   42.795524] 92528640 bytes free on /cache (4096 needed)
+[   42.795648]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f3a0081ff6b49c6e1df19168c6a454fbea242c4
+[   42.799108] patching 1 blocks to 1
+[   42.799498] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f3a0081ff6b49c6e1df19168c6a454fbea242c4
+[   42.801133] stashing 1 overlapping blocks to 010aa5c1ce95f127a39fdbb4f3974fe0182ed44f
+[   42.801255] 92528640 bytes free on /cache (4096 needed)
+[   42.801375]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/010aa5c1ce95f127a39fdbb4f3974fe0182ed44f
+[   42.807096] patching 1 blocks to 1
+[   42.807491] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/010aa5c1ce95f127a39fdbb4f3974fe0182ed44f
+[   42.859822] stashing 512 overlapping blocks to 7c26d2d097fe74358f314fcc593a1d355fa04744
+[   42.860001] 92528640 bytes free on /cache (2097152 needed)
+[   42.860144]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c26d2d097fe74358f314fcc593a1d355fa04744
+[   42.890971] patching 512 blocks to 512
+[   44.190930] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c26d2d097fe74358f314fcc593a1d355fa04744
+[   44.219952] stashing 1 overlapping blocks to 780d995eddd666b75bc266e06bc69caaefb5c1dc
+[   44.220116] 92528640 bytes free on /cache (4096 needed)
+[   44.220316]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/780d995eddd666b75bc266e06bc69caaefb5c1dc
+[   44.226283] patching 1 blocks to 1
+[   44.226747] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/780d995eddd666b75bc266e06bc69caaefb5c1dc
+[   44.230778] stashing 18 overlapping blocks to 3db4d95e31d016524e122464c8a5b4bc69d0173f
+[   44.230939] 92528640 bytes free on /cache (73728 needed)
+[   44.231078]  writing 18 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3db4d95e31d016524e122464c8a5b4bc69d0173f
+[   44.236040] patching 18 blocks to 18
+[   44.238977] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3db4d95e31d016524e122464c8a5b4bc69d0173f
+[   44.243225] stashing 17 overlapping blocks to 16185a081cf24e6bfb51a80fc1cde095f2e1a1ad
+[   44.243390] 92528640 bytes free on /cache (69632 needed)
+[   44.243610]  writing 17 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/16185a081cf24e6bfb51a80fc1cde095f2e1a1ad
+[   44.250140] patching 17 blocks to 17
+[   44.253163] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/16185a081cf24e6bfb51a80fc1cde095f2e1a1ad
+[   44.256349] stashing 1 overlapping blocks to 70dcbb1edcb3edd5de29f1d39a4156ca5f744a10
+[   44.256495] 92528640 bytes free on /cache (4096 needed)
+[   44.256625]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70dcbb1edcb3edd5de29f1d39a4156ca5f744a10
+[   44.261300] patching 1 blocks to 1
+[   44.261728] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70dcbb1edcb3edd5de29f1d39a4156ca5f744a10
+[   44.263412] stashing 1 overlapping blocks to 929130cfb1e0c19b765382498ed262266e96902e
+[   44.263583] 92528640 bytes free on /cache (4096 needed)
+[   44.263709]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/929130cfb1e0c19b765382498ed262266e96902e
+[   44.267115] patching 1 blocks to 1
+[   44.267514] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/929130cfb1e0c19b765382498ed262266e96902e
+[   44.269186] stashing 1 overlapping blocks to 0062c8487779a432e4ebe0bd83151154cfbb68d0
+[   44.269305] 92528640 bytes free on /cache (4096 needed)
+[   44.269421]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0062c8487779a432e4ebe0bd83151154cfbb68d0
+[   44.273210] patching 1 blocks to 1
+[   44.273664] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0062c8487779a432e4ebe0bd83151154cfbb68d0
+[   44.279455] stashing 32 overlapping blocks to ebc5429e78ca28305e7a2689910ca05948d7b369
+[   44.279627] 92528640 bytes free on /cache (131072 needed)
+[   44.279769]  writing 32 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ebc5429e78ca28305e7a2689910ca05948d7b369
+[   44.287488] patching 32 blocks to 32
+[   44.293652] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ebc5429e78ca28305e7a2689910ca05948d7b369
+[   44.297647] stashing 1 overlapping blocks to f0adeb179973a360f3f7da131d7208291105249b
+[   44.297787] 92528640 bytes free on /cache (4096 needed)
+[   44.297919]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f0adeb179973a360f3f7da131d7208291105249b
+[   44.301443] patching 1 blocks to 1
+[   44.301845] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f0adeb179973a360f3f7da131d7208291105249b
+[   44.303736] stashing 7 overlapping blocks to 2c97c6320fe65de4c5de2cd6aa3ae3d295c00052
+[   44.303873] 92528640 bytes free on /cache (28672 needed)
+[   44.303999]  writing 7 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2c97c6320fe65de4c5de2cd6aa3ae3d295c00052
+[   44.308456] patching 7 blocks to 7
+[   44.309467] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2c97c6320fe65de4c5de2cd6aa3ae3d295c00052
+[   44.311694] stashing 1 overlapping blocks to fb8e9b1c3fb1fe06b94741699fd4c5a57483dd0b
+[   44.311830] 92528640 bytes free on /cache (4096 needed)
+[   44.311960]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fb8e9b1c3fb1fe06b94741699fd4c5a57483dd0b
+[   44.315437] patching 1 blocks to 1
+[   44.315825] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fb8e9b1c3fb1fe06b94741699fd4c5a57483dd0b
+[   44.317539] stashing 1 overlapping blocks to c5b37a559ff20eecc175be24b52161d2a088e51e
+[   44.317663] 92528640 bytes free on /cache (4096 needed)
+[   44.317784]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c5b37a559ff20eecc175be24b52161d2a088e51e
+[   44.321429] patching 1 blocks to 1
+[   44.321829] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c5b37a559ff20eecc175be24b52161d2a088e51e
+[   44.325709] stashing 30 overlapping blocks to 9255587b7da5e8dc631df82d063894b2148cd620
+[   44.325893] 92528640 bytes free on /cache (122880 needed)
+[   44.326038]  writing 30 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9255587b7da5e8dc631df82d063894b2148cd620
+[   44.332957] patching 30 blocks to 30
+[   44.338721] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9255587b7da5e8dc631df82d063894b2148cd620
+[   44.342430] stashing 2 overlapping blocks to 084d9ebd66922df5b7caa7b1c013afc3c0f9f14c
+[   44.342575] 92528640 bytes free on /cache (8192 needed)
+[   44.342703]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/084d9ebd66922df5b7caa7b1c013afc3c0f9f14c
+[   44.346586] patching 2 blocks to 2
+[   44.347228] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/084d9ebd66922df5b7caa7b1c013afc3c0f9f14c
+[   44.348920] stashing 1 overlapping blocks to f1d93cdaba030bc66e626ceb87147b0401db2d8a
+[   44.349040] 92528640 bytes free on /cache (4096 needed)
+[   44.349160]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f1d93cdaba030bc66e626ceb87147b0401db2d8a
+[   44.353112] patching 1 blocks to 1
+[   44.353619] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f1d93cdaba030bc66e626ceb87147b0401db2d8a
+[   44.355252] stashing 1 overlapping blocks to 39a4cd00295e49980624afa7e73eddfeacb62742
+[   44.355377] 92528640 bytes free on /cache (4096 needed)
+[   44.355498]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/39a4cd00295e49980624afa7e73eddfeacb62742
+[   44.359330] patching 1 blocks to 1
+[   44.359759] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/39a4cd00295e49980624afa7e73eddfeacb62742
+[   44.361548] stashing 1 overlapping blocks to a45c7fd29554724cd8fd096d798f4836500df5ea
+[   44.361678] 92528640 bytes free on /cache (4096 needed)
+[   44.361807]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a45c7fd29554724cd8fd096d798f4836500df5ea
+[   44.367291] patching 1 blocks to 1
+[   44.367696] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a45c7fd29554724cd8fd096d798f4836500df5ea
+[   44.369607] stashing 2 blocks to 89225f9af7dbf7b434b54813a8523fba4b22ccd2
+[   44.369712]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/89225f9af7dbf7b434b54813a8523fba4b22ccd2
+[   44.396014] stashing 200 overlapping blocks to fc21185068360d7d328d61e5cb1368e25a05d9d5
+[   44.396194] 92520448 bytes free on /cache (819200 needed)
+[   44.396340]  writing 200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fc21185068360d7d328d61e5cb1368e25a05d9d5
+[   44.412192]   moving 200 blocks
+[   44.413996] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fc21185068360d7d328d61e5cb1368e25a05d9d5
+[   44.755232] stashing 3200 overlapping blocks to e330d0dd95a1a17edb87c193c021a6b695d4a82e
+[   44.755416] 92520448 bytes free on /cache (13107200 needed)
+[   44.755568]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e330d0dd95a1a17edb87c193c021a6b695d4a82e
+[   45.060666]   moving 3200 blocks
+[   45.084950] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e330d0dd95a1a17edb87c193c021a6b695d4a82e
+[   45.195789] stashing 1 blocks to a32493b4f38828901c202dea122f5b4963a6af27
+[   45.195929]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a32493b4f38828901c202dea122f5b4963a6af27
+[   45.209174] stashing 59 overlapping blocks to a6e348d830e2ea3cae8268c32f37769ec8085ac5
+[   45.209358] 92516352 bytes free on /cache (241664 needed)
+[   45.209507]  writing 59 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a6e348d830e2ea3cae8268c32f37769ec8085ac5
+[   45.222016]   moving 59 blocks
+[   45.222682] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a6e348d830e2ea3cae8268c32f37769ec8085ac5
+[   45.229308] patching 1 blocks to 1
+[   45.231216] stashing 2 blocks to 716f9dc8285abd8ce38ae8cae24431b930a89820
+[   45.231320]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/716f9dc8285abd8ce38ae8cae24431b930a89820
+[   45.242928] stashing 54 overlapping blocks to 1d2b0c244b97806c8ecbeca65577045458257c71
+[   45.243108] 92508160 bytes free on /cache (221184 needed)
+[   45.243252]  writing 54 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1d2b0c244b97806c8ecbeca65577045458257c71
+[   45.250579]   moving 54 blocks
+[   45.251171] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1d2b0c244b97806c8ecbeca65577045458257c71
+[   45.267057] stashing 90 overlapping blocks to a85e5360cd16ada75cb10dbe559ba98cc8eee791
+[   45.267234] 92508160 bytes free on /cache (368640 needed)
+[   45.267382]  writing 90 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a85e5360cd16ada75cb10dbe559ba98cc8eee791
+[   45.280045]   moving 90 blocks
+[   45.280987] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a85e5360cd16ada75cb10dbe559ba98cc8eee791
+[   45.333953] stashing 416 overlapping blocks to 0f19e611ffe8d3db8460bcb31da85544b89da53f
+[   45.334134] 92508160 bytes free on /cache (1703936 needed)
+[   45.334286]  writing 416 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0f19e611ffe8d3db8460bcb31da85544b89da53f
+[   45.362406]   moving 416 blocks
+[   45.365746] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0f19e611ffe8d3db8460bcb31da85544b89da53f
+[   45.385560] stashing 2 blocks to 9e917281a4a4d039ed70d74add8c469bac8db395
+[   45.385689]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9e917281a4a4d039ed70d74add8c469bac8db395
+[   45.404861] stashing 119 overlapping blocks to ad17e1dd3b1abd587cc06595a231ee630b508bbc
+[   45.405054] 92499968 bytes free on /cache (487424 needed)
+[   45.405206]  writing 119 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ad17e1dd3b1abd587cc06595a231ee630b508bbc
+[   45.419221]   moving 119 blocks
+[   45.420573] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ad17e1dd3b1abd587cc06595a231ee630b508bbc
+[   45.434638] stashing 24 overlapping blocks to 6826b6d06dc7c8a59fcc70da51ee20dd4e619aeb
+[   45.434811] 92499968 bytes free on /cache (98304 needed)
+[   45.434959]  writing 24 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6826b6d06dc7c8a59fcc70da51ee20dd4e619aeb
+[   45.440063]   moving 24 blocks
+[   45.440482] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6826b6d06dc7c8a59fcc70da51ee20dd4e619aeb
+[   45.449839] stashing 38 overlapping blocks to 717106cd2979ac8396debb67b65ea72b786e68b6
+[   45.450011] 92499968 bytes free on /cache (155648 needed)
+[   45.450157]  writing 38 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/717106cd2979ac8396debb67b65ea72b786e68b6
+[   45.456111]   moving 38 blocks
+[   45.456574] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/717106cd2979ac8396debb67b65ea72b786e68b6
+[   45.465442] stashing 24 overlapping blocks to c64502767d2f0fd9b10589206f3fdd64d0178001
+[   45.465613] 92499968 bytes free on /cache (98304 needed)
+[   45.465755]  writing 24 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c64502767d2f0fd9b10589206f3fdd64d0178001
+[   45.470355]   moving 24 blocks
+[   45.470728] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c64502767d2f0fd9b10589206f3fdd64d0178001
+[   45.482635] stashing 57 overlapping blocks to 79a3554932532de06692e3b2c2b044a72cd909bb
+[   45.482823] 92499968 bytes free on /cache (233472 needed)
+[   45.482968]  writing 57 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/79a3554932532de06692e3b2c2b044a72cd909bb
+[   45.492616]   moving 57 blocks
+[   45.493213] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/79a3554932532de06692e3b2c2b044a72cd909bb
+[   45.507217] stashing 66 overlapping blocks to 3c70818cef11ee5dfeb6a4df767955bad9bacaa5
+[   45.507398] 92499968 bytes free on /cache (270336 needed)
+[   45.507549]  writing 66 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3c70818cef11ee5dfeb6a4df767955bad9bacaa5
+[   45.517521]   moving 66 blocks
+[   45.518218] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3c70818cef11ee5dfeb6a4df767955bad9bacaa5
+[   45.524979] stashing 2 blocks to 3082a29f8aa6a86c6e0804a1e70e7ef8303e3975
+[   45.525096]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3082a29f8aa6a86c6e0804a1e70e7ef8303e3975
+[   45.544635] stashing 128 overlapping blocks to 367f0276dbfe2fc0a01413a4ec160378933e54e4
+[   45.544812] 92491776 bytes free on /cache (524288 needed)
+[   45.544956]  writing 128 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/367f0276dbfe2fc0a01413a4ec160378933e54e4
+[   45.557646]   moving 128 blocks
+[   45.558816] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/367f0276dbfe2fc0a01413a4ec160378933e54e4
+[   45.568755] patching 1 blocks to 1
+[   45.584291] stashing 127 overlapping blocks to 81a200446f6e3e2ca0ab56c6470a8e01157da03e
+[   45.584468] 92491776 bytes free on /cache (520192 needed)
+[   45.584617]  writing 127 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/81a200446f6e3e2ca0ab56c6470a8e01157da03e
+[   45.599344]   moving 127 blocks
+[   45.600533] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/81a200446f6e3e2ca0ab56c6470a8e01157da03e
+[   45.610994] patching 1 blocks to 1
+[   45.612883] stashing 2 blocks to e468dc535aecbe20cfbfcc57d07001b9f4499787
+[   45.612985]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e468dc535aecbe20cfbfcc57d07001b9f4499787
+[   45.790319] stashing 1649 overlapping blocks to d6b96f621cb2fdb53ab4f5168372b7e2afea6bc2
+[   45.790500] 92483584 bytes free on /cache (6754304 needed)
+[   45.790647]  writing 1649 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6b96f621cb2fdb53ab4f5168372b7e2afea6bc2
+[   45.879649]   moving 1649 blocks
+[   45.892354] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6b96f621cb2fdb53ab4f5168372b7e2afea6bc2
+[   45.974414] patching 1 blocks to 1
+[   46.159306] stashing 1787 overlapping blocks to 1dcb04f54aeb0fbe82b64ec8d83e12d70e79ea70
+[   46.159490] 92483584 bytes free on /cache (7319552 needed)
+[   46.159636]  writing 1787 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1dcb04f54aeb0fbe82b64ec8d83e12d70e79ea70
+[   46.257956]   moving 1787 blocks
+[   46.271608] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1dcb04f54aeb0fbe82b64ec8d83e12d70e79ea70
+[   46.340634] patching 1 blocks to 1
+[   46.342986] stashing 2 blocks to 108128569cf8f303f4b92b6ce7a90b280d91ddab
+[   46.343128]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/108128569cf8f303f4b92b6ce7a90b280d91ddab
+[   46.351363] stashing 13 overlapping blocks to c96909ba7e45ad88f35a593167c40273d83c8336
+[   46.351530] 92475392 bytes free on /cache (53248 needed)
+[   46.351670]  writing 13 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c96909ba7e45ad88f35a593167c40273d83c8336
+[   46.356428]   moving 13 blocks
+[   46.356674] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c96909ba7e45ad88f35a593167c40273d83c8336
+[   46.491807] stashing 1244 overlapping blocks to f60e3923d134c65578c1e4c303839e4ced4a0767
+[   46.491990] 92475392 bytes free on /cache (5095424 needed)
+[   46.492136]  writing 1244 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f60e3923d134c65578c1e4c303839e4ced4a0767
+[   46.561928]   moving 1244 blocks
+[   46.571529] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f60e3923d134c65578c1e4c303839e4ced4a0767
+[   46.655941] stashing 73 overlapping blocks to 1e5a3800e988d5443ee07026a0cc0162d2977230
+[   46.656120] 92475392 bytes free on /cache (299008 needed)
+[   46.656266]  writing 73 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1e5a3800e988d5443ee07026a0cc0162d2977230
+[   46.763356]   moving 73 blocks
+[   46.764190] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1e5a3800e988d5443ee07026a0cc0162d2977230
+[   46.936341] stashing 1432 overlapping blocks to aafb44630f4e9fc0e783a46b74109e9be8796ca2
+[   46.936525] 92475392 bytes free on /cache (5865472 needed)
+[   46.936673]  writing 1432 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aafb44630f4e9fc0e783a46b74109e9be8796ca2
+[   47.324125]   moving 1432 blocks
+[   47.334699] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aafb44630f4e9fc0e783a46b74109e9be8796ca2
+[   47.603198] stashing 1 blocks to ab357199c8b0b4a0eaf6e9a259fd1ac78239fc1c
+[   47.603330]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab357199c8b0b4a0eaf6e9a259fd1ac78239fc1c
+[   47.709676] stashing 1 blocks to 549e9811586544aa2bd9e5ec2ad732738240c300
+[   47.709806]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/549e9811586544aa2bd9e5ec2ad732738240c300
+[   47.825593] stashing 5 overlapping blocks to bb4af4d90ad6fad10c34ff6e366bd11230fd5653
+[   47.825758] 92467200 bytes free on /cache (20480 needed)
+[   47.825901]  writing 5 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bb4af4d90ad6fad10c34ff6e366bd11230fd5653
+[   47.945506]   moving 5 blocks
+[   47.945738] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/bb4af4d90ad6fad10c34ff6e366bd11230fd5653
+[   47.992271] patching 1 blocks to 1
+[   48.014803] stashing 3 blocks to 48013e1b973c7bb6435cd25fca6dd81db4f81318
+[   48.014908]  writing 3 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/48013e1b973c7bb6435cd25fca6dd81db4f81318
+[   48.054548] stashing 1 blocks to 7269cf8cf908069c8a22cf375856093452b3c26c
+[   48.054683]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7269cf8cf908069c8a22cf375856093452b3c26c
+[   48.059271] stashing 1 blocks to aac6fdb83158a00f77dea76d14a6592cbc88d300
+[   48.059398]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aac6fdb83158a00f77dea76d14a6592cbc88d300
+[   48.063388] stashing 1 blocks to 9b4a6743a346d2a484d2fca3ed6203c1dac7397e
+[   48.063601]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9b4a6743a346d2a484d2fca3ed6203c1dac7397e
+[   48.067805] stashing 1 blocks to 59fb198610f95b0837e98bdf86df37431efd6da5
+[   48.067921]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/59fb198610f95b0837e98bdf86df37431efd6da5
+[   48.074124] stashing 1 blocks to 815d5934f9fb9e62adb84db850154389b91e4164
+[   48.074239]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/815d5934f9fb9e62adb84db850154389b91e4164
+[   48.079113] stashing 1 blocks to e841a2c63683a48836bbc671be7a2d030b73cd0d
+[   48.079234]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e841a2c63683a48836bbc671be7a2d030b73cd0d
+[   48.084027] stashing 1 blocks to d6acf744356b95e0064b4643a210c919b56c0d7d
+[   48.084144]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6acf744356b95e0064b4643a210c919b56c0d7d
+[   48.089100] stashing 1 blocks to 620f20130807cf75accc9e3a390a8c017e81d7e9
+[   48.089216]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/620f20130807cf75accc9e3a390a8c017e81d7e9
+[   48.094053] stashing 1 blocks to 47e62c49ec3d9c3549a1f099383ea7894ee5c8c8
+[   48.094178]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/47e62c49ec3d9c3549a1f099383ea7894ee5c8c8
+[   48.098176] stashing 1 blocks to fd6b7bccd80462468d78c1eecc74c64a0c0cae6c
+[   48.098293]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fd6b7bccd80462468d78c1eecc74c64a0c0cae6c
+[   48.102581] stashing 2 blocks to 2ba24dfbfeb8ae1af73fabb5e397c981933f44b1
+[   48.102697]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2ba24dfbfeb8ae1af73fabb5e397c981933f44b1
+[   48.107956] stashing 2 blocks to 6cfce2280436bb54f500dce1ffbcb5268c1fd54b
+[   48.108079]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6cfce2280436bb54f500dce1ffbcb5268c1fd54b
+[   48.112856] stashing 2 blocks to 7036a9550b97b370a5f0e9497808208972a2961b
+[   48.112976]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7036a9550b97b370a5f0e9497808208972a2961b
+[   48.118166] stashing 2 blocks to d950274de5b634145d3c055fdbde5a0e85925d74
+[   48.118292]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d950274de5b634145d3c055fdbde5a0e85925d74
+[   48.123228] stashing 2 blocks to 0241baad2118bb7144cef707fa02f5251c52102d
+[   48.123368]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0241baad2118bb7144cef707fa02f5251c52102d
+[   48.128776] stashing 1 blocks to 011704dcfa0326453f20a92fc7e7cff8859114b9
+[   48.128903]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/011704dcfa0326453f20a92fc7e7cff8859114b9
+[   48.133024] stashing 1 blocks to f7e2e5b7d545070b661426617d53e41a02914045
+[   48.133142]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f7e2e5b7d545070b661426617d53e41a02914045
+[   48.140008] stashing 2 blocks to ed0227eada0242f057c8ab6f96d6eead4aa8e452
+[   48.140129]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ed0227eada0242f057c8ab6f96d6eead4aa8e452
+[   48.145209] stashing 2 blocks to d02fd607bf809aa6911c582aa35b7199bbb001d8
+[   48.145332]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d02fd607bf809aa6911c582aa35b7199bbb001d8
+[   48.150458] stashing 2 blocks to c9c6f57bc99bfae25e69dc5416531ae1048b0f44
+[   48.150580]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9c6f57bc99bfae25e69dc5416531ae1048b0f44
+[   48.155515] stashing 2 blocks to e86c7869d05449d757cdb907695179ac5d67c9e9
+[   48.155638]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e86c7869d05449d757cdb907695179ac5d67c9e9
+[   48.161201] stashing 2 blocks to b2cee5a0ca037714426e309bf95b8e659475b4e2
+[   48.161332]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b2cee5a0ca037714426e309bf95b8e659475b4e2
+[   48.165965] stashing 2 blocks to b1edef35022eed519a2ef68b3a8d712eaf955597
+[   48.166081]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b1edef35022eed519a2ef68b3a8d712eaf955597
+[   48.170785] stashing 1 blocks to 0f1410f751169bf0366cdf2e900a368ef0cf50b4
+[   48.170902]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0f1410f751169bf0366cdf2e900a368ef0cf50b4
+[   48.176423] stashing 1 blocks to 904dedd1b4199cb4297bbb90f05b5159cef33bb4
+[   48.176548]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/904dedd1b4199cb4297bbb90f05b5159cef33bb4
+[   48.182071] stashing 2 blocks to 54afef358c2da94a7955d993304ddc1a500a3904
+[   48.182192]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/54afef358c2da94a7955d993304ddc1a500a3904
+[   48.282595] stashing 512 overlapping blocks to 7491e85e74782729fb5d4018f8a96844005936af
+[   48.282779] 92299264 bytes free on /cache (2097152 needed)
+[   48.282932]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7491e85e74782729fb5d4018f8a96844005936af
+[   48.321864] patching 512 blocks to 512
+[   48.376296] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7491e85e74782729fb5d4018f8a96844005936af
+[   48.409154]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6cfce2280436bb54f500dce1ffbcb5268c1fd54b
+[   48.422066] stashing 148 overlapping blocks to 9e61f958f3434f0e40a9b5a065d8d6f3b78a7a07
+[   48.422242] 92299264 bytes free on /cache (606208 needed)
+[   48.422391]  writing 148 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9e61f958f3434f0e40a9b5a065d8d6f3b78a7a07
+[   48.436755]   moving 148 blocks
+[   48.438128] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9e61f958f3434f0e40a9b5a065d8d6f3b78a7a07
+[   48.448069] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6cfce2280436bb54f500dce1ffbcb5268c1fd54b
+[   48.449989]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7036a9550b97b370a5f0e9497808208972a2961b
+[   48.451420] stashing 14 overlapping blocks to 24892cc7ebd99508f3f533001f4925fd92a1e082
+[   48.451545] 92307456 bytes free on /cache (57344 needed)
+[   48.451675]  writing 14 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/24892cc7ebd99508f3f533001f4925fd92a1e082
+[   48.458158]   moving 14 blocks
+[   48.458453] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/24892cc7ebd99508f3f533001f4925fd92a1e082
+[   48.461100] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7036a9550b97b370a5f0e9497808208972a2961b
+[   48.465296]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d950274de5b634145d3c055fdbde5a0e85925d74
+[   48.473960] stashing 101 overlapping blocks to 7f53d56e2586df7f9189ebcb65b34720a9d254f1
+[   48.474136] 92315648 bytes free on /cache (413696 needed)
+[   48.474287]  writing 101 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f53d56e2586df7f9189ebcb65b34720a9d254f1
+[   48.485460]   moving 101 blocks
+[   48.486414] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f53d56e2586df7f9189ebcb65b34720a9d254f1
+[   48.495177] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d950274de5b634145d3c055fdbde5a0e85925d74
+[   48.498549]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9c6f57bc99bfae25e69dc5416531ae1048b0f44
+[   48.499556] stashing 9 overlapping blocks to 122332b6f12394ea6483fc2049f86e541137c926
+[   48.499662] 92323840 bytes free on /cache (36864 needed)
+[   48.499787]  writing 9 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/122332b6f12394ea6483fc2049f86e541137c926
+[   48.504063]   moving 9 blocks
+[   48.504293] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/122332b6f12394ea6483fc2049f86e541137c926
+[   48.506075] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9c6f57bc99bfae25e69dc5416531ae1048b0f44
+[   48.508455]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7269cf8cf908069c8a22cf375856093452b3c26c
+[   48.513284] stashing 52 overlapping blocks to cc16f11ac2329e990274e950475d6a535f179613
+[   48.513457] 92332032 bytes free on /cache (212992 needed)
+[   48.513659]  writing 52 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cc16f11ac2329e990274e950475d6a535f179613
+[   48.521643]   moving 52 blocks
+[   48.522218] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cc16f11ac2329e990274e950475d6a535f179613
+[   48.527307] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7269cf8cf908069c8a22cf375856093452b3c26c
+[   48.528219]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2ba24dfbfeb8ae1af73fabb5e397c981933f44b1
+[   48.529644] stashing 15 overlapping blocks to aa46919695cd49aadbd5d794113cd846bd5034e1
+[   48.529752] 92336128 bytes free on /cache (61440 needed)
+[   48.529881]  writing 15 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa46919695cd49aadbd5d794113cd846bd5034e1
+[   48.534808]   moving 15 blocks
+[   48.535084] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aa46919695cd49aadbd5d794113cd846bd5034e1
+[   48.537123] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2ba24dfbfeb8ae1af73fabb5e397c981933f44b1
+[   48.562154]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aac6fdb83158a00f77dea76d14a6592cbc88d300
+[   48.647437] stashing 1014 overlapping blocks to 5b0cb6a075796594ae071f59b5cd654b3d775361
+[   48.647614] 92344320 bytes free on /cache (4153344 needed)
+[   48.647764]  writing 1014 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5b0cb6a075796594ae071f59b5cd654b3d775361
+[   48.705127]   moving 1014 blocks
+[   48.713239] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5b0cb6a075796594ae071f59b5cd654b3d775361
+[   48.755739] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/aac6fdb83158a00f77dea76d14a6592cbc88d300
+[   48.759113]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0241baad2118bb7144cef707fa02f5251c52102d
+[   48.764746] stashing 63 overlapping blocks to f2dc39f2dce4bab27c5598cb6d1c56a416db582f
+[   48.764922] 92348416 bytes free on /cache (258048 needed)
+[   48.765066]  writing 63 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f2dc39f2dce4bab27c5598cb6d1c56a416db582f
+[   48.774598]   moving 63 blocks
+[   48.775264] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f2dc39f2dce4bab27c5598cb6d1c56a416db582f
+[   48.781153] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0241baad2118bb7144cef707fa02f5251c52102d
+[   48.784856]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9b4a6743a346d2a484d2fca3ed6203c1dac7397e
+[   48.791039] stashing 72 overlapping blocks to 17ccf35e3af6665e2aadff293f242691061864ed
+[   48.791211] 92356608 bytes free on /cache (294912 needed)
+[   48.791355]  writing 72 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/17ccf35e3af6665e2aadff293f242691061864ed
+[   48.801204]   moving 72 blocks
+[   48.801956] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/17ccf35e3af6665e2aadff293f242691061864ed
+[   48.807730] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9b4a6743a346d2a484d2fca3ed6203c1dac7397e
+[   48.810301]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ed0227eada0242f057c8ab6f96d6eead4aa8e452
+[   48.811266] stashing 9 overlapping blocks to a14c0e06d04836c1adbbe6d57af90de9954979a3
+[   48.811374] 92360704 bytes free on /cache (36864 needed)
+[   48.811499]  writing 9 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a14c0e06d04836c1adbbe6d57af90de9954979a3
+[   48.815507]   moving 9 blocks
+[   48.815740] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a14c0e06d04836c1adbbe6d57af90de9954979a3
+[   48.817915] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ed0227eada0242f057c8ab6f96d6eead4aa8e452
+[   48.819393]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/59fb198610f95b0837e98bdf86df37431efd6da5
+[   48.819992] stashing 5 overlapping blocks to 85dec8c219530961ab2aac16f62cfe946543f883
+[   48.820092] 92368896 bytes free on /cache (20480 needed)
+[   48.820347]  writing 5 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/85dec8c219530961ab2aac16f62cfe946543f883
+[   48.826350]   moving 5 blocks
+[   48.826542] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/85dec8c219530961ab2aac16f62cfe946543f883
+[   48.828222] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/59fb198610f95b0837e98bdf86df37431efd6da5
+[   48.888806]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e86c7869d05449d757cdb907695179ac5d67c9e9
+[   49.080431] stashing 2316 overlapping blocks to ddec301c54f166774be607237aa43c6dd331145b
+[   49.080605] 92372992 bytes free on /cache (9486336 needed)
+[   49.080748]  writing 2316 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ddec301c54f166774be607237aa43c6dd331145b
+[   49.505320]   moving 2316 blocks
+[   49.522506] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ddec301c54f166774be607237aa43c6dd331145b
+[   49.893144] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e86c7869d05449d757cdb907695179ac5d67c9e9
+[   49.920072]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/815d5934f9fb9e62adb84db850154389b91e4164
+[   50.008314] stashing 1042 overlapping blocks to 37e00198ec4c500e5d1ae2e6726cfd8a1ef4be56
+[   50.008492] 92381184 bytes free on /cache (4268032 needed)
+[   50.008640]  writing 1042 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/37e00198ec4c500e5d1ae2e6726cfd8a1ef4be56
+[   50.067460]   moving 1042 blocks
+[   50.075237] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/37e00198ec4c500e5d1ae2e6726cfd8a1ef4be56
+[   50.119748] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/815d5934f9fb9e62adb84db850154389b91e4164
+[   50.163205]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b2cee5a0ca037714426e309bf95b8e659475b4e2
+[   50.303426] stashing 1671 overlapping blocks to 7f752fc8c960b211f49bd59f72eaabed26e60e46
+[   50.303646] 92385280 bytes free on /cache (6844416 needed)
+[   50.303799]  writing 1671 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f752fc8c960b211f49bd59f72eaabed26e60e46
+[   50.395078]   moving 1671 blocks
+[   50.407934] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7f752fc8c960b211f49bd59f72eaabed26e60e46
+[   50.475699] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b2cee5a0ca037714426e309bf95b8e659475b4e2
+[   50.489063]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e841a2c63683a48836bbc671be7a2d030b73cd0d
+[   50.517184] stashing 329 overlapping blocks to 4c83613de4b2844f2040573ffd98a63fb1a14402
+[   50.517363] 92393472 bytes free on /cache (1347584 needed)
+[   50.517514]  writing 329 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4c83613de4b2844f2040573ffd98a63fb1a14402
+[   50.541314]   moving 329 blocks
+[   50.544039] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4c83613de4b2844f2040573ffd98a63fb1a14402
+[   50.563852] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e841a2c63683a48836bbc671be7a2d030b73cd0d
+[   50.565763]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b1edef35022eed519a2ef68b3a8d712eaf955597
+[   50.567070] stashing 11 overlapping blocks to 2303c833420023d457cb86a886fda88a6e731120
+[   50.567192] 92397568 bytes free on /cache (45056 needed)
+[   50.567323]  writing 11 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2303c833420023d457cb86a886fda88a6e731120
+[   50.574104]   moving 11 blocks
+[   50.574385] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2303c833420023d457cb86a886fda88a6e731120
+[   50.576751] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b1edef35022eed519a2ef68b3a8d712eaf955597
+[   50.578114]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6acf744356b95e0064b4643a210c919b56c0d7d
+[   50.578677]   moving 4 blocks
+[   50.579911] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d6acf744356b95e0064b4643a210c919b56c0d7d
+[   50.588720]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/620f20130807cf75accc9e3a390a8c017e81d7e9
+[   50.604167] stashing 181 overlapping blocks to 13bddd1b26bd268e0bf4ffb4338297f21a9efbae
+[   50.604340] 92409856 bytes free on /cache (741376 needed)
+[   50.604494]  writing 181 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/13bddd1b26bd268e0bf4ffb4338297f21a9efbae
+[   50.619215]   moving 181 blocks
+[   50.621138] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/13bddd1b26bd268e0bf4ffb4338297f21a9efbae
+[   50.631815] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/620f20130807cf75accc9e3a390a8c017e81d7e9
+[   50.633147]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/54afef358c2da94a7955d993304ddc1a500a3904
+[   50.633847] stashing 5 overlapping blocks to 5c63662e6ff17f9d15911ea5cfc16e31b6dfcb7f
+[   50.633954] 92413952 bytes free on /cache (20480 needed)
+[   50.634079]  writing 5 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5c63662e6ff17f9d15911ea5cfc16e31b6dfcb7f
+[   50.639823]   moving 5 blocks
+[   50.640024] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5c63662e6ff17f9d15911ea5cfc16e31b6dfcb7f
+[   50.641940] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/54afef358c2da94a7955d993304ddc1a500a3904
+[   50.646752]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/47e62c49ec3d9c3549a1f099383ea7894ee5c8c8
+[   50.657386] stashing 123 overlapping blocks to 4fcd3032c7c2196eacc67078e7a8679cd4de472a
+[   50.657558] 92422144 bytes free on /cache (503808 needed)
+[   50.657707]  writing 123 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4fcd3032c7c2196eacc67078e7a8679cd4de472a
+[   50.670368]   moving 123 blocks
+[   50.671501] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4fcd3032c7c2196eacc67078e7a8679cd4de472a
+[   50.681646] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/47e62c49ec3d9c3549a1f099383ea7894ee5c8c8
+[   50.686304]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fd6b7bccd80462468d78c1eecc74c64a0c0cae6c
+[   50.691135] stashing 51 overlapping blocks to 7da888ee012769def72aba2eeb9e310670ed804b
+[   50.691314] 92426240 bytes free on /cache (208896 needed)
+[   50.691462]  writing 51 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7da888ee012769def72aba2eeb9e310670ed804b
+[   50.699595] patching 51 blocks to 51
+[   50.809864] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7da888ee012769def72aba2eeb9e310670ed804b
+[   50.815809] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fd6b7bccd80462468d78c1eecc74c64a0c0cae6c
+[   50.825102]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f7e2e5b7d545070b661426617d53e41a02914045
+[   50.852120] stashing 323 overlapping blocks to 7c8c157f4f3558446854a4c2a2db2fdd224590c5
+[   50.852303] 92430336 bytes free on /cache (1323008 needed)
+[   50.852454]  writing 323 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c8c157f4f3558446854a4c2a2db2fdd224590c5
+[   50.873338]   moving 323 blocks
+[   50.875944] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/7c8c157f4f3558446854a4c2a2db2fdd224590c5
+[   50.892359] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f7e2e5b7d545070b661426617d53e41a02914045
+[   50.894884]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0f1410f751169bf0366cdf2e900a368ef0cf50b4
+[   50.898512] stashing 39 overlapping blocks to be55025e05af78e2e3dffd527bd48485dbe5f853
+[   50.898687] 92434432 bytes free on /cache (159744 needed)
+[   50.898832]  writing 39 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be55025e05af78e2e3dffd527bd48485dbe5f853
+[   50.906524]   moving 39 blocks
+[   50.907143] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/be55025e05af78e2e3dffd527bd48485dbe5f853
+[   50.910095] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0f1410f751169bf0366cdf2e900a368ef0cf50b4
+[   50.910743]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/904dedd1b4199cb4297bbb90f05b5159cef33bb4
+[   50.911104]   moving 2 blocks
+[   50.912109] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/904dedd1b4199cb4297bbb90f05b5159cef33bb4
+[   50.916316] stashing 11 overlapping blocks to 18d85b6fb735911c52e5a610d8d55f8422538feb
+[   50.916483] 92442624 bytes free on /cache (45056 needed)
+[   50.916616]  writing 11 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/18d85b6fb735911c52e5a610d8d55f8422538feb
+[   50.923390] patching 11 blocks to 11
+[   50.925504] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/18d85b6fb735911c52e5a610d8d55f8422538feb
+[   50.928586]   moving 2 blocks
+[   50.982039]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/011704dcfa0326453f20a92fc7e7cff8859114b9
+[   51.140409] stashing 1883 overlapping blocks to 56e29b8e39a148788f23b77d349c5a2a2851966a
+[   51.140599] 92442624 bytes free on /cache (7712768 needed)
+[   51.140749]  writing 1883 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/56e29b8e39a148788f23b77d349c5a2a2851966a
+[   51.261895]   moving 1883 blocks
+[   51.275762] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/56e29b8e39a148788f23b77d349c5a2a2851966a
+[   51.347198] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/011704dcfa0326453f20a92fc7e7cff8859114b9
+[   51.349004]   moving 2 blocks
+[   51.424954]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d02fd607bf809aa6911c582aa35b7199bbb001d8
+[   51.693604] stashing 3200 overlapping blocks to 92ffe6f6b49173f0b7df2e581d8f957de2183b91
+[   51.693815] 92446720 bytes free on /cache (13107200 needed)
+[   51.693967]  writing 3200 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/92ffe6f6b49173f0b7df2e581d8f957de2183b91
+[   52.204086]   moving 3200 blocks
+[   52.227709] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/92ffe6f6b49173f0b7df2e581d8f957de2183b91
+[   52.817179] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d02fd607bf809aa6911c582aa35b7199bbb001d8
+[   52.818904]   moving 1 blocks
+[   52.830503] warning: commands executed out of order [move]
+[   52.830597] skipping 1 already moved blocks
+[   53.002686] stashing 1627 overlapping blocks to fd0e8501f1bd85c9dec477cbb1512e7e3fbce90a
+[   53.002865] 92454912 bytes free on /cache (6664192 needed)
+[   53.003013]  writing 1627 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fd0e8501f1bd85c9dec477cbb1512e7e3fbce90a
+[   53.362116]   moving 1627 blocks
+[   53.375063] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fd0e8501f1bd85c9dec477cbb1512e7e3fbce90a
+[   53.470639] patching 1 blocks to 1
+[   53.493603] patching 1 blocks to 1
+[   53.517354] patching 1 blocks to 1
+[   53.542142] patching 1 blocks to 1
+[   53.564669]   moving 1 blocks
+[   53.587507]   moving 1 blocks
+[   53.610104] patching 1 blocks to 1
+[   53.641616] patching 1 blocks to 1
+[   53.664427] patching 1 blocks to 1
+[   53.687479] patching 1 blocks to 1
+[   53.710874] stashing 1 blocks to 71fa7940c3021c04f8182d289f082b530e1b8fbc
+[   53.711000]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/71fa7940c3021c04f8182d289f082b530e1b8fbc
+[   53.829523] stashing 1 blocks to f64410f75b90a94c50c959356bffc4891dda4d3c
+[   53.829650]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f64410f75b90a94c50c959356bffc4891dda4d3c
+[   53.876608] stashing 1 blocks to 4dd87b6b9a680865d515b179dce75be2994366b3
+[   53.876735]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4dd87b6b9a680865d515b179dce75be2994366b3
+[   53.881084] stashing 1 blocks to 898f3dc9f3a550ca26838425eca4898751a0a1f8
+[   53.881204]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/898f3dc9f3a550ca26838425eca4898751a0a1f8
+[   53.885238] stashing 1 blocks to 381df0f863539a289e03951d68f4acc7ec017b02
+[   53.885356]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/381df0f863539a289e03951d68f4acc7ec017b02
+[   53.889493] stashing 1 blocks to d9c47085a4e665125e02981c2e2be6f65b7b98d1
+[   53.889609]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d9c47085a4e665125e02981c2e2be6f65b7b98d1
+[   53.893846] stashing 1 blocks to 11217afe02f1058674dcc0a9d06606cb0b7d34d6
+[   53.893965]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/11217afe02f1058674dcc0a9d06606cb0b7d34d6
+[   53.897884] stashing 2 blocks to 19820d577bd729bdc093f1287177900ee20e2f94
+[   53.898002]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/19820d577bd729bdc093f1287177900ee20e2f94
+[   53.903749] stashing 2 blocks to 352599f47c787f0e4276e70e6a0cfba3408a6570
+[   53.903892]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/352599f47c787f0e4276e70e6a0cfba3408a6570
+[   53.908514] stashing 1 blocks to f43df0ecbb03831ce21140b57d8fb21e66a5a520
+[   53.908634]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f43df0ecbb03831ce21140b57d8fb21e66a5a520
+[   53.913071] stashing 2 blocks to 458dfed7e4e661f497cda69f25f9ea76f2db4dee
+[   53.913193]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/458dfed7e4e661f497cda69f25f9ea76f2db4dee
+[   53.918355] stashing 2 blocks to c9709ee5d5f0d4142958561d2ed6f600a4dcd6c2
+[   53.918477]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9709ee5d5f0d4142958561d2ed6f600a4dcd6c2
+[   53.923294] stashing 2 blocks to 2212aa9f9ff4eeccc222deabfe815f9058f65b23
+[   53.923415]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2212aa9f9ff4eeccc222deabfe815f9058f65b23
+[   53.928074] stashing 2 blocks to cb6cd2103a8299833fc239e7e8ad15ab290d0232
+[   53.928359]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cb6cd2103a8299833fc239e7e8ad15ab290d0232
+[   53.932726] stashing 2 blocks to 06512f1e78832ffbfed9493d2acbf33e48418636
+[   53.932841]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/06512f1e78832ffbfed9493d2acbf33e48418636
+[   53.938585] stashing 2 blocks to 3dd4ce82c1c4d56675ac6b38b41b8baf3f40152f
+[   53.938716]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3dd4ce82c1c4d56675ac6b38b41b8baf3f40152f
+[   53.943455] stashing 2 blocks to d22a30d4360f3186a91d1d2edd22c2eb016b784f
+[   53.943641]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d22a30d4360f3186a91d1d2edd22c2eb016b784f
+[   53.948536] stashing 2 blocks to a5f5e3d876e4a1ccef4ced1c7ecff77d9b28b7af
+[   53.948658]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a5f5e3d876e4a1ccef4ced1c7ecff77d9b28b7af
+[   53.953305] stashing 2 blocks to 664804aa7da1d33bfb30bd5fba39239ccfddb73b
+[   53.953427]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/664804aa7da1d33bfb30bd5fba39239ccfddb73b
+[   53.958060] stashing 1 blocks to d1518ad3e1f337dc78b526b286596d1c4e844988
+[   53.958177]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d1518ad3e1f337dc78b526b286596d1c4e844988
+[   53.963129] stashing 2 blocks to e59aaf3dcab56c6adb704900b520ed7cc30f3f13
+[   53.963252]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e59aaf3dcab56c6adb704900b520ed7cc30f3f13
+[   53.968155] stashing 2 blocks to 923764b141ee4ec671e40d0a5751517e23527dd6
+[   53.968277]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/923764b141ee4ec671e40d0a5751517e23527dd6
+[   53.973800] stashing 2 blocks to 84d8663726cb41021ce5c327e84e831b0a7766f9
+[   53.973929]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/84d8663726cb41021ce5c327e84e831b0a7766f9
+[   53.978588] stashing 2 blocks to 6b75fbf760e4a9dd5f0a68cec64ea7f506a1b1c4
+[   53.978713]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6b75fbf760e4a9dd5f0a68cec64ea7f506a1b1c4
+[   53.983789] stashing 2 blocks to 262ae9063e4ce7ef848557f1a5e236d33898f9ce
+[   53.983907]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/262ae9063e4ce7ef848557f1a5e236d33898f9ce
+[   53.987987] stashing 2 blocks to 20bdac4e6b509d899e21d8e97bd50a83a274d1bc
+[   53.988118]  writing 2 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/20bdac4e6b509d899e21d8e97bd50a83a274d1bc
+[   53.992841] stashing 1 blocks to b90e85daa7ba9dc5874df18c65bbd904a41fe7bb
+[   53.992957]  writing 1 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b90e85daa7ba9dc5874df18c65bbd904a41fe7bb
+[   54.075517]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9e917281a4a4d039ed70d74add8c469bac8db395
+[   54.075812]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/108128569cf8f303f4b92b6ce7a90b280d91ddab
+[   54.075964]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/89225f9af7dbf7b434b54813a8523fba4b22ccd2
+[   54.076114]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/48013e1b973c7bb6435cd25fca6dd81db4f81318
+[   54.076289]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e468dc535aecbe20cfbfcc57d07001b9f4499787
+[   54.076438]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a32493b4f38828901c202dea122f5b4963a6af27
+[   54.076575]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3082a29f8aa6a86c6e0804a1e70e7ef8303e3975
+[   54.076722]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab357199c8b0b4a0eaf6e9a259fd1ac78239fc1c
+[   54.076978]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/716f9dc8285abd8ce38ae8cae24431b930a89820
+[   54.122921] stashing 512 overlapping blocks to 846c4b04e9d6d90f06106ea65d3bdbb16119188f
+[   54.123105] 92274688 bytes free on /cache (2097152 needed)
+[   54.123253]  writing 512 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/846c4b04e9d6d90f06106ea65d3bdbb16119188f
+[   54.151130] patching 512 blocks to 512
+[   54.213101] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/846c4b04e9d6d90f06106ea65d3bdbb16119188f
+[   54.260539] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/9e917281a4a4d039ed70d74add8c469bac8db395
+[   54.261636] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/108128569cf8f303f4b92b6ce7a90b280d91ddab
+[   54.262271] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/89225f9af7dbf7b434b54813a8523fba4b22ccd2
+[   54.262780] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/48013e1b973c7bb6435cd25fca6dd81db4f81318
+[   54.263224] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e468dc535aecbe20cfbfcc57d07001b9f4499787
+[   54.263768] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a32493b4f38828901c202dea122f5b4963a6af27
+[   54.264237] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3082a29f8aa6a86c6e0804a1e70e7ef8303e3975
+[   54.264735] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/ab357199c8b0b4a0eaf6e9a259fd1ac78239fc1c
+[   54.265216] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/716f9dc8285abd8ce38ae8cae24431b930a89820
+[   54.290617]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/19820d577bd729bdc093f1287177900ee20e2f94
+[   54.366727] stashing 922 overlapping blocks to f828fb030597d4aa9761e7cb4aef3390f83720d4
+[   54.366941] 92344320 bytes free on /cache (3776512 needed)
+[   54.367090]  writing 922 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f828fb030597d4aa9761e7cb4aef3390f83720d4
+[   54.420073]   moving 922 blocks
+[   54.427353] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f828fb030597d4aa9761e7cb4aef3390f83720d4
+[   54.467174] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/19820d577bd729bdc093f1287177900ee20e2f94
+[   54.469342]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/458dfed7e4e661f497cda69f25f9ea76f2db4dee
+[   54.470084] stashing 6 overlapping blocks to fa7aaeb5a0fdb163816fee701657217e2fcf2e39
+[   54.470279] 92352512 bytes free on /cache (24576 needed)
+[   54.470422]  writing 6 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fa7aaeb5a0fdb163816fee701657217e2fcf2e39
+[   54.474916]   moving 6 blocks
+[   54.475142] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fa7aaeb5a0fdb163816fee701657217e2fcf2e39
+[   54.477012] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/458dfed7e4e661f497cda69f25f9ea76f2db4dee
+[   54.479605]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9709ee5d5f0d4142958561d2ed6f600a4dcd6c2
+[   54.483682] stashing 43 overlapping blocks to 8e384e1696d365ec8f8bf7c42343bb12909d3770
+[   54.483853] 92360704 bytes free on /cache (176128 needed)
+[   54.483998]  writing 43 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8e384e1696d365ec8f8bf7c42343bb12909d3770
+[   54.492059]   moving 43 blocks
+[   54.492553] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8e384e1696d365ec8f8bf7c42343bb12909d3770
+[   54.497326] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/c9709ee5d5f0d4142958561d2ed6f600a4dcd6c2
+[   54.501818]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2212aa9f9ff4eeccc222deabfe815f9058f65b23
+[   54.510352] stashing 97 overlapping blocks to fe4fa13f842f73396fdc64b56b62b2ef41032f24
+[   54.510527] 92368896 bytes free on /cache (397312 needed)
+[   54.510676]  writing 97 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fe4fa13f842f73396fdc64b56b62b2ef41032f24
+[   54.521883]   moving 97 blocks
+[   54.522824] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fe4fa13f842f73396fdc64b56b62b2ef41032f24
+[   54.531817] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2212aa9f9ff4eeccc222deabfe815f9058f65b23
+[   54.536059]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cb6cd2103a8299833fc239e7e8ad15ab290d0232
+[   54.545134] stashing 106 overlapping blocks to abda90137dee04414799812e9b2a812688ae75fe
+[   54.545309] 92377088 bytes free on /cache (434176 needed)
+[   54.545458]  writing 106 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/abda90137dee04414799812e9b2a812688ae75fe
+[   54.557275]   moving 106 blocks
+[   54.558282] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/abda90137dee04414799812e9b2a812688ae75fe
+[   54.567161] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/cb6cd2103a8299833fc239e7e8ad15ab290d0232
+[   54.569741]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3dd4ce82c1c4d56675ac6b38b41b8baf3f40152f
+[   54.572960] stashing 35 overlapping blocks to 09c50f38b4c0137be0d7ecb8e0aa96736a10c7bb
+[   54.573125] 92385280 bytes free on /cache (143360 needed)
+[   54.573266]  writing 35 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/09c50f38b4c0137be0d7ecb8e0aa96736a10c7bb
+[   54.580853]   moving 35 blocks
+[   54.581348] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/09c50f38b4c0137be0d7ecb8e0aa96736a10c7bb
+[   54.584512] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3dd4ce82c1c4d56675ac6b38b41b8baf3f40152f
+[   54.586437]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a5f5e3d876e4a1ccef4ced1c7ecff77d9b28b7af
+[   54.587287] stashing 5 overlapping blocks to 0e8283381f0bf2964a305f202f69bf1a3c4f79d4
+[   54.587399] 92393472 bytes free on /cache (20480 needed)
+[   54.587522]  writing 5 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0e8283381f0bf2964a305f202f69bf1a3c4f79d4
+[   54.591729]   moving 5 blocks
+[   54.591919] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0e8283381f0bf2964a305f202f69bf1a3c4f79d4
+[   54.593196] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a5f5e3d876e4a1ccef4ced1c7ecff77d9b28b7af
+[   54.606964]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d1518ad3e1f337dc78b526b286596d1c4e844988
+[   54.607243]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/549e9811586544aa2bd9e5ec2ad732738240c300
+[   54.651335] stashing 542 overlapping blocks to 8f21d0611c9f807e75a09a2173929ec18d3a3212
+[   54.651510] 92401664 bytes free on /cache (2220032 needed)
+[   54.651681]  writing 542 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8f21d0611c9f807e75a09a2173929ec18d3a3212
+[   54.686175]   moving 542 blocks
+[   54.690608] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/8f21d0611c9f807e75a09a2173929ec18d3a3212
+[   54.715731] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d1518ad3e1f337dc78b526b286596d1c4e844988
+[   54.716682] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/549e9811586544aa2bd9e5ec2ad732738240c300
+[   54.718905]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/71fa7940c3021c04f8182d289f082b530e1b8fbc
+[   54.720227] stashing 13 overlapping blocks to 3f8deaa0da8c5b08207bb36443fe74b8e611eb08
+[   54.720355] 92409856 bytes free on /cache (53248 needed)
+[   54.720489]  writing 13 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3f8deaa0da8c5b08207bb36443fe74b8e611eb08
+[   54.725072]   moving 13 blocks
+[   54.725320] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/3f8deaa0da8c5b08207bb36443fe74b8e611eb08
+[   54.727081] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/71fa7940c3021c04f8182d289f082b530e1b8fbc
+[   54.730066]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/352599f47c787f0e4276e70e6a0cfba3408a6570
+[   54.735802] stashing 66 overlapping blocks to 4aa42bbe0856fbc112f5bfb2c6fd3a4db677688f
+[   54.735977] 92413952 bytes free on /cache (270336 needed)
+[   54.736123]  writing 66 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4aa42bbe0856fbc112f5bfb2c6fd3a4db677688f
+[   54.747384]   moving 66 blocks
+[   54.748065] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4aa42bbe0856fbc112f5bfb2c6fd3a4db677688f
+[   54.755089] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/352599f47c787f0e4276e70e6a0cfba3408a6570
+[   54.759434]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f64410f75b90a94c50c959356bffc4891dda4d3c
+[   54.767468] stashing 93 overlapping blocks to 54568ac74f6348512257a52438dff1c0c64b06bc
+[   54.767642] 92422144 bytes free on /cache (380928 needed)
+[   54.767791]  writing 93 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/54568ac74f6348512257a52438dff1c0c64b06bc
+[   54.782209]   moving 93 blocks
+[   54.783111] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/54568ac74f6348512257a52438dff1c0c64b06bc
+[   54.790457] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f64410f75b90a94c50c959356bffc4891dda4d3c
+[   54.794687]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d22a30d4360f3186a91d1d2edd22c2eb016b784f
+[   54.804564] stashing 117 overlapping blocks to e14001cdd4b883843f497570550f8579d2c11de7
+[   54.804738] 92426240 bytes free on /cache (479232 needed)
+[   54.804882]  writing 117 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e14001cdd4b883843f497570550f8579d2c11de7
+[   54.818224]   moving 117 blocks
+[   54.819302] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e14001cdd4b883843f497570550f8579d2c11de7
+[   54.829806] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d22a30d4360f3186a91d1d2edd22c2eb016b784f
+[   54.831832]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4dd87b6b9a680865d515b179dce75be2994366b3
+[   54.832948] stashing 10 overlapping blocks to 07739d81a67df61c50870f98da549f8c6ea30230
+[   54.833085] 92434432 bytes free on /cache (40960 needed)
+[   54.833220]  writing 10 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/07739d81a67df61c50870f98da549f8c6ea30230
+[   54.837425]   moving 10 blocks
+[   54.837663] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/07739d81a67df61c50870f98da549f8c6ea30230
+[   54.839238] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/4dd87b6b9a680865d515b179dce75be2994366b3
+[   54.867930]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e59aaf3dcab56c6adb704900b520ed7cc30f3f13
+[   54.960095] stashing 1094 overlapping blocks to 60012658f1fef9bb64b66df90035466b398e6a63
+[   54.960313] 92438528 bytes free on /cache (4481024 needed)
+[   54.960465]  writing 1094 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/60012658f1fef9bb64b66df90035466b398e6a63
+[   55.021813]   moving 1094 blocks
+[   55.030686] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/60012658f1fef9bb64b66df90035466b398e6a63
+[   55.077191] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/e59aaf3dcab56c6adb704900b520ed7cc30f3f13
+[   55.085530]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/898f3dc9f3a550ca26838425eca4898751a0a1f8
+[   55.105357] stashing 230 overlapping blocks to 0d4cffe10dae7ce92fc9a4eb67bcbf042a9621d1
+[   55.105535] 92446720 bytes free on /cache (942080 needed)
+[   55.105680]  writing 230 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d4cffe10dae7ce92fc9a4eb67bcbf042a9621d1
+[   55.126328]   moving 230 blocks
+[   55.128491] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/0d4cffe10dae7ce92fc9a4eb67bcbf042a9621d1
+[   55.141881] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/898f3dc9f3a550ca26838425eca4898751a0a1f8
+[   55.143403]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/923764b141ee4ec671e40d0a5751517e23527dd6
+[   55.144181] stashing 6 overlapping blocks to f2893755f57b190bc522f8ad31706bf5b28b1be0
+[   55.144294] 92450816 bytes free on /cache (24576 needed)
+[   55.144418]  writing 6 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f2893755f57b190bc522f8ad31706bf5b28b1be0
+[   55.150395]   moving 6 blocks
+[   55.150601] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f2893755f57b190bc522f8ad31706bf5b28b1be0
+[   55.152171] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/923764b141ee4ec671e40d0a5751517e23527dd6
+[   55.154829]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/381df0f863539a289e03951d68f4acc7ec017b02
+[   55.157610] stashing 29 overlapping blocks to 923d25306a57ab48bdf69005c6073373419d0426
+[   55.157761] 92459008 bytes free on /cache (118784 needed)
+[   55.157898]  writing 29 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/923d25306a57ab48bdf69005c6073373419d0426
+[   55.163160]   moving 29 blocks
+[   55.163659] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/923d25306a57ab48bdf69005c6073373419d0426
+[   55.168197] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/381df0f863539a289e03951d68f4acc7ec017b02
+[   55.171307]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/84d8663726cb41021ce5c327e84e831b0a7766f9
+[   55.177413] stashing 66 overlapping blocks to fcc0910fe6de8f08990f0165679a0d7780393879
+[   55.177585] 92463104 bytes free on /cache (270336 needed)
+[   55.177733]  writing 66 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fcc0910fe6de8f08990f0165679a0d7780393879
+[   55.187630]   moving 66 blocks
+[   55.188317] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/fcc0910fe6de8f08990f0165679a0d7780393879
+[   55.194319] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/84d8663726cb41021ce5c327e84e831b0a7766f9
+[   55.195368]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d9c47085a4e665125e02981c2e2be6f65b7b98d1
+[   55.196211]   moving 3 blocks
+[   55.197805] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d9c47085a4e665125e02981c2e2be6f65b7b98d1
+[   55.209908]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/262ae9063e4ce7ef848557f1a5e236d33898f9ce
+[   55.244866] stashing 409 overlapping blocks to 5c96cabd361c83c2c23b2d2679ace0d0987ea10d
+[   55.245048] 92475392 bytes free on /cache (1675264 needed)
+[   55.245199]  writing 409 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5c96cabd361c83c2c23b2d2679ace0d0987ea10d
+[   55.436106]   moving 409 blocks
+[   55.439456] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5c96cabd361c83c2c23b2d2679ace0d0987ea10d
+[   55.543210] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/262ae9063e4ce7ef848557f1a5e236d33898f9ce
+[   55.545914]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/11217afe02f1058674dcc0a9d06606cb0b7d34d6
+[   55.548684] stashing 29 overlapping blocks to 21100f845ce23652168a74c6fba4f3997a0e3f4d
+[   55.548836] 92483584 bytes free on /cache (118784 needed)
+[   55.548973]  writing 29 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/21100f845ce23652168a74c6fba4f3997a0e3f4d
+[   55.554980]   moving 29 blocks
+[   55.555355] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/21100f845ce23652168a74c6fba4f3997a0e3f4d
+[   55.557582] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/11217afe02f1058674dcc0a9d06606cb0b7d34d6
+[   55.561590]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/20bdac4e6b509d899e21d8e97bd50a83a274d1bc
+[   55.573925] stashing 141 overlapping blocks to 136cef9bbf0526330f4a5e54673e21a75af54862
+[   55.574101] 92487680 bytes free on /cache (577536 needed)
+[   55.574259]  writing 141 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/136cef9bbf0526330f4a5e54673e21a75af54862
+[   55.588985]   moving 141 blocks
+[   55.590347] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/136cef9bbf0526330f4a5e54673e21a75af54862
+[   55.600122] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/20bdac4e6b509d899e21d8e97bd50a83a274d1bc
+[   55.602522]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f43df0ecbb03831ce21140b57d8fb21e66a5a520
+[   55.604787] stashing 23 overlapping blocks to 70da1f5dbd5cdbea4164b45a7fac1e6d2fedcf70
+[   55.604941] 92495872 bytes free on /cache (94208 needed)
+[   55.605085]  writing 23 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70da1f5dbd5cdbea4164b45a7fac1e6d2fedcf70
+[   55.610649]   moving 23 blocks
+[   55.610982] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/70da1f5dbd5cdbea4164b45a7fac1e6d2fedcf70
+[   55.613074] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/f43df0ecbb03831ce21140b57d8fb21e66a5a520
+[   55.613891]   moving 2 blocks
+[   55.615035]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/06512f1e78832ffbfed9493d2acbf33e48418636
+[   55.616205] stashing 12 overlapping blocks to 491d4a5d3d17b975aa1ecf5aa082aa2598c3b208
+[   55.616308] 92499968 bytes free on /cache (49152 needed)
+[   55.616431]  writing 12 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/491d4a5d3d17b975aa1ecf5aa082aa2598c3b208
+[   55.622873]   moving 12 blocks
+[   55.623119] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/491d4a5d3d17b975aa1ecf5aa082aa2598c3b208
+[   55.625675] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/06512f1e78832ffbfed9493d2acbf33e48418636
+[   55.627185]   moving 2 blocks
+[   55.629466]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/664804aa7da1d33bfb30bd5fba39239ccfddb73b
+[   55.635061] stashing 64 overlapping blocks to d281fd19b256c97447198c07da319c78f78414c6
+[   55.635234] 92508160 bytes free on /cache (262144 needed)
+[   55.635380]  writing 64 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d281fd19b256c97447198c07da319c78f78414c6
+[   55.644653]   moving 64 blocks
+[   55.645379] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d281fd19b256c97447198c07da319c78f78414c6
+[   55.654035] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/664804aa7da1d33bfb30bd5fba39239ccfddb73b
+[   55.654851]   moving 2 blocks
+[   55.655925]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6b75fbf760e4a9dd5f0a68cec64ea7f506a1b1c4
+[   55.657344] stashing 13 overlapping blocks to 969c54f5d16f8d838d54f36386e2060c92420eb5
+[   55.657464] 92516352 bytes free on /cache (53248 needed)
+[   55.657590]  writing 13 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/969c54f5d16f8d838d54f36386e2060c92420eb5
+[   55.662244]   moving 13 blocks
+[   55.662500] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/969c54f5d16f8d838d54f36386e2060c92420eb5
+[   55.664175] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/6b75fbf760e4a9dd5f0a68cec64ea7f506a1b1c4
+[   55.664975]   moving 2 blocks
+[   55.673707]  loading /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b90e85daa7ba9dc5874df18c65bbd904a41fe7bb
+[   55.695041] stashing 258 overlapping blocks to 99213653a1d55eb35fd83d7e57ab64bbdde45827
+[   55.695216] 92524544 bytes free on /cache (1056768 needed)
+[   55.695361]  writing 258 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99213653a1d55eb35fd83d7e57ab64bbdde45827
+[   55.715305]   moving 258 blocks
+[   55.717512] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/99213653a1d55eb35fd83d7e57ab64bbdde45827
+[   55.734048] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/b90e85daa7ba9dc5874df18c65bbd904a41fe7bb
+[   55.742950] stashing 51 overlapping blocks to 5df3877c4a88138d4685803fcb0c9321ae92e80d
+[   55.743138] 92528640 bytes free on /cache (208896 needed)
+[   55.743283]  writing 51 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5df3877c4a88138d4685803fcb0c9321ae92e80d
+[   55.751098] patching 51 blocks to 51
+[   55.760534] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/5df3877c4a88138d4685803fcb0c9321ae92e80d
+[   55.769689] stashing 28 overlapping blocks to 2d951d8a1e486febe9bb0a9e557d1a05c475e921
+[   55.769861] 92528640 bytes free on /cache (114688 needed)
+[   55.770002]  writing 28 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2d951d8a1e486febe9bb0a9e557d1a05c475e921
+[   55.775590]   moving 28 blocks
+[   55.775978] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2d951d8a1e486febe9bb0a9e557d1a05c475e921
+[   55.782026] stashing 8 overlapping blocks to 1a8e678fd1ee98548585fb582626edd2054dfc23
+[   55.782191] 92528640 bytes free on /cache (32768 needed)
+[   55.782333]  writing 8 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1a8e678fd1ee98548585fb582626edd2054dfc23
+[   55.786752]   moving 8 blocks
+[   55.787033] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/1a8e678fd1ee98548585fb582626edd2054dfc23
+[   55.804463] stashing 109 overlapping blocks to a84f1433f18e11c67267ac79ccc5cbd4e6e85c63
+[   55.804634] 92528640 bytes free on /cache (446464 needed)
+[   55.804777]  writing 109 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a84f1433f18e11c67267ac79ccc5cbd4e6e85c63
+[   55.817142]   moving 109 blocks
+[   55.818181] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/a84f1433f18e11c67267ac79ccc5cbd4e6e85c63
+[   55.839455] stashing 100 overlapping blocks to d9cddd1f872cacfaeee16715691a9fb4f7dcb805
+[   55.839638] 92528640 bytes free on /cache (409600 needed)
+[   55.839781]  writing 100 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d9cddd1f872cacfaeee16715691a9fb4f7dcb805
+[   55.852361]   moving 100 blocks
+[   55.853349] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/d9cddd1f872cacfaeee16715691a9fb4f7dcb805
+[   55.864910] stashing 34 overlapping blocks to 16deaeeb24550553ffd32c268f587ac20818acbb
+[   55.865082] 92528640 bytes free on /cache (139264 needed)
+[   55.865230]  writing 34 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/16deaeeb24550553ffd32c268f587ac20818acbb
+[   55.872343] patching 34 blocks to 34
+[   55.877856] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/16deaeeb24550553ffd32c268f587ac20818acbb
+[   55.882168] stashing 7 overlapping blocks to 2ae8b2a2fcb83a42089a99b09f912b3b565270cf
+[   55.882332] 92528640 bytes free on /cache (28672 needed)
+[   55.882473]  writing 7 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2ae8b2a2fcb83a42089a99b09f912b3b565270cf
+[   55.887236] patching 7 blocks to 8
+[   55.888985] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/2ae8b2a2fcb83a42089a99b09f912b3b565270cf
+[   55.890932] patching 1 blocks to 1
+[   55.892155] patching 1 blocks to 1
+[   55.893285] patching 1 blocks to 1
+[   55.894462] patching 1 blocks to 1
+[   55.895562] patching 1 blocks to 1
+[   55.896650] patching 1 blocks to 1
+[   55.897811] patching 1 blocks to 1
+[   55.898907] patching 1 blocks to 1
+[   55.899985] patching 1 blocks to 1
+[   55.901151] patching 1 blocks to 1
+[   55.902243] patching 1 blocks to 1
+[   55.919414] stashing 144 overlapping blocks to 09363fa36e8caba3be667bacc6470a3a64594c51
+[   55.919593] 92528640 bytes free on /cache (589824 needed)
+[   55.919742]  writing 144 blocks to /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/09363fa36e8caba3be667bacc6470a3a64594c51
+[   55.933638] patching 144 blocks to 145
+[   55.955024] deleting /cache/recovery/de2e7fb5670ac23a725c1327e0e96dd9f24d2281/09363fa36e8caba3be667bacc6470a3a64594c51
+[   55.967427]   zeroing 1024 blocks
+[   56.022925]   zeroing 1024 blocks
+[   56.076419]   zeroing 1024 blocks
+[   56.130557]   zeroing 1024 blocks
+[   56.203989]   zeroing 1024 blocks
+[   56.260709]   zeroing 1024 blocks
+[   57.270252]   zeroing 1024 blocks
+[   57.650278]   zeroing 1024 blocks
+[   57.724141]   zeroing 1024 blocks
+[   57.780690]   zeroing 1024 blocks
+[   57.855609]   zeroing 1024 blocks
+[   57.910631]   zeroing 1024 blocks
+[   57.969565]   zeroing 1024 blocks
+[   58.021245]   zeroing 1024 blocks
+[   58.090985]   zeroing 1024 blocks
+[   58.147400]   zeroing 1024 blocks
+[   58.204318]   zeroing 1024 blocks
+[   58.262928]   zeroing 770 blocks
+[   58.323032] wrote 88499 blocks; expected 88499
+[   58.323159] stashed 70365 blocks
+[   58.323229] max alloc needed was 13107200
+[   58.323322] deleting stash de2e7fb5670ac23a725c1327e0e96dd9f24d2281
+[   58.620323] Patching vendor image after verification.
+[   58.620483] performing update
+[   58.621159] blockimg version is 4
+[   58.621238] maximum stash entries 0
+[   58.621391] creating stash /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/
+[   58.621760] 92528640 bytes free on /cache (2097152 needed)
+[   58.621865]  erasing 336 blocks
+[   58.632294] stashing 1 overlapping blocks to 6e9763e42fd04b59931297f7b800cb2cdc6b6b22
+[   58.632460] 92528640 bytes free on /cache (4096 needed)
+[   58.632602]  writing 1 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/6e9763e42fd04b59931297f7b800cb2cdc6b6b22
+[   58.638466] patching 1 blocks to 1
+[   58.638962] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/6e9763e42fd04b59931297f7b800cb2cdc6b6b22
+[   58.640460]  writing 1 blocks of new data
+[   58.709257] stashing 512 overlapping blocks to 4011660f0962a9ff0601b26c972feef6839c6e9f
+[   58.709437] 92528640 bytes free on /cache (2097152 needed)
+[   58.709579]  writing 512 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/4011660f0962a9ff0601b26c972feef6839c6e9f
+[   58.741328] patching 512 blocks to 512
+[   58.793143] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/4011660f0962a9ff0601b26c972feef6839c6e9f
+[   58.861226] stashing 379 overlapping blocks to 3110a28d29d9731278d580e5f113462712840788
+[   58.861410] 92528640 bytes free on /cache (1552384 needed)
+[   58.861559]  writing 379 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/3110a28d29d9731278d580e5f113462712840788
+[   58.887626] patching 379 blocks to 379
+[   58.941518] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/3110a28d29d9731278d580e5f113462712840788
+[   58.965007] stashing 13 overlapping blocks to 3132f8d5b2c96a2dc7c8b5bce48392f2fcf83da2
+[   58.965178] 92528640 bytes free on /cache (53248 needed)
+[   58.965320]  writing 13 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/3132f8d5b2c96a2dc7c8b5bce48392f2fcf83da2
+[   58.969937] patching 13 blocks to 13
+[   58.971652] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/3132f8d5b2c96a2dc7c8b5bce48392f2fcf83da2
+[   58.975214] stashing 11 overlapping blocks to abba2660d98128d243f2508ba0a13aa633281a37
+[   58.975380] 92528640 bytes free on /cache (45056 needed)
+[   58.975537]  writing 11 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/abba2660d98128d243f2508ba0a13aa633281a37
+[   58.981652] patching 11 blocks to 11
+[   58.983705] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/abba2660d98128d243f2508ba0a13aa633281a37
+[   58.987140] stashing 3 overlapping blocks to 2aaa08452fa699bbbbbc6c950b73bec175df49ab
+[   58.987278] 92528640 bytes free on /cache (12288 needed)
+[   58.987409]  writing 3 blocks to /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/2aaa08452fa699bbbbbc6c950b73bec175df49ab
+[   58.991518] patching 3 blocks to 3
+[   58.992229] deleting /cache/recovery/e0341fb49ef2c8bdfa78ba20752cf45f042352e9/2aaa08452fa699bbbbbc6c950b73bec175df49ab
+[   58.993864]   zeroing 1024 blocks
+[   59.047371]   zeroing 1024 blocks
+[   59.102453]   zeroing 135 blocks
+[   59.116156] wrote 3103 blocks; expected 3103
+[   59.116274] stashed 919 blocks
+[   59.116344] max alloc needed was 2097152
+[   59.116557] deleting stash e0341fb49ef2c8bdfa78ba20752cf45f042352e9
+[   59.130329] Patching boot image...
+[   59.367929] patch EMMC:/dev/block/platform/soc.0/f9824900.sdhci/by-name/boot:12682470:aafe155025440d48856dcd6dedd5fa86c578c8c8:12682470:e0135a697a14ca48c0a5b5567b59992bb459e9f1: partition read matched size 12682470 sha aafe155025440d48856dcd6dedd5fa86c578c8c8
+[   59.378026] 92532736 bytes free on /cache (12682470 needed)
+[   65.831855] now e0135a69
+[   66.150411]   caches dropped
+[   67.230576] verification read succeeded (attempt 1)
+[   67.263840]
+[   67.390687] I:@/cache/recovery/block.map
+[   67.390723] 1
+[   67.390733] time_total: 64
+[   67.390742] retry: 0
+[   67.390752] target_build: 4104010
+[   67.390760] source_build: 4073501
+[   67.390769] bytes_written_system: 362491904
+[   67.390777] bytes_stashed_system: 288215040
+[   67.390785] bytes_written_vendor: 12709888
+[   67.390794] bytes_stashed_vendor: 3764224
+[   67.390803] uncrypt_time: 0
+[   67.391015] I:Saving locale "en_US"
